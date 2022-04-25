@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="Feedback.css">
+</head>
+<body>
+    <main>
+    
+        <header>
+          <div class="container-fluid page-headerFeedback py-5" style="margin-bottom: 6rem;">
+          
+              <div class="container py-5 text-center">
+                <h1 class="display-3 text-white mb-3 animated slideInDown active"> Customer Feedback</h1>
+                <nav aria-label="breadcrumb animated slideInDown">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                      <p class="text-white">
+                      </p>
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+          </div>
+        </header>
+        <div class="my-container container">
+          <p  id="rcorners" class="my-para1-feedback">
+            Dear Customers,
+          </p>
+          <p class="my-para2-feedback">
+            We want to ensure that your experience with <strong class="GSC">GSC</strong> is a positive one and identify ways that we can 
+            improve.Please take a moment to share your opinion with us. Your input is extremely valuable and greatly appreciated.
+          </p>
+          <br>
+          <form>
+              <div class="row mb-3">
+                <div class="col-sm-1"></div>
+                <label for="inputCompanyName" class="myList col-sm-2 col-form-label"> Company Name: </label>
+                <div class="col-sm-9">
+                  <input type="text" class="my-input-feedback form-control" id="inputCompanyName" name="inputCompanyName">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-sm-1"></div>
+                <label for="inputEmail" class="myList col-sm-2 col-form-label">Email Address:</label>
+                <div class="col-sm-9">
+                  <input type="email" class="my-input-feedback form-control" id="inputEmail" name="inputEmail">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-sm-1"></div>
+                <label for="inputContact" class="myList col-sm-2 col-form-label">Contact Number:</label>
+                <div class="col-sm-9">
+                  <input type="tel" class="my-input-feedback form-control" id="inputContact" name="inputContact">
+                </div>
+              </div>
+              <ol type="I">
+                <li>
+                  <p><strong class="myList">Documentation</strong></p> <br>
+                  <p>
+                    How satisfied are you with <strong class="GSC">GSC</strong> accuray and timeliness of below Documentation aspects on a scale from 1 to 6?
+                  </p>
+                  <br>
+                  <div class="my-divSpec">
+                    <div class="row">
+                      <div class="col-sm-2">
+                        <strong class="my-cap">Bill of Lading</strong>
+                      </div>
+                      <div class="col-sm-10"></div>
+                    </div>
+                    <div class="my-rows row">
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                          <label class="form-check-label" for="inlineRadio1">Extremely Satisfied</label>
+                        </div>
+                      </div> 
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                          <label class="form-check-label" for="inlineRadio2">Very Satisfied</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                          <label class="form-check-label" for="inlineRadio3">Neither Satisfied Nor Dissatified</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                          <label class="form-check-label" for="inlineRadio4">Quite Dissatisfied</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
+                          <label class="form-check-label" for="inlineRadio5">Very Dissatisfied</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6">
+                          <label class="form-check-label" for="inlineRadio6">Extremely Dissatisfied</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="my-divSpec">
+                    <div class="row">
+                      <div class="col-sm-2">
+                        <strong class="my-cap">Vessel ETA (Cargo Arrival Notice)</strong>
+                      </div>
+                      <div class="col-sm-10"></div>
+                    </div>
+                    <div class="my-rows row">
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio7" value="option7">
+                          <label class="form-check-label" for="inlineRadio7">Extremely Satisfied</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio8" value="option8">
+                          <label class="form-check-label" for="inlineRadio8">Very Satisfied</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio9" value="option9">
+                          <label class="form-check-label" for="inlineRadio9">Neither Satisfied Nor Dissatified</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio10" value="option10">
+                          <label class="form-check-label" for="inlineRadio10">Quite Dissatisfied</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio11" value="option11">
+                          <label class="form-check-label" for="inlineRadio11">Very Dissatisfied</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio12" value="option12">
+                          <label class="form-check-label" for="inlineRadio12">Extremely Dissatisfied</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="my-divSpec">
+                    <div class="row">
+                      <div class="col-sm-2">
+                        <strong class="my-cap">Delivery Order</strong>
+                      </div>
+                      <div class="col-sm-10"></div>
+                    </div>
+                    <div class="my-rows row">
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio13" value="option13">
+                          <label class="form-check-label" for="inlineRadio13">Extremely Satisfied</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio14" value="option14">
+                          <label class="form-check-label" for="inlineRadio14">Very Satisfied</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio15" value="option15">
+                          <label class="form-check-label" for="inlineRadio15">Neither Satisfied Nor Dissatified</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio16" value="option16">
+                          <label class="form-check-label" for="inlineRadio16">Quite Dissatisfied</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio17" value="option17">
+                          <label class="form-check-label" for="inlineRadio17">Very Dissatisfied</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions2" id="inlineRadio18" value="option18">
+                          <label class="form-check-label" for="inlineRadio18">Extremely Dissatisfied</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="my-divSpec">
+                    <div class="row">
+                      <div class="col-sm-2">
+                        <strong class="my-cap">Invoice</strong>
+                      </div>
+                      <div class="col-sm-10"></div>
+                    </div>
+                    <div class="my-rows row">
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio19" value="option19">
+                          <label class="form-check-label" for="inlineRadio19">Extremely Satisfied</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio20" value="option20">
+                          <label class="form-check-label" for="inlineRadio20">Very Satisfied</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio21" value="option21">
+                          <label class="form-check-label" for="inlineRadio21">Neither Satisfied Nor Dissatified</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio22" value="option22">
+                          <label class="form-check-label" for="inlineRadio22">Quite Dissatisfied</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio23" value="option23">
+                          <label class="form-check-label" for="inlineRadio23">Very Dissatisfied</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions3" id="inlineRadio24" value="option24">
+                          <label class="form-check-label" for="inlineRadio24">Extremely Dissatisfied</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="my-divSpec">
+                    <div class="row">
+                      <div class="col-sm-2">
+                        <strong class="my-cap">Statement of Account</strong>
+                      </div>
+                      <div class="col-sm-10"></div>
+                    </div>
+                    <div class="my-rows row">
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions4" id="inlineRadio25" value="option25">
+                          <label class="form-check-label" for="inlineRadio25">Extremely Satisfied</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions4" id="inlineRadio26" value="option26">
+                          <label class="form-check-label" for="inlineRadio26">Very Satisfied</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions4" id="inlineRadio27" value="option27">
+                          <label class="form-check-label" for="inlineRadio27">Neither Satisfied Nor Dissatified</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions4" id="inlineRadio28" value="option28">
+                          <label class="form-check-label" for="inlineRadio28">Quite Dissatisfied</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions4" id="inlineRadio29" value="option29">
+                          <label class="form-check-label" for="inlineRadio29">Very Dissatisfied</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions4" id="inlineRadio30" value="option30">
+                          <label class="form-check-label" for="inlineRadio30">Extremely Dissatisfied</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                </li>
+
+                <li>
+                  <p><strong class="myList">Communication</strong></p>
+                  <br>
+                  <div class="my-divSpec">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <p>
+                          How satisfied are you with <strong class="GSC">GSC</strong> Telephone Etiquettes aspects on a scale from 1 to 6?
+                        </p>
+                      </div>
+                    </div>
+                    <div class="my-rows row">
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions5" id="inlineRadio31" value="option31">
+                          <label class="form-check-label" for="inlineRadio31">Extremely Satisfied</label>
+                        </div>
+                      </div> 
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions5" id="inlineRadio32" value="option32">
+                          <label class="form-check-label" for="inlineRadio32">Very Satisfied</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions5" id="inlineRadio33" value="option33">
+                          <label class="form-check-label" for="inlineRadio33">Neither Satisfied Nor Dissatified</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions5" id="inlineRadio34" value="option34">
+                          <label class="form-check-label" for="inlineRadio34">Quite Dissatisfied</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions5" id="inlineRadio35" value="option35">
+                          <label class="form-check-label" for="inlineRadio35">Very Dissatisfied</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions5" id="inlineRadio36" value="option36">
+                          <label class="form-check-label" for="inlineRadio36">Extremely Dissatisfied</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <br>
+
+                <li>
+                  <p><strong class="myList">Customer Service / Operations </strong></p>
+                  <br>
+                  <div class="my-divSpec">
+                    <div class="row">
+                      <div class="col-sm-2">
+                        <strong class="my-cap">Promptness of Reponse</strong>
+                      </div>
+                      <div class="col-sm-10"></div>
+                    </div>
+                    <div class="my-rows row">
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions6" id="inlineRadio37" value="option37">
+                          <label class="form-check-label" for="inlineRadio37">Extremely Satisfied</label>
+                        </div>
+                      </div> 
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions6" id="inlineRadio38" value="option38">
+                          <label class="form-check-label" for="inlineRadio38">Very Satisfied</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions6" id="inlineRadio39" value="option39">
+                          <label class="form-check-label" for="inlineRadio39">Neither Satisfied Nor Dissatified</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions6" id="inlineRadio40" value="option40">
+                          <label class="form-check-label" for="inlineRadio40">Quite Dissatisfied</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions6" id="inlineRadio41" value="option41">
+                          <label class="form-check-label" for="inlineRadio41">Very Dissatisfied</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions6" id="inlineRadio42" value="option42">
+                          <label class="form-check-label" for="inlineRadio42">Extremely Dissatisfied</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="my-divSpec">
+                    <div class="row">
+                      <div class="col-sm-2">
+                        <strong class="my-cap">Product Knowledge</strong>
+                      </div>
+                      <div class="col-sm-10"></div>
+                    </div>
+                    <div class="my-rows row">
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions7" id="inlineRadio43" value="option43">
+                          <label class="form-check-label" for="inlineRadio43">Extremely Satisfied</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions7" id="inlineRadio44" value="option44">
+                          <label class="form-check-label" for="inlineRadio44">Very Satisfied</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions7" id="inlineRadio45" value="option45">
+                          <label class="form-check-label" for="inlineRadio45">Neither Satisfied Nor Dissatified</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions7" id="inlineRadio46" value="option146">
+                          <label class="form-check-label" for="inlineRadio46">Quite Dissatisfied</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions7" id="inlineRadio47" value="option47">
+                          <label class="form-check-label" for="inlineRadio47">Very Dissatisfied</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions7" id="inlineRadio48" value="option48">
+                          <label class="form-check-label" for="inlineRadio48">Extremely Dissatisfied</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="my-divSpec">
+                    <div class="row">
+                      <div class="col-sm-2">
+                        <strong class="my-cap">Problem Solving Skills</strong>
+                      </div>
+                      <div class="col-sm-10"></div>
+                    </div>
+                    <div class="my-rows row">
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions8" id="inlineRadio49" value="option49">
+                          <label class="form-check-label" for="inlineRadio49">Extremely Satisfied</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions8" id="inlineRadio50" value="option50">
+                          <label class="form-check-label" for="inlineRadio50">Very Satisfied</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions8" id="inlineRadio51" value="option51">
+                          <label class="form-check-label" for="inlineRadio51">Neither Satisfied Nor Dissatified</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions8" id="inlineRadio52" value="option52">
+                          <label class="form-check-label" for="inlineRadio52">Quite Dissatisfied</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions8" id="inlineRadio53" value="option53">
+                          <label class="form-check-label" for="inlineRadio53">Very Dissatisfied</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="form-check form-check-inline">
+                          <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions8" id="inlineRadio54" value="option54">
+                          <label class="form-check-label" for="inlineRadio54">Extremely Dissatisfied</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                  <br>
+
+                  <li>
+                    <p><strong class="myList"> General </strong></p>
+                    <br>
+                    <div class="my-divSpec">
+                      <div class="row">
+                        <div class="my-cap col-sm-12">
+                          <p>
+                            <strong> 
+                              In which area do you think our business needs imporvement?
+                            </strong>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="my-rows row">
+                        <div class="col-sm-3">
+                          <div class="form-check form-check-inline">
+                            <input class="my-radio form-check-input" type="checkbox" id="inlineCheckbox1" name="check1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">Staff Efficency</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="form-check form-check-inline">
+                            <input class="my-radio form-check-input" type="checkbox" id="inlineCheckbox2" name="check2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">Customer Care</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="form-check form-check-inline">
+                            <input class="my-radio form-check-input" type="checkbox" id="inlineCheckbox3" name="check3" value="option3">
+                            <label class="form-check-label" for="inlineCheckbox3">Telephone Skills</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="form-check form-check-inline">
+                            <input class="my-radio form-check-input" type="checkbox" id="inlineCheckbox4" name="check4" value="option4">
+                            <label class="form-check-label" for="inlineCheckbox4">Any Other</label>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                      <br>
+                    <div class="my-divSpec">
+                      <div class="row">
+                        <div class="col-sm-2">
+                          <strong class="my-cap">Courtesy</strong>
+                        </div>
+                        <div class="col-sm-10"></div>
+                      </div>
+                      <div class="my-rows row">
+                        <div class="col-sm-2">
+                          <div class="form-check form-check-inline">
+                            <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions9" id="inlineRadio55" value="option55">
+                            <label class="form-check-label" for="inlineRadio55">Extremely Satisfied</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-2">
+                          <div class="form-check form-check-inline">
+                            <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions9" id="inlineRadio56" value="option56">
+                            <label class="form-check-label" for="inlineRadio56">Very Satisfied</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-2">
+                          <div class="form-check form-check-inline">
+                            <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions9" id="inlineRadio57" value="option57">
+                            <label class="form-check-label" for="inlineRadio57">Neither Satisfied Nor Dissatified</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-2">
+                          <div class="form-check form-check-inline">
+                            <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions9" id="inlineRadio58" value="option58">
+                            <label class="form-check-label" for="inlineRadio58">Quite Dissatisfied</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-2">
+                          <div class="form-check form-check-inline">
+                            <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions9" id="inlineRadio59" value="option59">
+                            <label class="form-check-label" for="inlineRadio59">Very Dissatisfied</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-2">
+                          <div class="form-check form-check-inline">
+                            <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions9" id="inlineRadio60" value="option60">
+                            <label class="form-check-label" for="inlineRadio60">Extremely Dissatisfied</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="my-divSpec">
+                      <div class="row">
+                        <div class="col-sm-2">
+                          <strong class="my-cap">Accessibility</strong>
+                        </div>
+                        <div class="col-sm-10"></div>
+                      </div>
+                      <div class="my-rows row">
+                        <div class="col-sm-2">
+                          <div class="form-check form-check-inline">
+                            <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions10" id="inlineRadio61" value="option61">
+                            <label class="form-check-label" for="inlineRadio61">Extremely Satisfied</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-2">
+                          <div class="form-check form-check-inline">
+                            <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions10" id="inlineRadio62" value="option62">
+                            <label class="form-check-label" for="inlineRadio62">Very Satisfied</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-2">
+                          <div class="form-check form-check-inline">
+                            <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions10" id="inlineRadio63" value="option63">
+                            <label class="form-check-label" for="inlineRadio63">Neither Satisfied Nor Dissatified</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-2">
+                          <div class="form-check form-check-inline">
+                            <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions10" id="inlineRadio64" value="option64">
+                            <label class="form-check-label" for="inlineRadio64">Quite Dissatisfied</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-2">
+                          <div class="form-check form-check-inline">
+                            <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions10" id="inlineRadio65" value="option65">
+                            <label class="form-check-label" for="inlineRadio65">Very Dissatisfied</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-2">
+                          <div class="form-check form-check-inline">
+                            <input class="my-radio form-check-input" type="radio" name="inlineRadioOptions10" id="inlineRadio66" value="option66">
+                            <label class="form-check-label" for="inlineRadio66">Extremely Dissatisfied</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  </ol>
+                  <br>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">
+                      <p class="my-para3-feedback"> What other services you want <strong class="GSC"> GSC </strong>to offer?</strong></P> 
+                    </label>
+                    <textarea class="my-textarea form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                  </div>
+                  <br><br>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">
+                      <P class="my-para3-feedback">Would you recommend <strong class="GSC"> GSC </strong> Service to your friends or colleagues?</strong></P> 
+                    </label>
+                    <textarea class="my-textarea form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                  </div>
+                  <br> <br>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">
+                      <P class="my-para3-feedback"> Any other comments?</P>
+                    </label>
+                    <textarea class="my-textarea form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                  </div>
+                  <br> <br>
+                  <button type="submit" class="my-submit-feedback btn btn-outline-dark">Submit</button>
+                </form>
+              </div>
+            </main>
+          </body>
+          </html>

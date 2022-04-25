@@ -1,0 +1,78 @@
+/* .gradient-custom-2 { */
+    /* fallback for old browsers */
+    /* background: #fccb90; */
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    /* background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593); */
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+    }
+    
+    @media (min-width: 768px) {
+    .gradient-form {
+    height: 100vh !important;
+    }
+    }
+    @media (min-width: 769px) {
+    .gradient-custom-2 {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    }
+    } */
+/* 
+    .vh-100{
+        background-color: #bfbfbf !important;
+    } */
+    .card{
+        border-radius: 1rem !important;
+    }
+    /* .img-fluid{
+        background: linear-gradient(rgba(6, 3, 21, .5), rgba(6, 3, 21, .5)), url(signin.jpg) center center no-repeat;
+        border-radius: 1rem 0 0 1rem;
+        width: 400px !important;
+        height: 545px !important;
+        box-shadow:2px 5px 8px gray ;
+    } */
+    .my-btn-signin{
+        width: 450px !important;
+        border-radius: 7px !important;
+    }
+    .my-input-signin{
+        border-radius: 7px !important;
+    }
+    .my-card{
+        background-color: #0d596a !important;
+    }
+    .my-parag-text{
+        color: white !important;
+        text-align: center !important;
+    
+    }
+    .my-btn-account{
+        border-radius: 7px !important;
+        width: 250px !important;
+    }
+    .back-btn {
+        font-size: .8rem !important;
+        color: #fbfbfb !important;
+        outline: none !important;
+        border: none !important;
+        background: transparent !important;
+        display: flex !important;
+        align-items: center !important;  
+        transition: all .30s ease-in !important;
+        margin-top: -40px !important;
+        margin-left: -45px !important;
+    }
+    
+    .back-btn span i {
+        font-size: 1.5rem;
+    }
+    
+    button {
+        cursor: pointer;
+    }
+    .back{
+        font-size: 20px;
+    }

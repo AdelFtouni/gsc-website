@@ -1,0 +1,38 @@
+.my-shippingRequest{
+    font-weight: bold !important;
+    color: #0d596a !important;
+    padding-top: 25px !important;
+    margin-left: -35px !important;
+}
+.my-para-rate{
+    margin-left: -35px !important;
+}
+.my-details{
+    border-radius: 7px !important;
+    box-shadow: 5px 4px 8px gray;
+}
+.my-btn-shipping{
+    border-radius: 7px !important;
+    background-color: #0d596a !important;
+    color: white !important;
+    box-shadow: 5px 4px 8px #0d596a;
+} 
+.my-detailss{
+    box-shadow: 5px 4px 8px gray;
+}
+.page-headership{
+    background: linear-gradient(rgba(6, 3, 21, .5), rgba(6, 3, 21, .5)), url(shippingRequestImg2.png) center center no-repeat;
+    background-size: cover;
+ 
+    }
+/* .my-text-img{
+    color: #0d596a !important;
+} */
+
+.my-loc span i{
+font-size: 5rem;
+color: #0d596a !important;
+}
+.my-loc{
+    padding-left: 100px !important;
+} 
