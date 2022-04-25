@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/shipments_company.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Shipments</title>
+</head>
+<body>
+
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2">
+                <aside>
+                    <header class="header-aside d-flex justify-content-between align-items-center">
+                        <button class="btn d-flex align-items-center">
+                            <span><i class="ri-arrow-left-circle-line"></i></span>Back
+                        </button>
+
+                    </header>
+                    
+                        <nav>
+                            <ul class="list-items text-center">
+                                <li class="item">
+                                    <button class="btn" style="color: #fbfbfb">
+                                        <p><i class="ri-user-3-fill"></i></p>
+                                        <h5>Edit</h5>
+                                    </button>
+                                </li>
+                                <li class="item">
+                                    <button class="btn" id="message-btn" style="color: #fbfbfb;">
+                                        <p><i class="ri-chat-smile-3-fill"></i></p>
+                                        <h5>Message</h5>
+                                    </button>
+                                </li>
+                                <li class="item">
+                                    <button class="btn active-btn-aside" id="shipment-btn" style="color: #fbfbfb">
+                                        <p><i class="ri-folder-3-fill"></i></p>
+                                        <h5>Shipments</h5>
+                                    </button>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div class="log-out">
+                          <h6>
+                            <span><i class="ri-logout-circle-line"></i>
+                           </span>
+                           Log out
+                          </h6>
+                        </div>
+                    
+                </aside>
+            </div>
+            <div class="col-lg-10 main-side my-auto shipment-part">
+
+                <div class="container btn-container d-flex justify-content-start align-items-center">
+                    <button class="filter-btn btns">Filter <span><i class="ri-filter-line"></i></span></button>
+                    <form action="">
+                        <input type="text" placeholder="search by origin" class="search-input" id="search-input">
+                    </form>
+                    <span> search by</span>
+                    <button class="origin-btn btns" id="origin-search-btn">Origin</button>
+                    <button class="destination-btn btns" id="destination-search-btn">Destination</button>
+                    <button class="recent-btn btns">Recent</button>
+                    <button class="old-btn btns">Old</button>
+                </div>
+
+                <div class="container d-flex justify-content-center align-items-center">
+                    <div class="table-responsive table-container">
+                        <table class="table-style">
+                            <thead>
+                              <tr>
+                                <th >Code</th>
+                                <th >Origin</th>
+                                <th >Destination</th>
+                                <th >Location</th>
+                                <th >Starting</th>
+                                <th >Arrival</th>
+                                <th >Status</th>
+                              </tr>
+                            </thead>
+
+                            <tbody id="add-tables">
+    
+                              <tr>
+                               
+                                <td>ABC123</td>
+                                <td>Chicago</td>
+                                <td>China</td>
+                                <td>Ligier</td>
+                                <td>10/04/2022</td>
+                                <td>30/04/2022</td>
+                                <td>
+                                    <div id="online-bubble">
+                                        <div class="bubble">
+                                          <span class="bubble-outer-dot">
+                                          <span class="bubble-inner-dot"></span>
+                                          </span>
+                                        </div>
+                                      </div>
+                                </td>
+                              </tr>
+    
+                              <tr>
+                                
+                                <td>ABC123</td>
+                                <td>Chicago</td>
+                                <td>China</td>
+                                <td>Ligier</td>
+                                <td>10/04/2022</td>
+                                <td>30/04/2022</td>
+                                <td>
+                                    <div id="online-bubble">
+                                        <div class="risk-bubble" id="risk-bubble-btn">
+                                          <span class="risk-bubble-outer-dot">
+                                          <span class="risk-bubble-inner-dot"></span>
+                                          </span>
+                                        </div>
+                                      </div>
+                                </td>
+    
+                              </tr>
+    
+                              <tr>
+                                
+                                <td>ABC123</td>
+                                <td>Chicago</td>
+                                <td>China</td>
+                                <td>Ligier</td>
+                                <td>10/04/2022</td>
+                                <td>30/04/2022</td>
+                                <td>
+                                    <div id="online-bubble">
+                                        <div class="bubble">
+                                          <span class="bubble-outer-dot">
+                                          <span class="bubble-inner-dot"></span>
+                                          </span>
+                                        </div>
+                                      </div>
+                                </td>
+    
+                              </tr>
+    
+                              <tr>
+                                
+                                <td>ABC123</td>
+                                <td>Chicago</td>
+                                <td>China</td>
+                                <td>Ligier</td>
+                                <td>10/04/2022</td>
+                                <td>30/04/2022</td>
+                                <td>
+                                    <div id="online-bubble">
+                                        <div class="bubble">
+                                          <span class="bubble-outer-dot">
+                                          <span class="bubble-inner-dot"></span>
+                                          </span>
+                                        </div>
+                                      </div>
+                                </td>
+                                
+                              </tr>
+    
+                              <tr>
+                                
+                                <td>ABC123</td>
+                                <td>Chicago</td>
+                                <td>China</td>
+                                <td>Ligier</td>
+                                <td>10/04/2022</td>
+                                <td>30/04/2022</td>
+                                <td>
+                                    <div id="online-bubble">
+                                        <div class="risk-bubble">
+                                          <span class="risk-bubble-outer-dot">
+                                          <span class="risk-bubble-inner-dot"></span>
+                                          </span>
+                                        </div>
+                                      </div>
+                                </td>
+                                
+                              </tr>
+    
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-10 main-side my-auto message-part">
+
+              <div class="messages-container">
+                <ul class="message-list"></ul>
+            </div>
+
+              <div class="message-field-typing">
+                <form action="">
+                  <input type="text" placeholder="Typing..." class="message-input-field">
+                  <button class="btn send-message-btn">
+                    <i class="ri-send-plane-fill"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+
+        </div>
+
+        <div id="risk-management-container">
+          <div class="box-risk-container">
+              <header class="close-header">
+                    <p>or press ESC</p>
+                      <button id="close-btn-risk">
+                        <i class="ri-close-line"></i>
+                      </button>
+              </header>
+              <div class="details-container-risk">
+                  <h4>code: <span class="detail-text"> ABC123</span></h4>
+                  <h4>Risk date: <span class="detail-text"> 12/04/2022</span></h4>
+                  <h4>Risk type: <span class="detail-text"> Humidity</span></h4>
+                  <h4>Delay: <span class="detail-text"> 5 days</span></h4>
+                  <h4>New arrival date: <span class="detail-text"> 04/05/2022</span></h4>
+                  <h4>Solutions:
+                       <span class="detail-text">
+                           <select name="solution-select" id="solution-select">
+                               <option value="solution1">solution 1</option>
+                               <option value="solution2">solution 2</option>
+                               <option value="solution3">solution 3</option>
+                           </select>
+                       </span>
+                  </h4>
+                  <h4>Description:</h4>
+                  <div class="description-field-risk">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eveniet dolorum id laborum neque necessitatibus consequuntur, magnam numquam veritatis est odit, ut excepturi autem consectetur, cumque culpa soluta! Dignissimos, blanditiis.</p>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </main>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="../js/shipments_company.js"></script>
+</body>
+</html>
