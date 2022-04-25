@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/home_page.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.css"/>
+   
+    <title>GSC</title>
+</head>
+<style>
+
+    .swiper{
+        padding: 5rem 3rem;
+    }
+    .swiper-controls{
+    background-color: transparent;
+}
+
+.swiper-controls::after{
+    font-size: 1.5rem;
+    color: #0172ab;
+}
+
+.swiper-pagination{
+    bottom: .5rem !important;
+}
+
+.swiper-pagination-bullet{
+    background-color: #025c7a;
+}
+
+</style>
+<body>
+
+    <header>
+        <nav class="nav-bar">
+            <a href="#"><h1>LOGO</h1></a>
+
+            <div class="menu" id="menu">
+                <ul class="list">
+                    <li class="list-item">
+                        <div class="drop-down">
+                            <button class="drop-btn">Shipping 
+                                <i class="ri-arrow-drop-down-fill"></i>
+                            </button>
+                            <div class="drop-down-content">
+                              <a href="#">Booking</a>
+                              <a href="#special-section">Special cargo</a>
+                              <a href="#">oversized cargo</a>
+                              <a href="#">Refrigated cargo</a>
+                              <a href="#">Air freight cargo</a>
+                            </div>
+                          </div> 
+                    </li>
+                    <li class="list-item">
+                        <div class="drop-down">
+                            <button class="drop-btn">Tools 
+                                <i class="ri-arrow-drop-down-fill"></i>
+                            </button>
+                            <div class="drop-down-content">
+                              <a href="#">Risk management</a>
+                              <a href="#">Statistics</a>
+                              
+                            </div>
+                          </div>
+                    </li>
+                    <li class="list-item">
+                        <a href="#services-section" class="list-link">Services</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#about-section" class="list-link">About</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="" class="list-link"><span class="personal-profile"><i class="ri-user-3-fill"></i></span></a>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="nav-list hidden-lap">
+                <li class="list-item">
+                    <div class="drop-down">
+                        <button class="drop-btn">Shipping 
+                            <i class="ri-arrow-drop-down-fill"></i>
+                        </button>
+                        <div class="drop-down-content">
+                          <a href="#">Booking</a>
+                          <a href="#special-section">Special cargo</a>
+                          <a href="#">oversized cargo</a>
+                          <a href="#">Refrigated cargo</a>
+                          <a href="#">Air freight cargo</a>
+                        </div>
+                      </div> 
+                </li>
+                <li class="list-item">
+                    <div class="drop-down">
+                        <button class="drop-btn">Tools 
+                            <i class="ri-arrow-drop-down-fill"></i>
+                        </button>
+                        <div class="drop-down-content">
+                          <a href="#">Risk management</a>
+                          <a href="#">Statistics</a>
+                          
+                        </div>
+                      </div>
+                </li>
+                <li class="list-item">
+                    <a href="#services-section">
+                    Services
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#about-section">About</a>
+                </li>
+            </ul>
+
+            <a href="" class="hidden-lap">
+                <span class="personal-profile">
+                  <i class="ri-user-3-fill"></i>
+                </span>
+            </a>
+
+            <button class="menu-toggle-icon" id="menu-toggle-icon">
+                    <i class="ri-menu-3-line open-menu-icon"></i>
+                    <i class="ri-close-line close-menu-icon"></i>
+            </button>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="hero-section">
+            <div class="boat-animation-part">
+                <img src="../images/boat-img.png" alt="">
+            </div>
+            <div class="tracking-code-part">
+                <div class="name-of-web">
+                    <h1>Global Shipping Company</h1>
+                </div>
+                <div class="tracking-field">
+                    <div class="titles-tab">
+                        
+                        <button id="tracking-code-tab-tracking" class="btn-tabs"><h1 class="active-tab" id="h1-tracking-style">Tracking</h1></button>
+                        <button  id="tracking-code-tab-schedule" class="btn-tabs"><h1 id="h1-schedule-style">Schedule</h1></button>
+                    </div>
+                    <div class="form-container" id="tracking">
+                        <p>Container, Bill of lading or Booking Number</p>
+                        <input type="text" class="tracking-code-input" 
+                        id="tracking-code-input"
+                        placeholder="ex: ABC123">
+                        <button class="tracking-code-btn" id="tracking-code-submit">Submit</button>
+                        <p class="note-tracking-code">To track up to three containers, please enter references separated by a comma</p>
+                    </div>
+
+                    <div class="form-container" id="schedule" style="display: none">
+                        
+                        
+                        <input type="text" class="tracking-code-input" placeholder="Place of loading">
+                        
+
+                        
+                        <input type="text" class="tracking-code-input" placeholder="Place of discharge">
+                        
+
+                        <button class="tracking-code-btn">Search</button>
+            
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-section">
+            <h2 class="section-title title" data-name="About US">
+                ABOUT US
+            </h2>
+
+            <div class="about-card">
+                
+                    <img src="../images/about.jpg" alt="" class="image-style">
+                
+                <div class="description description-about">
+                    <h1>Quick Transport and Logistics Solutions</h1>
+                    <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit doloremque vero earum dolor, odio error sit dolore quas laboriosam laudantium corporis, sunt maiores placeat inventore quo est aperiam obcaecati nisi.</p>
+                    
+                
+                    <div class="icons-about">
+                        <div class="icon-about">
+                            <p><i class="ri-global-line"></i></p>
+                        <p class="text">Globaly</p>
+                        </div>
+                        <div class="icon-about">
+                            <p><i class="ri-time-line"></i></p>
+                            <p class="text">On Time</p>
+                        </div>
+                    </div>
+                    <p class="read-more">read more <span class="arrow-read-more">></span></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services-section">
+
+            <h2 class="section-title title" data-name="Services">
+                SERVICES
+            </h2>
+
+            <div class="services-card-container">
+                <div class="services-card">
+                    <img src="../images/ai-services.jpg" alt="">
+                    <div class="services-card-description">
+                        <h1>Air freight</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, omnis repellat! Quis et obcaecati dicta! Voluptates impedit atque porro ab, placeat</p>
+                    </div>
+                    <div class="read-more">
+                        <p>read more ></p>
+                    </div>
+                </div>
+    
+                <div class="services-card">
+                    <img src="../images/ocean-services.jpg" alt="">
+                    <div class="services-card-description">
+                        <h1>Ocean freight</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, omnis repellat! Quis et obcaecati dicta! Voluptates impedit atque porro ab, placeat</p>
+                    </div>
+                    <div class="read-more">
+                        <p>read more ></p>
+                    </div>
+                </div>
+    
+                <div class="services-card">
+                    <img src="../images/road-services.jpg" alt="">
+                    <div class="services-card-description">
+                        <h1>Road freight</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, omnis repellat! Quis et obcaecati dicta! Voluptates impedit atque porro ab, placeat</p>
+                    </div>
+                    <div class="read-more">
+                        <p>read more ></p>
+                    </div>
+                </div>
+    
+                <div class="services-card">
+                    <img src="../images/train-services.jpg" alt="">
+                    <div class="services-card-description">
+                        <h1>Train freight</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, omnis repellat! Quis et obcaecati dicta! Voluptates impedit atque porro ab, placeat</p>
+                    </div>
+                    <div class="read-more">
+                        <p>read more ></p>
+                    </div>
+                </div>
+    
+                <div class="services-card">
+                    <img src="../images/custom-services.jpg" alt="">
+                    <div class="services-card-description">
+                        <h1>Custom clearance</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, omnis repellat! Quis et obcaecati dicta! Voluptates impedit atque porro ab, placeat</p>
+                    </div>
+                    <div class="read-more">
+                        <p>read more ></p>
+                    </div>
+                </div>
+    
+                <div class="services-card">
+                    <img src="../images/warehouse-services.jpg" alt="">
+                    <div class="services-card-description">
+                        <h1>Warehouse solutions</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, omnis repellat! Quis et obcaecati dicta! Voluptates impedit atque porro ab, placeat</p>
+                    </div>
+                    <div class="read-more">
+                        <p>read more ></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="special-section" id="special-section">
+
+
+            <h2 class="section-title title" data-name="Special">
+                SPECIAL
+            </h2>
+
+           <div class="container-sepcial">
+
+            <div class="special-card">
+                
+                <img src="../images/specialCargo.png" alt="" class="image-style">
+            
+            <div class="description description-about">
+                <h1>Special cargo</h1>
+                <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit doloremque vero earum dolor, odio error sit dolore quas laboriosam laudantium corporis, sunt maiores placeat inventore quo est aperiam obcaecati nisi.</p>
+                
+                <button class="special-registration">
+                    Registration
+                </button>
+            </div>
+        </div>
+
+
+        <div class="special-card">
+        <div class="description description-about">
+            <h1>Refrigated</h1>
+            <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit doloremque vero earum dolor, odio error sit dolore quas laboriosam laudantium corporis, sunt maiores placeat inventore quo est aperiam obcaecati nisi.</p>
+            <button class="special-registration">
+                Registration
+            </button>
+        </div>
+
+        <img src="../images/refrigerated.jpg" alt="" class="image-style">
+    </div>
+
+
+    <div class="special-card">
+                
+        <img src="../images/oversized.jpeg" alt="" class="image-style">
+        
+        <div class="description description-about">
+            <h1>Ovesized</h1>
+            <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit doloremque vero earum dolor, odio error sit dolore quas laboriosam laudantium corporis, sunt maiores placeat inventore quo est aperiam obcaecati nisi.</p>
+            <button class="special-registration">
+                Registration
+            </button>
+      </div>
+    </div>
+
+    <div class="special-card">
+        <div class="description description-about">
+            <h1>Air freight</h1>
+            <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit doloremque vero earum dolor, odio error sit dolore quas laboriosam laudantium corporis, sunt maiores placeat inventore quo est aperiam obcaecati nisi.</p>
+            <button class="special-registration">
+                Registration
+            </button>
+        </div>
+
+        <img src="../images/airfreight.jpg" alt="" class="image-style">
+    </div>
+
+           </div>
+        </section>
+
+        <section id="gsc-plus">
+
+            <h2 class="section-title title" data-name="GSC+ solution">
+                GSC+ SOLUTION
+            </h2>
+
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <a href="" class="swiper-slide">
+                        <div class="services-card">
+                            <img src="../images/barlock-security.jpg" alt="" class="swiper-image">
+                            <div class="services-card-description">
+                                <h1 class="swiper-text">BARLOCK SECURITY DEVICE</h1>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="" class="swiper-slide">
+                        <div class="services-card">
+                            <img src="../images/coldtraitment.jpg" alt="" class="swiper-image">
+                            <div class="services-card-description">
+                                <h1 class="swiper-text">Warehouse solutions</h1>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="" class="swiper-slide">
+                        <div class="services-card">
+                            <img src="../images/pharma-reefer.jpg" alt="" class="swiper-image">
+                            <div class="services-card-description">
+                                <h1 class="swiper-text">PHARMA REFEER DIVISION</h1>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="" class="swiper-slide">
+                        <div class="services-card">
+                            <img src="../images/climactive.jpg" alt="" class="swiper-image">
+                            <div class="services-card-description">
+                                <h1 class="swiper-text">CLIMACTIVE CONTROLLED ATMOSPHERE</h1>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="" class="swiper-slide">
+                        <div class="services-card">
+                            <img src="../images/aquqviva.jpg" alt="" class="swiper-image">
+                            <div class="services-card-description">
+                                <h1 class="swiper-text">AQUAVIVA SEAFOOD SOLUTION</h1>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="" class="swiper-slide">
+                        <div class="services-card">
+                            <img src="../images/coldtraitment.jpg" alt="" class="swiper-image">
+                            <div class="services-card-description">
+                                <h1 class="swiper-text">COLD TREATMENT SERVICES</h1>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-button-prev swiper-controls"></div>
+                <div class="swiper-button-next swiper-controls"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+
+        <div class="brand-footer">
+            <ul>
+                <li><h1>LOGO</h1></li>
+            <li><h6><span class="copyright">&copy; 2022 GSC, all right reserved.</span></h6></li>
+            <li class="list-item">
+                <a href="#" class="list-link social-media">
+                    <i class="ri-instagram-line"></i>
+                </a>
+                <a href="#" class="list-link social-media">
+                    <i class="ri-twitter-line"></i>
+                </a>
+                <a href="#" class="list-link social-media">
+                    <i class="ri-facebook-circle-line"></i>
+                </a>
+                
+            </li>
+            </ul>
+
+        </div>
+
+        
+        <div class="useful-links">
+            <h1>Useful links</h1>
+            <ul>
+                <li>Home</li>
+                <li>services</li>
+                <li>shipping</li>
+                <li>about us</li>
+            </ul>
+        </div>
+
+        <div class="useful-links">
+            <h1>Team</h1>
+            <ul>
+                <li>Adel Ftouni</li>
+                <li>Fatima Mansour</li>
+                <li>Kawthar</li>
+                <li>Hamza Nemer</li>
+            </ul>
+        </div>
+        
+    </footer>
+
+    <script src="../js/home_page.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script type="module">
+       import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
+     
+       const swiper = new Swiper('.swiper', {
+       slidesPerView: 1,
+       spaceBetween: 20,
+       navigation: {
+           nextEl: '.swiper-button-next',
+           prevEl: '.swiper-button-prev'
+       },
+       pagination: {
+           el: '.swiper-pagination'
+       },
+       breakpoints: {
+           700: {slidesPerView: 2},
+           1200: {slidesPerView: 3}
+       }
+   })
+     </script>
+</body>
+</html>
