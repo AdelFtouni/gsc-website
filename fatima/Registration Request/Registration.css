@@ -1,0 +1,45 @@
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+.page-headerReg{
+    background: linear-gradient(rgba(6, 3, 21, .5), rgba(6, 3, 21, .5)), url(register.jpeg) center center no-repeat;
+    background-size: cover;
+    }
+
+.info-btn span i{
+  font-size: 1.3rem;
+}
+    
+.info-btn {
+  font-size: .8rem;
+  color: #8692A6;
+  outline: none;
+  border: none;
+  background: transparent;
+  /* display: flex;
+  align-items: center; */
+  transition: all .25s ease-in;
+}
+
+button {
+  cursor: pointer;
+}
+.my-btnn{
+  background-color: #0d596a !important;
+  color: #fbfbfb !important;
+}
+.my-btnn:hover{
+  background-color: #fbfbfb !important;
+  color: #0d596a !important;
+}

@@ -1,0 +1,149 @@
+.page-headerFeedback{
+    background: linear-gradient(rgba(6, 3, 21, .5), rgba(6, 3, 21, .5)), url(FeedbackImg2.jpg) center fixed no-repeat;
+    background-size: cover !important;
+    object-fit: cover !important;
+
+
+    }
+    .my-divSpec {
+        background-color: #0d596a;
+        color: #fbfbfb;
+        /* opacity: 0.5; */
+    }
+    .my-divSpec:hover{
+        /* opacity: 1 !important; */
+        background-color: #fbfbfb;
+        color: #0d596a;
+        font-weight: bold;
+    }
+
+    .my-radio{
+        box-shadow: 2px 4px 4px gray;
+    }
+    .my-cap{
+        color: #023047;
+    }
+    .my-rows{
+        padding-left: 25px !important;
+    }
+    .my-para1-feedback{
+        color:white;
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+        font-size: 20px;
+    }
+    #rcorners{
+        border-radius: 15px 50px;
+        background: #0d596a;
+        padding: 20px;
+        width:120px;
+        height: 100px;
+        box-shadow: 2px 4px 8px gray;
+    }
+    #rcorners:hover{
+        border-radius: 15px 50px;
+        background: #fbfbfb;
+        padding: 20px;
+        width:170px;
+        height: 130px;
+        box-shadow: 2px 4px 5px gray;
+    }
+    .my-para1-feedback:hover{
+        color:#0d596a;
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+        font-size: 25px;
+    }
+    .my-para2-feedback{
+        font-size: 20px;
+        color: #023047;
+    }
+    .my-para2-feedback:hover{
+        font-size: 20px;
+        color: #0d596a;
+        font-weight: bold;
+    }
+    .GSC{
+        text-shadow: 1px 1px 2px black, 0 0 25px #0d596a, 0 0 5px whitesmoke;
+        font-size: 25px;
+
+    }
+    .GSC:hover{
+        color: #0d596a;
+        font-size: 30px;
+        font-weight: bold;
+        font-style: oblique;
+        text-shadow: 1px 1px 2px black, 0 0 25px #0d596a, 0 0 5px whitesmoke;
+    }
+    .my-para3-feedback{
+        font-size:20px;
+        text-shadow: #0d596a;
+        color: #0d596a;
+    }
+    .my-para3-feedback:hover{
+        font-size:25px;
+        text-shadow: #023047;
+        font-weight: bold;
+        
+
+    }
+    .my-textarea{
+        box-shadow: 2px 3px 8px gray;
+        width: 600px;
+        height: 200px;
+        background-color: #0d596a;
+        opacity: 0.8;
+    }
+    .my-textarea:hover{
+        box-shadow: 2px 3px 5px gray;
+        background-color: #0d596a;
+        opacity: 1;
+     
+
+    }
+    .myList{
+        font-weight: bold;
+        font-family:'Times New Roman', Times, serif;
+        color:#0d596a;
+        background: #fbfbfb;
+    }
+    .myList:hover{
+        font-weight: bold;
+        font-family:'Times New Roman', Times, serif;
+        color: #fbfbfb;
+        background: #0d596a;
+        text-shadow:#023047;
+    }
+    .my-submit-feedback{
+        width: 250px;
+        color:#fbfbfb;
+        background-color: #0d596a;
+        box-shadow: 3px 4px 8px gray;
+        font-size: 30px;
+        border-radius: 7px;
+    }
+    .my-submit-feedback:hover{
+        width: 250px;
+        height: 60px;
+        color:#0d596a;
+        background-color: #fbfbfb;
+        box-shadow: 3px 4px 8px rgb(70, 69, 69);
+        font-weight: bold;
+        border-radius: 15px ;
+        font-size: 35px;
+    }
+    .my-input-feedback{
+        background-color: #fbfbfb;
+        border-radius: 7px;
+        border-color: #0d596a;
+        box-shadow: 3px 4px 8px gray;
+     }
+     .my-input-feedback:hover{
+        background-color: #0d596a;
+        border-radius: 15px ;
+        border-color: #fbfbfb;
+        box-shadow: 3px 4px 8px gray ;
+        
+     }
+     .my-container{
+         transition:all 0.30s ease-in-out;
+     }
+
