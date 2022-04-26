@@ -15,7 +15,9 @@ body{
     margin-right: 5%;
     margin-bottom: 2%;
 }
-
+.mainTable{
+  margin-left: 100px !important;
+}
 
  * {
     box-sizing: border-box;
