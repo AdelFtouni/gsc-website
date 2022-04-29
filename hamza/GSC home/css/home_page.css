@@ -430,10 +430,10 @@ header{
 }
 
 .services-card-container{
+    margin-left: 10% ;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-left: .5rem;
 }
 
 .container-special{
