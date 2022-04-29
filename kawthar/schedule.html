@@ -8,21 +8,13 @@
   <meta content="" name="keywords">
   <meta content="" name="description">
 
-  <link href="schedule.css" rel="stylesheet">
+  <link href="schtesttab.css" rel="stylesheet">
 
   <!--for all inputs-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-
 </head>
-
-
-<!--for tab menue-->
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" rel="stylesheet" />
-
-
-
 
 <title>Search Schedule</title>
 
@@ -31,74 +23,75 @@
 
 
 <body>
-  <main>
+  <main >
 
-    <nav>
-    </nav>
+    <div class="container ">
+
+    <!-- <nav></nav> -->
 
 
-
-    <header>
-      <div class="container-fluid page-headerschedule py-5" style="margin-bottom: 6rem;">
-
-        <div class=" container-fluid header-text mt-4">
+<div class="row" >
+    <header class="d-flex justify-content-between align-items-center col-lg-12">
+      <div class=" container page-headerschedule py-5" style="margin-bottom: 6rem;">
+        <div class="container py-5">
+        
           <h1 class="display-3 text-white mb-3 "> Search Schedule</h1>
+
           <p class="text-white">
             Search our extensive routes to find the schedule which fits your supply chain.
           </p>
-        </div>
+         
       </div>
-
-
+      </div>
     </header>
+</div>
 
-    <div class="container">
+    
+<div class="row">
       <h1 class="my-schedule">
         Search faster
       </h1>
       <br>
+</div>
+
 
 
       <form class="form-search">
-        <!-- Tabs navs -->
-        <div class="container">
-          <ul class="nav nav-tabs">
-            <li class="nav-item">
-              <a class="nav-link active" data-toggle="tab" href="#ptp-search">Point to Point</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#prt-sch">Port Schedule</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link  disabled" data-toggle="tab" href="#vsl-sch">Vessel Schedule</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#ship-ln">Shipping Lines</a>
-            </li>
 
-          </ul>
+        <div class="tabContainer">
+          
+          <div class="tab">
+
+            <button class="tablinks" onclick="menuSearch(event, 'pointToPoint')">Point-to-Point</button>
+            <button class="tablinks" onclick="menuSearch(event, 'portSchedule')">Port Schedule</button>
+            <button class="tablinks hoveroff" onclick="menuSearch(event, 'vesselSearch')" disabled>Vessel Search</button>
+            <button class="tablinks" onclick="menuSearch(event, 'shippingLines')">Shipping Lines</button>
+          </div>
 
           <!--tabs content-->
 
-          <div class="container-fluid input-group mb-3 mt-2" id="leftdiv">
-            <div class="tab-content">
-              <div role="tabpanel" class="tab-pane fade show active" id="ptp-search">
-                <div class="border-5 p-2">
+          <div class="container-fluid input-group mb-3 mt-2 col-lg" id="leftdiv">
+
+            <div class="">
+              <div class=" tabcontent" id="pointToPoint">
+                <div class="container border-5 p-2">
                   <!--added inputs-->
 
-                  <form class="row needs-validation" novalidate>
+                  <div class="row">
+                   <form class="d-flex needs-validation" novalidate>
 
                     <!--1-->
-
-                    <div class="col-sm-12 mb-2 mt-4">
+                    <div class="row">
+                    <div class="col-md mb-2 mt-4">
                       <label for="from" class="form-label mb-0">From City /Region</label>
                       <input type="text" class="form-control rounded" id="form" name="form" aria-label="form" required>
                       <div class="invalid-feedback">
                         Please provide a valid region.
                       </div>
-                    </div>
+                    </div></div>
 
-                    <div class="col-sm-12 mb-2">
+                    <div class="row">
+                    <div class="col-md mb-2">
                       <div class="form-check mb-2">
                         <input type="radio" class="form-check-input mb-0" id="validationFormCheck1" name="radio1"
                           required>
@@ -107,18 +100,19 @@
                           required>
                         <label class="form-check-label" for="validationFormCheck2">Carrier Haulage (SD)</label>
                       </div>
-                    </div>
+                    </div></div>
 
-
-                    <div class="col-sm-12 mb-2 mt-3">
+                    <div class="row">
+                    <div class="col-md mb-2 mt-3">
                       <label for="validationCustom01" class="form-label mb-0">To City /Region</label>
                       <input type="text" class="form-control rounded" id="validationCustom01" required>
                       <div class="valid-feedback">
                         Please provide a valid city.
                       </div>
-                    </div>
+                    </div></div>
 
-                    <div class="col-sm-12 mb-4">
+                    <div class="row">
+                    <div class="col-md mb-4">
                       <div class="form-check">
                         <input type="radio" class="form-check-input mb-0" id="validationFormCheck3" name="radio2"
                           required>
@@ -127,11 +121,11 @@
                           required>
                         <label class="form-check-label" for="validationFormCheck4">Carrier Haulage (SD)</label>
                       </div>
-                    </div>
+                    </div></div>
 
                     <!--2-->
-
-                    <div class="col-sm-12 mb-3 mt-2 p-4 border-top">
+                    <div class="row">
+                    <div class="col-md mb-3 mt-2 p-4 border-top">
                       <label for="validationCustom03" class="form-label mb-0">Date</label>
                       <div>
                         <select class="form-select mb-2" id="validationCustom03">
@@ -151,10 +145,11 @@
                         </div>
 
                       </div>
-                    </div>
+                    </div></div>
 
+                    <div class="row">
                     <!--3-->
-                    <div class="col-sm-12 mb-4 mt-1 p-4 border-top border-bottom">
+                    <div class="col-md mb-4 mt-1 p-4 border-top border-bottom">
                       <label for="validationCustom02" class="form-label mb-0">Container Type</label>
 
                       <select class="form-select mb-3" id="validationCustom02" required>
@@ -182,45 +177,50 @@
                           Cargo requires temperature control
                         </label>
                       </div>
-                    </div>
+                    </div></div>
 
 
                     <!--4-->
 
-                    <div class="col-sm-12 mb-4 mt-2">
+                    <div class="row">
+                    <div class="col-md mb-4 mt-2">
                       <button class="btn btn-primary" type="submit">Search</button>
-                    </div>
+                    </div></div>
                   </form>
+                  </div>
 
                   <!--end-->
                 </div>
               </div>
-              <div role="tabpanel" class="tab-pane fade" id="prt-sch">
-                <div class="border-5 p-4">
+              
+              <div class="tabcontent" id="portSchedule">
+                <div class="container border-5 p-4">
                   <!--added inputs-->
 
                   <form class="row needs-validation" novalidate>
 
                     <!--1-->
 
-
-                    <div class="col-sm-12 mb-2 mt-2">
+                    <div class=" row">
+                    <div class="col-md mb-2 mt-2">
                       <label for="validationCustom06" class="form-label mb-0">Country Region</label>
                       <input type="text" class="form-control rounded" id="validationCustom06" required>
                       <div class="valid-feedback">
                         Please provide a valid city.
                       </div>
-                    </div>
+                    </div></div>
 
-                    <div class="col-sm-12 mb-2 mt-3">
+                    <div class=" row">
+                    <div class="col-md mb-2 mt-3">
                       <label for="validationCustom07" class="form-label mb-0">Port</label>
                       <input type="text" class="form-control rounded" id="validationCustom07" required>
                       <div class="valid-feedback">
                         Please provide a valid city.
                       </div>
-                    </div>
+                    </div></div>
 
-                    <div>
+                    <div class=" row">
+                    <div class="col-md mb-4 mt-2">
                       <label for="validationCustom08" class="form-label mb-0">Date</label>
                       <input type="Date" class="form-control rounded" id="validationCustom08" required>
 
@@ -228,28 +228,27 @@
                         Please provide a valid date.
                       </div>
 
-                    </div>
-                    <div class="col-sm-12 mb-4 mt-2">
+                    </div></div>
+
+                    <div class=" row">
+                    <div class="col-md mb-4 mt-2">
                       <button class="btn btn-primary" type="submit">Search</button>
-                    </div>
+                    </div></div>
                   </form>
                   <!--end-->
                 </div>
               </div>
 
-
-
-
-              <div role="tabpanel" class="tab-pane fade" id="ship-ln">
-                <div class="border-5 p-4">
+              <div  class="tabcontent" id="shippingLines">
+                <div class="container border-5 p-4">
                   <!--added inputs-->
 
                   <form class="row needs-validation" novalidate>
 
                     <!--1-->
 
-
-                    <div class="col-sm-12 mb-2 mt-2">
+                    <div class=" row">
+                    <div class="col-md mb-2 mt-2">
                       <p class=" mb-2">Preview zones schedules by departure and destination area</p>
                       <br>
                       <div>
@@ -295,10 +294,12 @@
                       </div>
 
 
-                    </div>
-                    <div class="col-sm-12 mb-4 mt-2">
+                    </div></div>
+                    
+                    <div class=" row">
+                    <div class="col-md mb-4 mt-2">
                       <button class="btn btn-primary" type="submit">Search</button>
-                    </div>
+                    </div></div>
                   </form>
 
                   <!--end-->
@@ -306,21 +307,23 @@
                 </div>
               </div>
 
-
-
-              <div role="tabpanel" class="tab-pane fade disabled" id="vsl-sch">
+              <div class="disabled tabcontent" id="vesselSearch">
                 <div class="">see the vessels schedule</div>
               </div>
+
+            </div>
+          
 
             </div>
           </div>
 
           <!--RESUALT-->
 
-          <div class="container-fluid input-group mb-3 mt-2" id="rightdiv">
-
-            <div class="col-sm-12 mb-2 mt-4 ml- container tbcont">
+          <div class="container-fluid input-group mb-3 mt-2 col-md-9" id="rightdiv">
+           <div class="row">
+            <div class="col-md mb-2 mt-4 ml- container tbcont">
               <!--PORT CALLS TABLE-->
+              <div class="row">
               <table class="table table-hover table-borderless tbstrp" id="tb1">
                 <caption class="caption-top">Results for:</caption>
                 <tr class="trf disHR">
@@ -362,12 +365,13 @@
                   <td>N/A</td>
                 </tr>
 
-              </table>
+              </table></div>
 
-            </div>
-
-            <div class="col-sm-12 mb-2 mt-4 ml- tbcont">
+            </div></div>
+            <div class="row">
+            <div class="col-md mb-2 mt-4 ml- tbcont">
               <!--POINT TO POINT TABLE-->
+              <div class="row">
               <table class="table table-hover table-borderless tbstrp" id="tb1">
                 <caption class="caption-top">Results for:</caption>
                 <tr class="trf disHR">
@@ -402,13 +406,15 @@
                   <td>BEIHAI, CN </td>
                 </tr>
   
-              </table>
+              </table></div>
 
-            </div>
+            </div></div>
 
             <!--Shipping Lines-->
-            <div class="col-sm-12 mb-2 mt-4 ml- tbcont">
+            <div class="row">
+            <div class="col-md mb-2 mt-4 ml- tbcont">
               <!--SHIPPING LINES first TABLE-->
+              <div class="row">
               <table class="table table-hover table-borderless tbstrp" id="tb1">
                 <caption class="caption-top"> Services</caption>
                 <tr class="trf disHR">
@@ -426,13 +432,13 @@
                   <td> East Africa - Asia </td>
                 </tr>
 
-              </table>
+              </table></div>
 
-            </div>
+            </div></div>
 
             <!--shipping lines services details-->
-
-            <div class="col-sm-12 mb-2 mt-4 ml- tbcont">
+            <div class="row">
+            <div class="col-md mb-2 mt-4 ml- tbcont">
 
               <!--map image array-->
               <div class="Container rounded mx-auto d-block" id="map-img-cont">
@@ -446,7 +452,7 @@
             <!--shipping lines Services schedule details-->
 
             <div class="col-sm-12 mb-2 mt-4 ml- tbcont">
-
+              <div class="row">
               <table class="table table-hover table-borderless tbstrp" id="tb1">
                 <caption class="caption-top">Service Schedules Asea Kenya</caption>
                 <tr class="trf disHR">
@@ -473,40 +479,48 @@
                   <td>Friday, April 15, 2022 </td>
                 </tr>
 
-              </table>
+              </table></div>
                
               <div class="col-sm-12 mb-2 mt-4 ml- tbcont">
                 <!--SHIPPING LINES ports TABLE-->
+                <div class="row">
                 <table class="table table-hover table-borderless tbstrp" id="tb1">
                   <caption class="caption-top"> Ports</caption>
                   <tr class="trf disHR">
-                    <th class=" disH"></th>
+                    <thead>
+                    
                     <th class=" disH">Port Name</th>
                     <th class=" disH">Transit Times</th>
+
+                    <tr> <th colspan="3" class="disH"> West Ports</th> </tr>
+
+                  </thead>
                   </tr>
   
-                  <tr class="tr-br trm trhvr">
-                    <th rowspan="3" class="disH"> West Ports</th>
+                  <tr class=" trm trhvr">
                     <td> NINGBO, CN </td>
                     <td> 2</td>
                   </tr>
                   
-                  <tr class="tr-br trm trhvr">
+                  <tr class=" trm trhvr">
                     <td>SHANGHAI, CN</td>
                     <td>0 </td>
                   </tr>
-                  <tr class="tr-br trm trhvr">
+                  <tr class=" trm tr-br trhvr">
                     <td> MOMBASA, KE</td>
                     <td>24 </td>
                   </tr>
   
-                  <tr class="tr-br trm trhvr">
-                    <th rowspan="3" class="disH"> East Ports </th>
+                  <tr class="disHR">
+                   <thead><th colspan="3"> East Ports </th></thead> 
+                   </tr>
+
+                   <tr class="trm trhvr">
                     <td> MOMBASA, KE</td>
                     <td>24</td>
                   </tr>
 
-                  <tr class="tr-br trm trhvr">
+                  <tr class="trm trhvr">
                     <td>SHANGHAI, CN</td>
                     <td>48 </td>
                   </tr>
@@ -517,7 +531,7 @@
                   </tr>
   
   
-                </table>
+                </table></div>
   
               </div>
 
@@ -532,7 +546,7 @@
                   <div class="col-sm-12 mb-2 mt-2">
                     <p id="capform" class=" mb-2">Transit Time Calculation</p>
                     <br>
-                    <div>
+                    <div class="row">
                       <label for="fromport" class="form-label mb-0">From Port</label>
                       <select id="fromport" name="ZoneFrom" class="form-select mb-2" required>
                         <option selected="selected" value="COLOMBO, LK">COLOMBO, LK</option>
@@ -548,7 +562,7 @@
 
                     </div>
 
-                    <div>
+                    <div class="row">
                       <label for="toport" class="form-label mb-0">To Port</label>
                       <select id="toport" name="ZoneTo" class="form-select mb-2" required>
                         <option selected="selected" value="COLOMBO, LK">COLOMBO, LK</option>
@@ -566,7 +580,7 @@
 
 
                   </div>
-                  <div class="col-sm-12 mb-4 mt-2">
+                  <div class="col-md mb-4 mt-2 row">
                     <button class="btn btn-primary" type="submit">Calculate</button>
 
                     <div id="nbdays">
@@ -589,22 +603,33 @@
 
 
 
-          </div>
+          </div></div>
         </div>
-    </div>
+       </div>
     </form>
 
 
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
 
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.4/js/tether.min.js"></script>
-   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous">
-
-  </script>
+<!--tab nav func-->
+<script>
+  function menuSearch(evt, searchType) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(searchType).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+</script>
 
 
     <script>// Example starter JavaScript for disabling form submissions if there are invalid fields
