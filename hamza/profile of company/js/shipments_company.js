@@ -142,4 +142,3 @@ function randomFun(){
     quoteText.innerHTML = groupOfQuotes[randomIndex]["quote"];
     authorText.innerHTML = groupOfQuotes[randomIndex]["author"];
 }
-

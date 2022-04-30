@@ -645,6 +645,10 @@ box-shadow: 0 10px 25px rgba(0, 0, 0, 50%);
 padding: 3rem;
 }
 
+.right-part-inputs{
+  width: 100%;
+}
+
 .right-part-inputs input{
 border: 1px solid var(--secondary-color) !important;
 border-radius: 20px !important;
@@ -714,4 +718,28 @@ color: var(--background-color) !important;
 background-color: var(--primary-color) !important;
 font-weight: bold !important;
 margin-left: 1rem;
+}
+
+::-webkit-scrollbar{
+  width: .7rem;
+}
+
+::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: var(--primary-color);
+  border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: var(--secondary-color);
+}
+
+a{
+  text-decoration: none !important;
+  color: var(--background-color) !important;
+  display: flex;
+  align-items: center;
 }
