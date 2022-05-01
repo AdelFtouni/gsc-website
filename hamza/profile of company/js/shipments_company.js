@@ -150,8 +150,9 @@ let dataOfShipments = [
         origin: "Chicago",
         destination: "Hong Kong",
         location: "koria",
-        starting: "4/4/2021",
-        arrival: "6/5/2021",
+        starting: new Date("4-4-2021").toDateString(),
+        arrival: new Date("6-5-2021").toDateString(),
+        status: true
     },
 
     {
@@ -159,8 +160,9 @@ let dataOfShipments = [
         origin: "Lebanon",
         destination: "France",
         location: "Bulgaria",
-        starting: "7/5/2021",
-        arrival: "5/7/2021",
+        starting: new Date("2021-5-7").toDateString(),
+        arrival: new Date("2021-7-5").toDateString(),
+        status: false
     },
 
     {
@@ -168,8 +170,9 @@ let dataOfShipments = [
         origin: "Italy",
         destination: "China",
         location: "Maldiv",
-        starting: "5/2/2020",
-        arrival: "25/2/2020",
+        starting: new Date("2020-2-5").toDateString(),
+        arrival: new Date("2020-2-25").toDateString(),
+        status: true
     },
 
     {
@@ -177,8 +180,9 @@ let dataOfShipments = [
         origin: "Barsil",
         destination: "Lebanon",
         location: "Syria",
-        starting: "2/10/2010",
-        arrival: "20/11/2010",
+        starting: new Date("2010-10-2").toDateString(),
+        arrival: new Date("2010-11-20").toDateString(),
+        status: false
     },
 
     {
@@ -186,18 +190,40 @@ let dataOfShipments = [
         origin: "Unites State",
         destination: "Germany",
         location: "France",
-        starting: "3/7/2021",
-        arrival: "30/8/2021",
+        starting: new Date("2021-7-3").toDateString(),
+        arrival: new Date("2021-8-20").toDateString(),
+        status: true
     }
 ];
 
 const tBody = selectElement("#tBody");
-// const testBtn = selectElement("#testBtn");
+
 // window.addEventListener('load', pushTableOfShipmentsFun);
+
+let statusOfshipments = true;
 
 function pushTableOfShipmentsFun(){
     let table = '';
     for(let i=0; i < dataOfShipments.length; i++){
+
+        if(dataOfShipments[i].status == true){
+            dataOfShipments[i].status = `<div id="online-bubble">
+            <div class="bubble" id="bubble-btn">
+              <span class="bubble-outer-dot">
+              <span class="bubble-inner-dot"></span>
+              </span>
+            </div>
+          </div>`;
+        }else{
+            dataOfShipments[i].status = `<div id="online-bubble">
+            <div class="risk-bubble" id="risk-bubble-btn">
+              <span class="risk-bubble-outer-dot">
+              <span class="risk-bubble-inner-dot"></span>
+              </span>
+            </div>
+          </div>`;
+        }
+
         table += `<tr>
                                 
         <td>${dataOfShipments[i].code}</td>
@@ -207,13 +233,7 @@ function pushTableOfShipmentsFun(){
         <td>${dataOfShipments[i].starting}</td>
         <td>${dataOfShipments[i].arrival}</td>
         <td>
-            <div id="online-bubble">
-                <div class="risk-bubble" id="risk-bubble-btn">
-                  <span class="risk-bubble-outer-dot">
-                  <span class="risk-bubble-inner-dot"></span>
-                  </span>
-                </div>
-              </div>
+            ${dataOfShipments[i].status}
         </td>
 
       </tr>`;
@@ -261,13 +281,7 @@ function searchInTable(value){
                 <td>${dataOfShipments[i].starting}</td>
                 <td>${dataOfShipments[i].arrival}</td>
                 <td>
-                    <div id="online-bubble">
-                        <div class="risk-bubble" id="risk-bubble-btn">
-                          <span class="risk-bubble-outer-dot">
-                          <span class="risk-bubble-inner-dot"></span>
-                          </span>
-                        </div>
-                      </div>
+                ${dataOfShipments[i].status}
                 </td>
         
               </tr>`;
@@ -286,12 +300,7 @@ function searchInTable(value){
                 <td>${dataOfShipments[i].arrival}</td>
         <td>
             <div id="online-bubble">
-                <div class="risk-bubble" id="risk-bubble-btn">
-                  <span class="risk-bubble-outer-dot">
-                  <span class="risk-bubble-inner-dot"></span>
-                  </span>
-                </div>
-              </div>
+            ${dataOfShipments[i].status}
         </td>
 
       </tr>`;
@@ -312,3 +321,24 @@ window.addEventListener('keyup', (event) => {
     if(event.key === 'Escape') riskContainer.classList.remove('activated');
 } );
 }
+
+
+// const oldBtn = selectElement(".old-btn");
+// const recentBtn = selectElement(".recent-btn");
+// // let reverseData = dataOfShipments.reverse();
+// oldBtn.addEventListener('click', () => {
+//     dataOfShipments.sort((a, b) => a.starting - b.starting);
+//     pushTableOfShipmentsFun();
+// });
+
+// recentBtn.addEventListener('click', () => {
+//     reverseData.reverse();
+//     pushTableOfShipmentsFun();
+// })
+
+const filterBtn = selectElement('.filter-btn');
+const hiddenFilterForm = selectElement('.hiddenFilterForm');
+
+filterBtn.addEventListener('click', () => {
+    hiddenFilterForm.classList.add('activeFilter');
+})

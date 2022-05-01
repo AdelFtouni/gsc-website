@@ -61,7 +61,8 @@
 
                 <div class="container btn-container d-flex justify-content-start align-items-center">
                     <button class="filter-btn btns">Filter <span><i class="ri-filter-line"></i></span></button>
-                    <form action="">
+                    <div class="hiddenFilterForm">
+                      <form action="">
                         <input type="text" placeholder="Search by Origin" class="search-input" id="search-input" onkeyup="searchInTable(value)">
                     </form>
                     <span> search by</span>
@@ -69,6 +70,7 @@
                     <button class="destination-btn btns" id="destination-search-btn"  onclick="whatTypeOfSearch(this.id)">Destination</button>
                     <button class="recent-btn btns">Recent</button>
                     <button class="old-btn btns">Old</button>
+                    </div>
                 </div>
 
                 <div class="container d-flex justify-content-center align-items-center">
