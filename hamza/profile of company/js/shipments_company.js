@@ -116,8 +116,8 @@ let groupOfQuotes = [
     },
 
     {
-        "quote": "All that glitters is not gold.",
-        "author": "William Shakespeare"
+        "quote": "You have got to start with the customer experience and work back toward the technology , not the other way around.",
+        "author": "Steve Jobs"
         },
 
         {
@@ -126,9 +126,25 @@ let groupOfQuotes = [
             },
 
             {
-                "quote": "For those to whom much is given, much is required.",
-                "author": "the Bible"
+                "quote": "Any product that needs a manual to work is broken.",
+                "author": "Alan Musk"
                 },
+
+                {
+                    "quote": "Quality in a product or service is not what the supplier puts in. it is what the customer gets out and is willing to pay for. A product is not quality because it is hard to make and costs a lot of money, as manufacturers typically believe.",
+                    "author": "Peter Drucker"
+                    },
+
+                    {
+                        "quote": "A product is something made in a factory; a brand is something that is bought by the customer. A product can be copied by a competitor; a brand is unique. A product can be quickly outdated; a successful brand is timeless.",
+                        "author": "Stephen King"
+                        },
+
+                        {
+                            "quote": "When the product is right, you dont have to be a great Marketer.",
+                            "author": "Lee Iacocca"
+                            },
+    
 ];
 
 const randomBtn = selectElement('.random-quote-btn');
@@ -136,9 +152,9 @@ const quoteText = selectElement('.quote-text');
 const authorText = selectElement('.author');
 
 randomBtn.addEventListener('click', randomFun);
-
+let lengthOfArrayQuote = groupOfQuotes.length;
 function randomFun(){
-    let randomIndex = parseInt(Math.random()*3) ;
+    let randomIndex = parseInt(Math.random() * lengthOfArrayQuote) ;
     quoteText.innerHTML = groupOfQuotes[randomIndex]["quote"];
     authorText.innerHTML = groupOfQuotes[randomIndex]["author"];
 }
