@@ -62,17 +62,17 @@
                 <div class="container btn-container d-flex justify-content-start align-items-center">
                     <button class="filter-btn btns">Filter <span><i class="ri-filter-line"></i></span></button>
                     <form action="">
-                        <input type="text" placeholder="search by origin" class="search-input" id="search-input">
+                        <input type="text" placeholder="Search by Origin" class="search-input" id="search-input" onkeyup="searchInTable(value)">
                     </form>
                     <span> search by</span>
-                    <button class="origin-btn btns" id="origin-search-btn">Origin</button>
-                    <button class="destination-btn btns" id="destination-search-btn">Destination</button>
+                    <button class="origin-btn btns" id="origin-search-btn"  onclick="whatTypeOfSearch(this.id)">Origin</button>
+                    <button class="destination-btn btns" id="destination-search-btn"  onclick="whatTypeOfSearch(this.id)">Destination</button>
                     <button class="recent-btn btns">Recent</button>
                     <button class="old-btn btns">Old</button>
                 </div>
 
                 <div class="container d-flex justify-content-center align-items-center">
-                    <div class="table-responsive table-container">
+                    <div class="table-container">
                         <table class="table-style">
                             <thead>
                               <tr>
@@ -87,104 +87,7 @@
                             </thead>
 
                             <tbody id="tBody">
-                              <tr>
-                               
-                                <td>ABC123</td>
-                                <td>Chicago</td>
-                                <td>China</td>
-                                <td>Ligier</td>
-                                <td>10/04/2022</td>
-                                <td>30/04/2022</td>
-                                <td>
-                                    <div id="online-bubble">
-                                        <div class="bubble">
-                                          <span class="bubble-outer-dot">
-                                          <span class="bubble-inner-dot"></span>
-                                          </span>
-                                        </div>
-                                      </div>
-                                </td>
-                              </tr>
-    
-                              <tr>
-                                
-                                <td>ABC123</td>
-                                <td>Chicago</td>
-                                <td>China</td>
-                                <td>Ligier</td>
-                                <td>10/04/2022</td>
-                                <td>30/04/2022</td>
-                                <td>
-                                    <div id="online-bubble">
-                                        <div class="risk-bubble" id="risk-bubble-btn">
-                                          <span class="risk-bubble-outer-dot">
-                                          <span class="risk-bubble-inner-dot"></span>
-                                          </span>
-                                        </div>
-                                      </div>
-                                </td>
-    
-                              </tr>
-    
-                              <tr>
-                                
-                                <td>ABC123</td>
-                                <td>Chicago</td>
-                                <td>China</td>
-                                <td>Ligier</td>
-                                <td>10/04/2022</td>
-                                <td>30/04/2022</td>
-                                <td>
-                                    <div id="online-bubble">
-                                        <div class="bubble">
-                                          <span class="bubble-outer-dot">
-                                          <span class="bubble-inner-dot"></span>
-                                          </span>
-                                        </div>
-                                      </div>
-                                </td>
-    
-                              </tr>
-    
-                              <tr>
-                                
-                                <td>ABC123</td>
-                                <td>Chicago</td>
-                                <td>China</td>
-                                <td>Ligier</td>
-                                <td>10/04/2022</td>
-                                <td>30/04/2022</td>
-                                <td>
-                                    <div id="online-bubble">
-                                        <div class="bubble">
-                                          <span class="bubble-outer-dot">
-                                          <span class="bubble-inner-dot"></span>
-                                          </span>
-                                        </div>
-                                      </div>
-                                </td>
-                                
-                              </tr>
-    
-                              <tr>
-                                
-                                <td>ABC123</td>
-                                <td>Chicago</td>
-                                <td>China</td>
-                                <td>Ligier</td>
-                                <td>10/04/2022</td>
-                                <td>30/04/2022</td>
-                                <td>
-                                    <div id="online-bubble">
-                                        <div class="risk-bubble">
-                                          <span class="risk-bubble-outer-dot">
-                                          <span class="risk-bubble-inner-dot"></span>
-                                          </span>
-                                        </div>
-                                      </div>
-                                </td>
-                                
-                              </tr>
+                             
                             </tbody>
                           </table>
                     </div>

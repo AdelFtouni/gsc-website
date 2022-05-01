@@ -103,6 +103,7 @@ td, th {
   border-radius: 30px;
   text-align: center;
   padding: 8px;
+  position: relative;
 }
 
 tr:nth-child(even) {
@@ -145,6 +146,8 @@ tr:nth-child(even) {
   .message-part{
    margin: 2rem auto !important;
   }
+
+  
 
 }
 
@@ -446,7 +449,7 @@ transform: scale(1);
 .box-risk-container{
   width: 80%;
   max-width: 80%;
-  height: 80%;
+  height: auto;
   background-color: var(--small-text-color);
   border-radius: 30px;
   padding: 1rem 3rem;

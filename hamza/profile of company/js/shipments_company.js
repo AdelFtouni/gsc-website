@@ -9,15 +9,15 @@ const selectElement = selector => {
 
 // POP-UP RISK DETAILS
 
-const riskOpenBtn = selectElement('#risk-bubble-btn');
-const riskCloseBtn = selectElement('#close-btn-risk');
-const riskContainer = selectElement('#risk-management-container');
+// const riskOpenBtn = selectElement('#risk-bubble-btn');
+// const riskCloseBtn = selectElement('#close-btn-risk');
+// const riskContainer = selectElement('#risk-management-container');
 
-riskOpenBtn.addEventListener('click', () => riskContainer.classList.add('activated'));
-riskCloseBtn.addEventListener('click', () => riskContainer.classList.remove('activated'));
-window.addEventListener('keyup', (event) => {
-    if(event.key === 'Escape') riskContainer.classList.remove('activated');
-} );
+// riskOpenBtn.addEventListener('click', () => riskContainer.classList.add('activated'));
+// riskCloseBtn.addEventListener('click', () => riskContainer.classList.remove('activated'));
+// window.addEventListener('keyup', (event) => {
+//     if(event.key === 'Escape') riskContainer.classList.remove('activated');
+// } );
 
 
 //  TOGGLE SIDE NAV
@@ -141,4 +141,174 @@ function randomFun(){
     let randomIndex = parseInt(Math.random()*3) ;
     quoteText.innerHTML = groupOfQuotes[randomIndex]["quote"];
     authorText.innerHTML = groupOfQuotes[randomIndex]["author"];
+}
+
+
+let dataOfShipments = [
+    {
+        code: "ABC123",
+        origin: "Chicago",
+        destination: "Hong Kong",
+        location: "koria",
+        starting: "4/4/2021",
+        arrival: "6/5/2021",
+    },
+
+    {
+        code: "AGE534",
+        origin: "Lebanon",
+        destination: "France",
+        location: "Bulgaria",
+        starting: "7/5/2021",
+        arrival: "5/7/2021",
+    },
+
+    {
+        code: "JSG573",
+        origin: "Italy",
+        destination: "China",
+        location: "Maldiv",
+        starting: "5/2/2020",
+        arrival: "25/2/2020",
+    },
+
+    {
+        code: "KSN340",
+        origin: "Barsil",
+        destination: "Lebanon",
+        location: "Syria",
+        starting: "2/10/2010",
+        arrival: "20/11/2010",
+    },
+
+    {
+        code: "JTO904",
+        origin: "Unites State",
+        destination: "Germany",
+        location: "France",
+        starting: "3/7/2021",
+        arrival: "30/8/2021",
+    }
+];
+
+const tBody = selectElement("#tBody");
+// const testBtn = selectElement("#testBtn");
+// window.addEventListener('load', pushTableOfShipmentsFun);
+
+function pushTableOfShipmentsFun(){
+    let table = '';
+    for(let i=0; i < dataOfShipments.length; i++){
+        table += `<tr>
+                                
+        <td>${dataOfShipments[i].code}</td>
+        <td>${dataOfShipments[i].origin}</td>
+        <td>${dataOfShipments[i].destination}</td>
+        <td>${dataOfShipments[i].location}</td>
+        <td>${dataOfShipments[i].starting}</td>
+        <td>${dataOfShipments[i].arrival}</td>
+        <td>
+            <div id="online-bubble">
+                <div class="risk-bubble" id="risk-bubble-btn">
+                  <span class="risk-bubble-outer-dot">
+                  <span class="risk-bubble-inner-dot"></span>
+                  </span>
+                </div>
+              </div>
+        </td>
+
+      </tr>`;
+    }
+     tBody.innerHTML = table;
+    //  POP-UP RISK DETAILS
+
+const riskOpenBtn = selectElement('#risk-bubble-btn');
+const riskCloseBtn = selectElement('#close-btn-risk');
+const riskContainer = selectElement('#risk-management-container');
+
+riskOpenBtn.addEventListener('click', () => riskContainer.classList.add('activated'));
+riskCloseBtn.addEventListener('click', () => riskContainer.classList.remove('activated'));
+window.addEventListener('keyup', (event) => {
+    if(event.key === 'Escape') riskContainer.classList.remove('activated');
+} );
+}
+pushTableOfShipmentsFun();
+
+const searchInput = selectElement("#search-input");
+
+let statusOfSearch = "Origin";
+function whatTypeOfSearch(id){
+    if(id == "origin-search-btn"){
+        statusOfSearch = "origin";
+        searchInput.placeholder = "Search by Origin";
+    }else{
+        statusOfSearch = "Destination";
+        searchInput.placeholder = "Search by Destination";
+    }
+    searchInput.focus();
+}
+
+function searchInTable(value){
+    let table = '';
+    if(statusOfSearch == "Origin"){
+        for(let i=0; i < dataOfShipments.length; i++){
+            if(dataOfShipments[i].origin.toLowerCase().includes(value.toLowerCase())){
+                table += `<tr>
+                                
+                <td>${dataOfShipments[i].code}</td>
+                <td>${dataOfShipments[i].origin}</td>
+                <td>${dataOfShipments[i].destination}</td>
+                <td>${dataOfShipments[i].location}</td>
+                <td>${dataOfShipments[i].starting}</td>
+                <td>${dataOfShipments[i].arrival}</td>
+                <td>
+                    <div id="online-bubble">
+                        <div class="risk-bubble" id="risk-bubble-btn">
+                          <span class="risk-bubble-outer-dot">
+                          <span class="risk-bubble-inner-dot"></span>
+                          </span>
+                        </div>
+                      </div>
+                </td>
+        
+              </tr>`;
+            }
+        }
+    }else {
+        for(let i=0; i < dataOfShipments.length; i++){
+            if(dataOfShipments[i].destination.toLowerCase().includes(value.toLowerCase())){
+               table += `<tr>
+                                
+                <td>${dataOfShipments[i].code}</td>
+                <td>${dataOfShipments[i].origin}</td>
+                <td>${dataOfShipments[i].destination}</td>
+                <td>${dataOfShipments[i].location}</td>
+                <td>${dataOfShipments[i].starting}</td>
+                <td>${dataOfShipments[i].arrival}</td>
+        <td>
+            <div id="online-bubble">
+                <div class="risk-bubble" id="risk-bubble-btn">
+                  <span class="risk-bubble-outer-dot">
+                  <span class="risk-bubble-inner-dot"></span>
+                  </span>
+                </div>
+              </div>
+        </td>
+
+      </tr>`;
+            }
+        }
+    }
+
+    tBody.innerHTML = table;
+     //  POP-UP RISK DETAILS
+
+const riskOpenBtn = selectElement('#risk-bubble-btn');
+const riskCloseBtn = selectElement('#close-btn-risk');
+const riskContainer = selectElement('#risk-management-container');
+
+riskOpenBtn.addEventListener('click', () => riskContainer.classList.add('activated'));
+riskCloseBtn.addEventListener('click', () => riskContainer.classList.remove('activated'));
+window.addEventListener('keyup', (event) => {
+    if(event.key === 'Escape') riskContainer.classList.remove('activated');
+} );
 }
