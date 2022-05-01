@@ -68,8 +68,9 @@
                     <span> search by</span>
                     <button class="origin-btn btns" id="origin-search-btn"  onclick="whatTypeOfSearch(this.id)">Origin</button>
                     <button class="destination-btn btns" id="destination-search-btn"  onclick="whatTypeOfSearch(this.id)">Destination</button>
-                    <button class="recent-btn btns">Recent</button>
-                    <button class="old-btn btns">Old</button>
+                    <form>
+                      <input type="text" placeholder="#code" class="search-input" id="searchByCode" onkeyup="searchCode(value)">
+                    </form>
                     </div>
                 </div>
 

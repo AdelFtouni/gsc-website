@@ -342,3 +342,28 @@ const hiddenFilterForm = selectElement('.hiddenFilterForm');
 filterBtn.addEventListener('click', () => {
     hiddenFilterForm.classList.add('activeFilter');
 })
+
+
+const searchByCode = selectElement("#searchByCode");
+
+function searchCode(value){
+    let table = '';
+        for(let i=0; i < dataOfShipments.length; i++){
+            if(dataOfShipments[i].code.includes(value)){
+                table += `<tr>
+                                
+                <td>${dataOfShipments[i].code}</td>
+                <td>${dataOfShipments[i].origin}</td>
+                <td>${dataOfShipments[i].destination}</td>
+                <td>${dataOfShipments[i].location}</td>
+                <td>${dataOfShipments[i].starting}</td>
+                <td>${dataOfShipments[i].arrival}</td>
+                <td>
+                ${dataOfShipments[i].status}
+                </td>
+        
+              </tr>`;
+            }
+        }
+        tBody.innerHTML = table;
+}
