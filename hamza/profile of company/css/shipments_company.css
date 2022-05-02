@@ -147,6 +147,10 @@ tr:nth-child(even) {
    margin: 2rem auto !important;
   }
 
+  .hiddenFilterForm{
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
   
 
 }
