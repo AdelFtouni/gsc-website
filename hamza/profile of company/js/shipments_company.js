@@ -212,6 +212,18 @@ let dataOfShipments = [
     }
 ];
 
+function riskProcessClick(){
+    const riskOpenBtn = selectElement('#risk-bubble-btn');
+const riskCloseBtn = selectElement('#close-btn-risk');
+const riskContainer = selectElement('#risk-management-container');
+
+riskOpenBtn.addEventListener('click', () => riskContainer.classList.add('activated'));
+riskCloseBtn.addEventListener('click', () => riskContainer.classList.remove('activated'));
+window.addEventListener('keyup', (event) => {
+    if(event.key === 'Escape') riskContainer.classList.remove('activated');
+} );
+}
+
 const tBody = selectElement("#tBody");
 
 // window.addEventListener('load', pushTableOfShipmentsFun);
@@ -256,16 +268,8 @@ function pushTableOfShipmentsFun(){
     }
      tBody.innerHTML = table;
     //  POP-UP RISK DETAILS
+    riskProcessClick();
 
-const riskOpenBtn = selectElement('#risk-bubble-btn');
-const riskCloseBtn = selectElement('#close-btn-risk');
-const riskContainer = selectElement('#risk-management-container');
-
-riskOpenBtn.addEventListener('click', () => riskContainer.classList.add('activated'));
-riskCloseBtn.addEventListener('click', () => riskContainer.classList.remove('activated'));
-window.addEventListener('keyup', (event) => {
-    if(event.key === 'Escape') riskContainer.classList.remove('activated');
-} );
 }
 pushTableOfShipmentsFun();
 
@@ -314,28 +318,15 @@ function searchInTable(value){
                 <td>${dataOfShipments[i].location}</td>
                 <td>${dataOfShipments[i].starting}</td>
                 <td>${dataOfShipments[i].arrival}</td>
-        <td>
-            <div id="online-bubble">
-            ${dataOfShipments[i].status}
-        </td>
-
-      </tr>`;
+               <td>${dataOfShipments[i].status}</td>
+               </tr>`;
             }
         }
     }
 
     tBody.innerHTML = table;
      //  POP-UP RISK DETAILS
-
-const riskOpenBtn = selectElement('#risk-bubble-btn');
-const riskCloseBtn = selectElement('#close-btn-risk');
-const riskContainer = selectElement('#risk-management-container');
-
-riskOpenBtn.addEventListener('click', () => riskContainer.classList.add('activated'));
-riskCloseBtn.addEventListener('click', () => riskContainer.classList.remove('activated'));
-window.addEventListener('keyup', (event) => {
-    if(event.key === 'Escape') riskContainer.classList.remove('activated');
-} );
+     riskProcessClick();
 }
 
 
@@ -382,4 +373,5 @@ function searchCode(value){
             }
         }
         tBody.innerHTML = table;
+        riskProcessClick();
 }
