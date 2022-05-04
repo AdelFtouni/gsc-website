@@ -526,3 +526,30 @@ footer li{
     transform: scale(1.1);
     color: var(--background-color);
 }
+
+#gsc-plus p{
+    color: var(--small-text-color) !important;
+}
+
+.gsc-plus-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--background-color) !important;
+    width: 100%;
+    background-color: var(--primary-color);
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 30px;
+}
+
+.gsc-plus-more span{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all .30s ease;
+}
+
+.gsc-plus-more:hover span{
+    letter-spacing: 3px;
+}
