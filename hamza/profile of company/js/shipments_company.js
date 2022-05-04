@@ -66,7 +66,7 @@ editBtn.addEventListener("click", () => {
 
 const sendMessageBtn = selectElement(".send-message-btn");
 const messageInput = selectElement(".message-input-field");
-const messageList = selectElement(".message-list");
+const messagesContainer = selectElement(".messages-container");
 
 sendMessageBtn.addEventListener('click', sendMessage);
 
@@ -74,11 +74,18 @@ function sendMessage(event){
     event.preventDefault();
     const messageDiv = document.createElement("div");
     messageDiv.classList.add("message");
-    const newMessage = document.createElement('li');
+    const newMessage = document.createElement('span');
+    const dateOfMessage = document.createElement('span');
+    dateOfMessage.className = 'date_of_message';
+    let dateNow = new Date();
+    dateOfMessage.innerText = dateNow.getHours() + ":" + dateNow.getMinutes();
     newMessage.innerText= messageInput.value;
     newMessage.classList.add('message-item');
     messageDiv.appendChild(newMessage);
-    messageList.appendChild(messageDiv);
+    messageDiv.appendChild(dateOfMessage);
+    messagesContainer.appendChild(messageDiv);
+    messageInput.value = '';
+    setTimeout(respondMessageFun,1300);
 }
 
 
@@ -208,6 +215,96 @@ let dataOfShipments = [
         location: "France",
         starting: new Date("2021-7-3").toDateString(),
         arrival: new Date("2021-8-20").toDateString(),
+        status: true
+    },
+
+    {
+        code: "USV378",
+        origin: "Vitnam",
+        destination: "Philipin",
+        location: "korea",
+        starting: new Date("2021-1-4").toDateString(),
+        arrival: new Date("2021-4-13").toDateString(),
+        status: true
+    },
+
+    {
+        code: "NDU640",
+        origin: "Barasil",
+        destination: "Maxico",
+        location: "san",
+        starting: new Date("2021-2-3").toDateString(),
+        arrival: new Date("2021-3-9").toDateString(),
+        status: true
+    },
+
+    {
+        code: "HDV745",
+        origin: "Dubai",
+        destination: "Lebanon",
+        location: "Egypt",
+        starting: new Date("2021-7-3").toDateString(),
+        arrival: new Date("2021-9-20").toDateString(),
+        status: true
+    },
+
+    {
+        code: "KAE583",
+        origin: "Egypt",
+        destination: "Lebanon",
+        location: "Syria",
+        starting: new Date("2021-6-4").toDateString(),
+        arrival: new Date("2021-9-12").toDateString(),
+        status: true
+    },
+
+    {
+        code: "CAE104",
+        origin: "Jordan",
+        destination: "Imarat",
+        location: "United Arabia",
+        starting: new Date("2021-5-2").toDateString(),
+        arrival: new Date("2021-7-20").toDateString(),
+        status: true
+    },
+
+    {
+        code: "JRT810",
+        origin: "Bulgaria",
+        destination: "France",
+        location: "Germany",
+        starting: new Date("2021-7-4").toDateString(),
+        arrival: new Date("2021-8-2").toDateString(),
+        status: true
+    },
+
+    {
+        code: "BAD739",
+        origin: "Canada",
+        destination: "France",
+        location: "Bulgaria",
+        starting: new Date("2021-2-5").toDateString(),
+        arrival: new Date("2021-5-9").toDateString(),
+        status: true
+    },
+
+    {
+        code: "NXE494",
+        origin: "Negiria",
+        destination: "Syria",
+        location: "Lebanon",
+        starting: new Date("2021-7-3").toDateString(),
+        arrival: new Date("2021-8-20").toDateString(),
+        status: true
+    },
+
+    {
+        code: "CYD849",
+        origin: "Iran",
+        destination: "Lebanon",
+        location: "Egypt",
+        starting: new Date("2021-3-1").toDateString(),
+        arrival: new Date("2021-5-9").toDateString(),
         status: true
     }
 ];
@@ -374,4 +471,19 @@ function searchCode(value){
         }
         tBody.innerHTML = table;
         riskProcessClick();
+}
+
+const respondMessageFun = function respondMessage(){
+    const respondMessageDiv = document.createElement("div");
+    respondMessageDiv.classList.add("respond_message");
+    const respondNewMessage = document.createElement('span');
+    const respondDateOfMessage = document.createElement('span');
+    respondDateOfMessage.className = 'date_of_message';
+    let respondDateNow = new Date();
+    respondDateOfMessage.innerText = respondDateNow.getHours() + ":" + respondDateNow.getMinutes();
+    respondNewMessage.innerText= "Hello Mr.Foulen";
+    respondNewMessage.classList.add('message-item');
+    respondMessageDiv.appendChild(respondNewMessage);
+    respondMessageDiv.appendChild(respondDateOfMessage);
+    messagesContainer.appendChild(respondMessageDiv);
 }
