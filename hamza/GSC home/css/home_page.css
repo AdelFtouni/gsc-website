@@ -16,10 +16,18 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: var(--background-color);
     font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
+}
+
+.logo_image{
+    width: 110px;
+    height: 110px;
 }
 
 a{
@@ -570,3 +578,8 @@ footer li{
   ::-webkit-scrollbar-thumb:hover{
     background-color: var(--secondary-color);
   }
+
+ .notification_icon{
+     font-size: 1.2rem !important;
+     color: var(--secondary-color) !important;
+ }

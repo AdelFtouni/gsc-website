@@ -62,8 +62,8 @@
               <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
                 <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
                   <div class="toast-header">
-                    <img src="" class="rounded me-2" alt="...">
-                    <strong class="me-auto">Admin</strong>
+                    <span class="notification_icon"> <i class="ri-notification-4-fill"></i>   </span>
+                    <strong class="me-auto"> Admin</strong>
                     <small>Now</small>
                     <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
                   </div>
@@ -118,14 +118,14 @@
             </div>
 
               <div class="message-field-typing">
-                <form action="">
+                <form id="form_upload" action="">
                   <div class="div-message-field">
                     <input type="text" placeholder="Typing..." class="message-input-field">
                   <button class="btn send-message-btn">
                     <i class="ri-send-plane-fill"></i>
                   </button>
                   
-                    <input type="file" id="upload-file-btn" hidden>
+                    <input type="file" id="upload-file-btn" name="file" hidden>
                     <label for="upload-file-btn" class="label-upload">
                       <i class="ri-attachment-line"></i>
                     </label>

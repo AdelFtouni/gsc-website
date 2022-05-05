@@ -29,6 +29,11 @@ aside{
   box-shadow: 0 10px 25px rgba(0, 0, 0, 50%);
 }
 
+.logo{
+  width: 10rem;
+  height: 10rem;
+}
+
 
 .header-aside{
   width: 100%;
@@ -349,4 +354,10 @@ box-shadow: 0 10px 25px rgba(43, 42, 42, 0.2);
 
 a{
   text-decoration: none !important;
+}
+
+@media screen and (max-width:768px){
+  .logo{
+    margin-top: -3rem;
+  }
 }

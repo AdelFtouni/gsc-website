@@ -375,7 +375,7 @@ const searchInput = selectElement("#search-input");
 let statusOfSearch = "Origin";
 function whatTypeOfSearch(id){
     if(id == "origin-search-btn"){
-        statusOfSearch = "origin";
+        statusOfSearch = "Origin";
         searchInput.placeholder = "Search by Origin";
     }else{
         statusOfSearch = "Destination";
@@ -497,3 +497,48 @@ function notificationMessage(){
 }
 
 window.addEventListener('load', notificationMessage);
+
+
+const form = document.querySelector('#form_upload');
+const uploadBtn = form.querySelector('#upload-file-btn');
+
+uploadBtn.onchange = ({target}) => {
+    let file = target.files[0];
+    if(file){
+        let fileName = file.name;
+        uploadFile(fileName);
+    }
+}
+
+function uploadFile(name){
+    let xhr = new XMLHttpRequest();
+    xhr.open('POST', 'php/upload.php');
+    xhr.upload.addEventListener('progress', ({loaded, total}) => {
+        let fileLoaded = Math.floor((loaded / total) * 100);
+        let fileTotal = Math.floor(total / 1000);
+        let spinner = `<div class="upload-message">
+        <span class="icon-file-upload"><i class="ri-folder-shared-fill"></i></span>
+        <span class="name-file-upload">${name}</span>
+        <div class="progress-bar">
+        <div class="progress" style="width: ${fileLoaded}"></div>
+        </div>
+        </div>`;
+      uploadBtn.addEventListener('click', function(event){
+        event.preventDefault();
+        const messageDiv = document.createElement("div");
+        messageDiv.classList.add("message");
+        const newMessage = document.createElement('span');
+        const dateOfMessage = document.createElement('span');
+        dateOfMessage.className = 'date_of_message';
+        let dateNow = new Date();
+        dateOfMessage.innerText = dateNow.getHours() + ":" + dateNow.getMinutes();
+        newMessage.innerHTML = spinner;
+        newMessage.classList.add('message-item');
+        messageDiv.appendChild(newMessage);
+        messageDiv.appendChild(dateOfMessage);
+        messagesContainer.appendChild(messageDiv);
+      });
+    });
+    let formData = new FormData(form);
+    xhr.send(formData);
+}
