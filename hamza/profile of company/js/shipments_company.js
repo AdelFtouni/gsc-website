@@ -85,7 +85,7 @@ function sendMessage(event){
     messageDiv.appendChild(dateOfMessage);
     messagesContainer.appendChild(messageDiv);
     messageInput.value = '';
-    setTimeout(respondMessageFun,1300);
+    setTimeout(respondMessageFun,1500);
 }
 
 
@@ -481,9 +481,19 @@ const respondMessageFun = function respondMessage(){
     respondDateOfMessage.className = 'date_of_message';
     let respondDateNow = new Date();
     respondDateOfMessage.innerText = respondDateNow.getHours() + ":" + respondDateNow.getMinutes();
-    respondNewMessage.innerText= "Hello Mr.Foulen";
+    respondNewMessage.innerText= "Hello Mr.Foulen, thanks for your message. We will contact you as soon as possible.";
     respondNewMessage.classList.add('message-item');
     respondMessageDiv.appendChild(respondNewMessage);
     respondMessageDiv.appendChild(respondDateOfMessage);
     messagesContainer.appendChild(respondMessageDiv);
 }
+
+function notificationMessage(){
+    var toastLiveExample = document.getElementById('liveToast');
+   if(respondMessageFun){
+    var toast = new bootstrap.Toast(toastLiveExample);
+    toast.show();
+   }
+}
+
+window.addEventListener('load', notificationMessage);
