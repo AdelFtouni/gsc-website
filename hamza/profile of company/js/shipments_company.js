@@ -504,20 +504,25 @@ uploadBtn.onchange = ({target}) => {
     }
 }
 
+let spinner= ``;
 function uploadFile(name){
     let xhr = new XMLHttpRequest();
     xhr.open('POST', 'php/upload.php');
     xhr.upload.addEventListener('progress', ({loaded, total}) => {
         let fileLoaded = Math.floor((loaded / total) * 100);
         let fileTotal = Math.floor(total / 1000);
-        let spinner = `<div class="upload-message">
+        console.log(fileLoaded, fileTotal);
+        spinner = `<div class="upload-message">
         <span class="icon-file-upload"><i class="ri-folder-shared-fill"></i></span>
         <span class="name-file-upload">${name}</span>
         <div class="progress-bar">
-        <div class="progress" style="width: ${fileLoaded}"></div>
+        <div class="progress" style="width: ${fileLoaded}%"></div>
         </div>
         </div>`;
-      uploadBtn.addEventListener('click', function(event){
+    });
+    let formData = new FormData(form);
+    xhr.send(formData);
+    uploadBtn.addEventListener('click', function(event){
         event.preventDefault();
         const messageDiv = document.createElement("div");
         messageDiv.classList.add("message");
@@ -532,7 +537,4 @@ function uploadFile(name){
         messageDiv.appendChild(dateOfMessage);
         messagesContainer.appendChild(messageDiv);
       });
-    });
-    let formData = new FormData(form);
-    xhr.send(formData);
 }
