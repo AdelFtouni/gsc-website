@@ -2,6 +2,30 @@ function first(){
     document.getElementById('testlocal12').innerHTML= Object.values(data);
     
 }
+
+
+class Account(){
+    constructor(email,password,firstName,lastName,phoneNumber){
+        this.email = email;
+        this.password = password;
+        this.firstName = firstName;
+        this.lastName =  lastName;
+        thisPhoneNumber = phoneNumber;
+    }
+}
+let _email = document.getElementbyId('email').value;
+let _password = document.getElementbyId('email').value;
+let _firstName = document.getElementbyId('email').value;
+let _lastName = document.getElementbyId('email').value;
+let _phonenumber = document.getElementbyId('email').value;
+let account ;
+let accounts = [];
+function signUp(){
+account = new Account(_email,_password,_firstName,_lastName,_phoneNumber);
+accounts.push(account);
+console.log(accounts);
+localStorage.setItem(JSON.stringify(accounts));
+}
 let array = [];
 class RiskCase{
     constructor(rcName,rcDangerLevel,rcDelayDuration,rcIsKnownBefore,rcSolutionNeeded,rcStatus,rcDescription){
@@ -501,4 +525,9 @@ let tRoute  =  document.getElementById('route').value;
     cell1.innerHTML = "NEW CELL1";
     cell2.innerHTML = "NEW CELL2";
   
+}
+
+
+function clear(){
+    document.getElementById('f').display = "none";
 }
