@@ -116,6 +116,8 @@ riskBriefBtn.addEventListener("click", function(event){
 })
 
 
+// edit profile part
+
 let groupOfQuotes = [
     {
     "quote": "Get to know the right, then you would know the people of right. Right Is not measured by its men, but men are measured by their right.",
@@ -167,6 +169,8 @@ function randomFun(){
 }
 
 
+// shipment tracking part 
+
 let dataOfShipments = [
     {
         code: "ABC123",
@@ -205,7 +209,7 @@ let dataOfShipments = [
         location: "Syria",
         starting: new Date("2010-10-2").toDateString(),
         arrival: new Date("2010-11-20").toDateString(),
-        status: false
+        status: true
     },
 
     {
@@ -309,23 +313,10 @@ let dataOfShipments = [
     }
 ];
 
-function riskProcessClick(){
-    const riskOpenBtn = selectElement('#risk-bubble-btn');
-const riskCloseBtn = selectElement('#close-btn-risk');
-const riskContainer = selectElement('#risk-management-container');
-
-riskOpenBtn.addEventListener('click', () => riskContainer.classList.add('activated'));
-riskCloseBtn.addEventListener('click', () => riskContainer.classList.remove('activated'));
-window.addEventListener('keyup', (event) => {
-    if(event.key === 'Escape') riskContainer.classList.remove('activated');
-} );
-}
 
 const tBody = selectElement("#tBody");
 
-// window.addEventListener('load', pushTableOfShipmentsFun);
-
-let statusOfshipments = true;
+// let statusOfshipments = true;
 
 function pushTableOfShipmentsFun(){
     let table = '';
@@ -364,11 +355,11 @@ function pushTableOfShipmentsFun(){
       </tr>`;
     }
      tBody.innerHTML = table;
-    //  POP-UP RISK DETAILS
-    riskProcessClick();
-
 }
+
 pushTableOfShipmentsFun();
+
+
 
 const searchInput = selectElement("#search-input");
 
@@ -423,29 +414,15 @@ function searchInTable(value){
 
     tBody.innerHTML = table;
      //  POP-UP RISK DETAILS
-     riskProcessClick();
 }
 
-
-// const oldBtn = selectElement(".old-btn");
-// const recentBtn = selectElement(".recent-btn");
-// // let reverseData = dataOfShipments.reverse();
-// oldBtn.addEventListener('click', () => {
-//     dataOfShipments.sort((a, b) => a.starting - b.starting);
-//     pushTableOfShipmentsFun();
-// });
-
-// recentBtn.addEventListener('click', () => {
-//     reverseData.reverse();
-//     pushTableOfShipmentsFun();
-// })
 
 const filterBtn = selectElement('.filter-btn');
 const hiddenFilterForm = selectElement('.hiddenFilterForm');
 
 filterBtn.addEventListener('click', () => {
     hiddenFilterForm.classList.add('activeFilter');
-})
+});
 
 
 const searchByCode = selectElement("#searchByCode");
@@ -470,8 +447,25 @@ function searchCode(value){
             }
         }
         tBody.innerHTML = table;
-        riskProcessClick();
+        
 }
+
+riskProcessClick();
+
+function riskProcessClick(){
+const riskOpenBtn = selectElement('#risk-bubble-btn');
+const riskCloseBtn = selectElement('#close-btn-risk');
+const riskContainer = selectElement('#risk-management-container');
+
+riskOpenBtn.addEventListener('click', () => riskContainer.classList.add('activated'));
+riskCloseBtn.addEventListener('click', () => riskContainer.classList.remove('activated'));
+window.addEventListener('keyup', (event) => {
+    if(event.key === 'Escape') riskContainer.classList.remove('activated');
+} );
+}
+
+
+// message part
 
 const respondMessageFun = function respondMessage(){
     const respondMessageDiv = document.createElement("div");
