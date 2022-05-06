@@ -31,6 +31,7 @@ trackingCodeSubmit.addEventListener('click' ,() => {
 
         if(codesTracking.indexOf(trackingCodeInput.value) !== -1){
             trackingCodeInput.style.border = "1px solid green";
+            document.location.href = '/hamza/Shipment tracking user/html/shipment_tracking_user.html';
          } else{
              trackingCodeInput.style.border = "1px solid red";
          }

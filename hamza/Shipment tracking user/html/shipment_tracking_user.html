@@ -16,9 +16,13 @@
             <div class="col-lg-4 col-md-12">
                 <aside class="text-center">
                     <header class="header-aside d-flex justify-content-between align-items-center">
-                        <button class="btn d-flex align-items-center">
-                            <span><i class="ri-arrow-left-circle-line"></i></span>Back
-                        </button>
+                        
+                        <a href="/hamza/GSC home/html/home_page.html">
+                            <button class="btn d-flex align-items-center">
+                                <span><i class="ri-arrow-left-circle-line"></i></span>Back
+                            </button>
+                        </a>
+
                         <div id="online-bubble">
                             <div class="bubble">
                               <span class="bubble-outer-dot">
@@ -27,38 +31,26 @@
                             </div>
                           </div>
                     </header>
-                    <h1 class="logo">Logo</h1>
+                    <img src="../images/logo1.png" alt="" class="logo">
                     <h4>Welcome dear</h4>
                     <p class="sub-welcoming-text">Your shipment is safe <br>
-                    You can follow you shipment here</p>
+                    You can follow your shipment here</p>
                 </aside>
             </div>
             <div class="col-lg-8 col-md-12 main-side">
                 <div class="container d-flex justify-content-center">
-                    <img src="../images/CMA CGM AIR CARGO - FR 03 11 2021.jpg" alt="" class="map-img">
+                    <!-- <img src="../images/CMA CGM AIR CARGO - FR 03 11 2021.jpg" alt="" class="map-img"> -->
+                    <div id="map"></div>
                 </div>
                
                     <div class="row">
                         <div class="col-lg-12">
-                            <div class="card-tracking">
-                                <div class="progress-track">
-                                    <ul id="progressbar">
-                                        <li class="step0 active " id="step1">
-                                            <span><i class="ri-file-add-fill"></i>Ordered</span> 
-                                        </li>
-                                        <li class="step0 active text-center" id="step2"> 
-                                            <span><i class="ri-truck-line"></i> Shipped</span>
-                                           
-                                        </li>
-                                        <li class="step0 active text-right" id="step3">
-                                            <span><i class="ri-map-pin-time-line"></i>
-                                                En route</span>
-                                           
-                                        </li>
-                                        <li class="step0 text-right" id="step4">
-                                            <span><i class="ri-check-double-line"></i>Arrived</span>
-                                            </li>
-                                    </ul>
+                            <div class="container d-flex justify-content-center align-items-center progress-container">
+                                <div class="progresses">
+                                    <div class="steps complete-step"> <span><i class="ri-file-add-fill"></i></span> </div> <span class="line"></span>
+                                    <div class="steps complete-step"> <span><i class="ri-truck-line"></i></span> </div> <span class="line"></span>
+                                    <div class="steps complete-step"> <span><i class="ri-map-pin-time-line"></i></span> </div> <span class="line uncomplete-line"></span>
+                                    <div class="steps uncomplete-step"> <span class="font-weight-bold"><i class="ri-home-smile-fill"></i></span> </div>
                                 </div>
                             </div>
                         </div>
@@ -125,5 +117,11 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="../js/shipment_tracking_user.js"></script>
+    <script type="module" src="/hamza/Shipment tracking user/js/index_map.js"></script>
+    <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_2SR2hPJ-Legs1Z8tF4u9vUnEJr9K_wc&map_ids=4c00a0a0a3aa7230&callback=initMap&v=weekly"
+      defer
+    ></script>
 </body>
 </html>
