@@ -75,7 +75,7 @@ let submit=document.getElementById('continue');
 
 //Empty Array To Store The Info
 let arrayOfInfo=[];
-
+let info;
 
 //Check if theres Info In Local Storage
  //if(localStorage.getItem("info")){
@@ -86,18 +86,18 @@ let arrayOfInfo=[];
 //getDataFromLocalStorage();
 
 //Add Info
-submit.addEventListener("click",myFunction)
-function myFunction2(){
-    if(input.value !==""){
-    //Add Info To Array
-    addInfoToArray(input.value);
-    //Empty Input Field
-    input.value="";
-  }
-}
+submit.addEventListener("click",addInfoToLocalStorage);
+// function myFunction2(){
+//     if(input.value !==""){
+//     //Add Info To Array
+//     addInfoToArray(input.value);
+//     //Empty Input Field
+//     input.value="";
+//   }
+// }
  function addInfoToArray(){
   // Info Data
-   const info={
+    info={
      id: Date.now(),
      FirstName:inputFirstName.value,
      LastName:inputLastName.value,
@@ -111,7 +111,7 @@ function myFunction2(){
      CountryRegion:inputCountryRegion.value,
      VatNumber:inputVatNumber.value,
      ColleagueEmail:inputColleagueEmail.value,
- 
+    
 };
 
   //push Info To Array Of Info
@@ -122,19 +122,19 @@ function myFunction2(){
   //For Testing
   console.log(arrayOfInfo);
   // console.log(JSON.stringify(arrayOfInfo));
-
+  addInfoToLocalStorage(info);
 }
 
-//  function addInfoToLocalStorage(arrayOfInfo){
-//   window.localStorage.setItem("Info", JSON.stringify(arrayOfInfo));
-//  }
-//   function getDataFromLocalStorage(){
-//    let data=window.localStorage.getItem("info");
-//     if(data){
-//      let info=JSON.parse(data);
-//      console.log(info);
-//    }
-// }
+ function addInfoToLocalStorage(a){
+  window.localStorage.setItem("Info", JSON.stringify(a));
+ }
+  function getDataFromLocalStorage(){
+   let data=window.localStorage.getItem("info");
+    if(data){
+     a =JSON.parse(data);
+     console.log(a);
+   }
+}
 
 
 
