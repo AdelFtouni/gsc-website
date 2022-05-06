@@ -1,7 +1,7 @@
 function send(){
     let message = document.getElementById('msg').value;
     // console.log(message);
-
+    localStorage.setItem('msg',JSON.stringify(message));
     let para = document.createElement("p");
     para.innerText = message;
     document.getElementById('msg').value = ''

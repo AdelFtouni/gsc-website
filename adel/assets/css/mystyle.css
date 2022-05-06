@@ -318,4 +318,19 @@ margin-top: 5px;
 color: rgb(255, 255, 255);
 font-size: medium;
 }
-
+.asddsa{
+  background: rgba(152, 226, 255, 0.916);
+  color: rgb(28, 42, 85);
+  font-size: 30px;
+  width:800px !important;
+  align-self: center;
+}
+.myTablert{
+  margin-right: -150px !important;
+ width:500px !important;
+}
+.hhhh{
+  /* margin-right: -110px !important; */
+ width:800px !important;
+ margin-left: 70px;
+}
