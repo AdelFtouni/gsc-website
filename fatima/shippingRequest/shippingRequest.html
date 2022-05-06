@@ -11,87 +11,157 @@
      <link rel="stylesheet" href="shippingRequest.css">
 </head>
 <body>
+    
+  <header>
+    <nav class="nav-bar">
+        <a href="#"><div class="logo2"></div></a>
+
+        <div class="menu" id="menu">
+            <ul class="list">
+                <li class="list-item">
+                    <div class="drop-down">
+                        <button class="drop-btn">Shipping 
+                            <i class="ri-arrow-drop-down-fill"></i>
+                        </button>
+                        <div class="drop-down-content">
+                          <a href="#">Booking</a>
+                          <a href="#special-section">Special cargo</a>
+                          <a href="#">oversized cargo</a>
+                          <a href="#">Refrigated cargo</a>
+                          <a href="#">Air freight cargo</a>
+                        </div>
+                      </div> 
+                </li>
+                <li class="list-item">
+                    <div class="drop-down">
+                        <button class="drop-btn">Tools 
+                            <i class="ri-arrow-drop-down-fill"></i>
+                        </button>
+                        <div class="drop-down-content">
+                          <a href="#">Risk management</a>
+                          <a href="#">Statistics</a>
+                          
+                        </div>
+                      </div>
+                </li>
+                <li class="list-item">
+                    <a href="#services-section" class="list-link">Services</a>
+                </li>
+                <li class="list-item">
+                    <a href="#about-section" class="list-link">About</a>
+                </li>
+                <li class="list-item">
+                    <a href="/hamza/profile of company/html/shipment_company.html" class="list-link"><span class="personal-profile"><i class="ri-user-3-fill"></i></span></a>
+                </li>
+            </ul>
+        </div>
+
+        <ul class="nav-list hidden-lap">
+            <li class="list-item">
+                <div class="drop-down">
+                    <button class="drop-btn">Shipping 
+                        <i class="ri-arrow-drop-down-fill"></i>
+                    </button>
+                    <div class="drop-down-content">
+                      <a href="#">Booking</a>
+                      <a href="#special-section">Special cargo</a>
+                      <a href="#">oversized cargo</a>
+                      <a href="#">Refrigated cargo</a>
+                      <a href="#">Air freight cargo</a>
+                    </div>
+                  </div> 
+            </li>
+            <li class="list-item">
+                <div class="drop-down">
+                    <button class="drop-btn">Tools 
+                        <i class="ri-arrow-drop-down-fill"></i>
+                    </button>
+                    <div class="drop-down-content">
+                      <a href="#">Risk management</a>
+                      <a href="#">Statistics</a>
+                      
+                    </div>
+                  </div>
+            </li>
+            <li class="list-item">
+                <a href="#services-section">
+                Services
+                </a>
+            </li>
+            <li class="list-item">
+                <a href="#about-section">About</a>
+            </li>
+        </ul>
+
+        <a href="/hamza/profile of company/html/shipment_company.html" class="hidden-lap">
+            <span class="personal-profile">
+              <i class="ri-user-3-fill"></i>
+            </span>
+        </a>
+
+        <button class="menu-toggle-icon" id="menu-toggle-icon">
+                <i class="ri-menu-3-line open-menu-icon"></i>
+                <i class="ri-close-line close-menu-icon"></i>
+        </button>
+
+    </nav>
+</header>
   <main>
     
-    <header>
+    <div class="header">
       <div class="container-fluid page-headership py-5" style="margin-bottom: 6rem;">
-      
-          <div class="container py-5 text-center">
-            <h1 class="my-text-img display-3 text-white mb-3 animated slideInDown active"> Shipping Request</h1>
-            <nav aria-label="breadcrumb animated slideInDown">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item">
-                  <a class="my-text-img text-white" href="#"> Welcome to our shipping request page. </a>
-                </li>
-              </ol>
-             
-    
-    
-            </nav>
-          </div>
+        <div class="container py-5 text-center">
+            <h1 class="my-text-img display-3 text-white mb-3 animated SlideOutRight active">
+               Shipping Request
+            </h1>
+            <p class="text-white animated ParagOpacity active">
+              Welcome to our shipping page. <br>
+              Please fill out the form below to request a shipping.
+            </p>
+        </div>
       </div>
-    </header>
-    
-  
-
-    <!-- <div class="modal" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content"> 
-           <div class="modal-header"> 
-            <h5 class="modal-title">Modal title</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p>Modal body text goes here.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div> 
-        -->
-
-      
-          
-
+    </div>
     <div class="container">
-      <h1 class="my-shippingRequest">
-          Shipping Request
-      </h1>
-      <br>
-      <p class="my-para-rate">
-        The fast, easy way to make single or multiple freight rate enquiries.
-      </p>
+      <div class="row">
+      <div class="col-sm-12">
+        <p class="my-para-rate">The fast, easy way to make single or multiple freight rate enquiries.</p>
+      </div>
+      </div>
 
       <br>
-      <h3 class="my-shipments">
-          MY SHIPMENTS
-      </h3>
-      <hr>
+      <div class="my-title row">
+        <div class="col-sm-3">
+          <h2 class="my-shipments"> My Shipments</h2>
+        </div>
+        <div class="col-sm-9">
+          <hr class="my-hr">
+        </div>
+      </div> <br>
       <p>
         Please complete as much of the rate enquiry form as possible in order for your GSC team to provide an accurate freight rate quotation.
       </p>
 
         <br>
       
-            <h5>
-                Shipment  &nbsp; Requirements
-            </h5>
+            <h3>
+                Shipment Requirements
+            </h3>
             <br>
-            <form >
+            <form class="needs-validation" novalidate>
                   <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label"> <h6>Description</h6></label>
+                    <label for="exampleFormControlTextarea1" class="form-label"> <h4>Description:</h4></label>
                     <textarea class="my-description form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                   </div>
                   <br> 
-                  <p>Import / Export:</p> 
+                  <h5>Import / Export:</h5> 
                   <div class="form-check">
-                    <input class="my-detailss form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <input class="my-detailss form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="" required>
                     <label class="form-check-label" for="flexRadioDefault1">
                       Import
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="my-detailss form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <input class="my-detailss form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked required>
                     <label class="form-check-label" for="flexRadioDefault2">
                       Export
                     </label>
@@ -101,7 +171,7 @@
                   <br>
                   <div class="row">
                     <div class="col-sm-5"> 
-                      <h5>Container type:</h5>
+                      <h4>Container type:</h4>
                     </div>
                     <div class="col-sm-7"></div>
                   </div>
@@ -109,7 +179,7 @@
                   <div class="row">
                   <div class="col-sm-3">
                     <div class="form-check">
-                      <input class="my-detailss form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <input class="my-detailss form-check-input" type="checkbox" value="" id="flexCheckDefault3">
                       <label class="form-check-label" for="flexCheckDefault">
                         20' Dry van
                       </label>
@@ -117,7 +187,7 @@
                     </div>
                     <div class="col-sm-3">
                       <div class="form-check">
-                        <input class="my-detailss form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <input class="my-detailss form-check-input" type="checkbox" value="" id="flexCheckDefault4">
                         <label class="form-check-label" for="flexCheckDefault">
                           40' Reefer
                         </label>
@@ -125,7 +195,7 @@
                       </div>
                       <div class="col-sm-3">
                         <div class="form-check">
-                          <input class="my-detailss form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <input class="my-detailss form-check-input" type="checkbox" value="" id="flexCheckDefault5">
                           <label class="form-check-label" for="flexCheckDefault">
                             20' Flat rack
                           </label>
@@ -141,7 +211,7 @@
                        <div class="row">
                         <div class="col-sm-3">
                           <div class="form-check">
-                            <input class="my-detailss form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <input class="my-detailss form-check-input" type="checkbox" value="" id="flexCheckDefault6">
                             <label class="form-check-label" for="flexCheckDefault">
                               40' Dry van
                             </label>
@@ -149,7 +219,7 @@
                           </div>
                           <div class="col-sm-3">
                             <div class="form-check">
-                              <input class="my-detailss form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                              <input class="my-detailss form-check-input" type="checkbox" value="" id="flexCheckDefault7">
                               <label class="form-check-label" for="flexCheckDefault">
                                 40' High Cube Reefer
                               </label>
@@ -157,7 +227,7 @@
                             </div>
                             <div class="col-sm-3">
                               <div class="form-check">
-                                <input class="my-detailss form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <input class="my-detailss form-check-input" type="checkbox" value="" id="flexCheckDefault8">
                                 <label class="form-check-label" for="flexCheckDefault">
                                   40' Flat rack
                                 </label>
@@ -165,7 +235,7 @@
                               </div>
                               <div class="col-sm-3">
                                 <div class="form-check">
-                                  <input class="my-detailss form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                  <input class="my-detailss form-check-input" type="checkbox" value="" id="flexCheckDefault9">
                                   <label class="form-check-label" for="flexCheckDefault">
                                     Customs Clearance
                                   </label>
@@ -176,7 +246,7 @@
                              <div class="row">
                               <div class="col-sm-3">
                                 <div class="form-check">
-                                  <input class="my-detailss form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                  <input class="my-detailss form-check-input" type="checkbox" value="" id="flexCheckDefault10">
                                   <label class="form-check-label" for="flexCheckDefault">
                                     40' High Cube
                                   </label>
@@ -184,7 +254,7 @@
                                 </div>
                                 <div class="col-sm-3">
                                   <div class="form-check">
-                                    <input class="my-detailss form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <input class="my-detailss form-check-input" type="checkbox" value="" id="flexCheckDefault11">
                                     <label class="form-check-label" for="flexCheckDefault">
                                       20' Open Top
                                     </label>
@@ -192,7 +262,7 @@
                                   </div>
                                   <div class="col-sm-3">
                                     <div class="form-check">
-                                      <input class="my-detailss form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                      <input class="my-detailss form-check-input" type="checkbox" value="" id="flexCheckDefault12">
                                       <label class="form-check-label" for="flexCheckDefault">
                                         20' Platform
                                       </label>
@@ -200,7 +270,7 @@
                                     </div>
                                     <div class="col-sm-3">
                                       <div class="form-check">
-                                        <input class="my-detailss form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <input class="my-detailss form-check-input" type="checkbox" value="" id="flexCheckDefault13">
                                         <label class="form-check-label" for="flexCheckDefault">
                                           Warehousing
                                         </label>
@@ -212,7 +282,7 @@
                              <div class="row">
                               <div class="col-sm-3">
                                 <div class="form-check">
-                                  <input class="my-detailss form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                  <input class="my-detailss form-check-input" type="checkbox" value="" id="flexCheckDefault14">
                                   <label class="form-check-label" for="flexCheckDefault">
                                     20' Refregerated container (reefer)
                                   </label>
@@ -220,7 +290,7 @@
                                 </div>
                                 <div class="col-sm-3">
                                   <div class="form-check">
-                                    <input class="my-detailss form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <input class="my-detailss form-check-input" type="checkbox" value="" id="flexCheckDefault15">
                                     <label class="form-check-label" for="flexCheckDefault">
                                       20' Open Top
                                     </label>
@@ -228,7 +298,7 @@
                                   </div>
                                   <div class="col-sm-3">
                                     <div class="form-check">
-                                      <input class="my-detailss form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                      <input class="my-detailss form-check-input" type="checkbox" value="" id="flexCheckDefault16">
                                       <label class="form-check-label" for="flexCheckDefault">
                                         40' Platform
                                       </label>
@@ -238,113 +308,170 @@
                                     </div>
                                    </div>
                                    <br>
-                                   <fieldset>
-                                     <legend class="my-routing">
-                                       ROUTING DETAILS
-                                     </legend>
-                                     <br>
-                                     <br>
+                                   <div class="my-title row">
+                                    <div class="col-sm-3">
+                                      <h2 class="my-shipments"> Routing Details</h2>
+                                    </div>
+                                    <div class="col-sm-9">
+                                      <hr class="my-hr">
+                                    </div>
+                                  </div> <br>
                                      <!-- ********************************************************************************* -->
-                                     <div class="row">
-                                       <div class="my-loc col-sm-3">
-                                        <span><i class="ri-map-pin-fill"></i></span>
+                                     <!-- <div class="main-rows">
+                                      <div class="rows">
+                                        <div class="">
+                                           <span><i class="ri-map-pin-fill"></i></span>
                                         </div>
-                                      <div class="my-loc col-sm-3">
-                                          <span><i class="ri-map-pin-fill"></i></span>
-                                      </div>
-                                       <div class="my-loc col-sm-3">
+                                        <div class="">
+                                          <div class="train-img"></div>
+                                        
+ 
+                                        </div>
+                                        <div>
                                          <span><i class="ri-map-pin-fill"></i></span>
+ 
                                         </div>
-                                       <div class="my-loc col-sm-3">
-                                          <span><i class="ri-map-pin-fill"></i></span>
+                                        <div>
+                                         <span><i class="ri-map-pin-fill"></i></span>
+ 
                                         </div>
-                                      </div>
-<!--                                       
-                                      <i class="ri-truck-line"></i>
-                                      <i class="ri-ship-2-line"></i>
-                                      <i class="ri-information-line"></i> -->
+                                        <div>
+                                         <span><i class="ri-map-pin-fill"></i></span>
+ 
+                                        </div>
+                                        <div>
+                                         <span><i class="ri-map-pin-fill"></i></span>
+ 
+                                        </div>
+                                        <div>
+                                         <span><i class="ri-map-pin-fill"></i></span>
+ 
+                                        </div>
+                                     </div>
+                                     </div> -->
+                                     <div class="row">
+                                       <div class="col-sm-2">
+                                         <div class="location-img"></div>
+                                       </div>
+                                       <div class="col-sm-1">
+                                         <div class="train-img"></div>
+                                       </div>
+                                       <div class="col-sm-2">
+                                         <div class="location-img"></div>
+                                       </div>
+                                       <div class="col-sm-1">
+                                         <div class="marine-img"></div>
+                                       </div>
+                                       <div class="col-sm-2">
+                                         <div class="location-img"></div>
+                                       </div>
+                                       <div class="col-sm-1">
+                                         <div class="train-img"></div>
+                                       </div>
+                                       <div class="col-sm-2">
+                                         <div class="location-img"></div>
+                                       </div>
+                                       <div class="col-sm-1"></div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-                                <!-- *********************************************************************************** -->
+                                     </div>
+                                  
                                     <div class="row">
                                       <div class="col-sm-3">
                                         <div class="mb-3">
-                                          <label for="collectionPoint" class="form-label">Collection point</label>
-                                          <input type="text" class="my-details form-control" id="collectionPoint" placeholder="Enter location">
+                                          <label for="collectionPoint" class="my-icon form-label">Collection point 
+                                            <span>
+                                              <div class="tooltips"> <span> <i class="ri-information-line"></i></span>
+                                                <span class="tooltiptexts">Search and select the collection point of your cargo.</span>
+                                              </div>
+                                            </span>
+                                          </label>
+                                          <input type="text" class="my-details form-control" id="collectionPoint" value="" placeholder="Enter location" required>
+                                          <div class="invalid-feedback">
+                                            Please enter a collection point of your Cargo.
+                                          </div>
                                         </div>
                                       </div>
                                       <div class="col-sm-3">
                                         <div class="mb-3">
-                                          <label for="portOfLoading" class="form-label">Port of loading</label>
-                                          <input type="text" class="my-details form-control" id="portOfLoading" placeholder="">
+                                          <label for="portOfLoading" class="my-icon form-label">Port of loading
+                                            <span>
+                                              <div class="tooltips"> <span> <i class="ri-information-line"></i></span>
+                                                <span class="tooltiptexts"> If known, please search and select an appropriate port for loading your cargo.</span>
+                                              </div>
+                                            </span>
+                                          </label>
+                                          <input type="text" value="" class="my-details form-control" id="portOfLoading" placeholder="" required>
+                                          <div class="invalid-feedback">
+                                            Please enter a port for loading your cargo.
+                                          </div>
                                         </div>
                                       </div>
                                       <div class="col-sm-3">
                                         <div class="mb-3">
-                                          <label for="portOfDischarge" class="form-label">Port of discharge</label>
-                                          <input type="text" class="my-details form-control" id="portOfDischarge" placeholder="">
+                                          <label for="portOfDischarge" class="my-icon form-label">Port of discharge
+                                            <span>
+                                              <div class="tooltips"> <span> <i class="ri-information-line"></i></span>
+                                                <span class="tooltiptexts"> If known, please search and select an appropriate port for unloading your cargo.</span>
+                                              </div>
+                                            </span>
+                                          </label>
+                                          <input type="text" value="" class="my-details form-control" id="portOfDischarge" placeholder="" required>
+                                          <div class="invalid-feedback">
+                                            Please enter a port for unloading your cargo.
+                                          </div>
                                         </div>
                                       </div>
                                       <div class="col-sm-3">
                                         <div class="mb-3">
-                                          <label for="deliveryPoint" class="form-label">Delivery point</label>
-                                          <input type="text" class="my-details form-control" id="deliveryPoint" placeholder="Enter location">
+                                          <label for="deliveryPoint" class="my-icon form-label">Delivery point
+                                            <span>
+                                              <div class="tooltips"> <span> <i class="ri-information-line"></i></span>
+                                                <span class="tooltiptexts"> Search and select the final delivery point of your cargo.</span>
+                                              </div>
+                                            </span>
+                                          </label>
+                                          <input type="text" value="" class="my-details form-control" id="deliveryPoint" placeholder="Enter location" required>
+                                          <div class="invalid-feedback">
+                                            Please enter the final delivery point of your cargo.
+                                          </div>
                                         </div>
                                       </div>
                                     </div>
-                                  </fieldset>
                                   <br>
-                                  <fieldset>
-                                    <legend class="my-cargo">
-                                      MY CARGO
-                                    </legend>
-                                    <br> <br> 
-                                    <!-- ************************************************************************************************** -->
-                                    <div class="row"> 
-                                      <div class="col-sm-3">
-
-
-                                      </div>
-
+                                  <div class="my-title row">
+                                    <div class="col-sm-2">
+                                      <h2 class="my-shipments"> My Cargo</h2>
                                     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                    <!-- *********************************************************************** -->
+                                    <div class="col-sm-10">
+                                      <hr class="my-hr">
+                                    </div>
+                                  </div> <br>
+                                  <div class="row">
+                                    <div class="col-sm-3">
+                                      <div class="type-img"></div>
+                                    </div>
+                                    <div class="col-sm-3"> 
+                                      <div class="hazardous-img"></div>
+                                    </div>
+                                    <div class="col-sm-3"> 
+                                      <div class="volume-img"></div>
+                                    </div>
+                                    <div class="col-sm-3"> 
+                                      <div class="dimension-img"></div>
+                                    </div>
+                                    </div>
+                                    <br>
                                     <div class="row">
                                       <div class="col-sm-3">
-                                        <label for="companyType2" class="form-label">Commodity type</label>
+                                        <label for="companyType2" class="my-icon form-label">Commodity type
+                                          <span>
+                                            <div class="tooltips"> <span> <i class="ri-information-line"></i></span>
+                                              <span class="tooltiptexts">Select the type of commodity you wish to ship.</span>
+                                            </div>
+                                          </span>
+                                        </label>
+                                      
                                         <select class="my-details form-select" id="companyType2" name="companyType2" required>
                                           <option value="" selected>Please select...</option>
                                           <option>Meat</option>
@@ -360,39 +487,63 @@
                                           <option value=""> Seafood</option>
                                           <option value=""> Autoparts</option>
                                         </select>
+                                        <div class="invalid-feedback">
+                                          Please select the type of commodity.
                                         </div>
-                                        <div class="col-sm-3"> 
-                                          <p>
-                                            Is this shipment <strong>haradous?</strong>
-                                          </p>
+                                        </div>
+                                        <div class="col-sm-3">
+                                          <label for="hazardous" class="my-icon form-label"> Is the shipments hazardous?
+                                            <span>
+                                              <div class="tooltips"> <span> <i class="ri-information-line"></i></span>
+                                                <span class="tooltiptexts"> If your cargo is hazardous, please let us known.</span>
+                                              </div>
+                                            </span>
+                                          </label>
                                           <div class="form-check">
-                                            <input class="my-detailss form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+                                            <input class="my-detailss form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked required>
                                             <label class="form-check-label" for="flexRadioDefault1">
                                               NO
                                             </label>
                                           </div>
                                           <div class="form-check">
-                                            <input class="my-detailss form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                                            <input class="my-detailss form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" required>
                                             <label class="form-check-label" for="flexRadioDefault2">
                                               YES
                                             </label>
                                           </div>
                                         </div>
                                         <div class="col-sm-3">
-                                          <label for="shipmentVolume" class="form-label">Shipment Volume</label>
-                                          <select class="my-details form-select" id="shipmentVolume" name="shipmentVolume" required>
+                                              <label for="shipmentVolume" class="my-icon form-label">Shipment Volume 
+                                                <span>
+                                                  <div class="tooltips"> <span> <i class="ri-information-line"></i></span>
+                                                    <span class="tooltiptexts"> What is the likely volume and frequency of this shipments</span>
+                                                  </div>
+                                                </span>
+                                              </label>
+                                              <select class="my-details form-select" id="shipmentVolume" name="shipmentVolume" required>
                                             <option value="" selected>Per annum (default)</option>
                                             <option>Per month</option>
                                             <option>Per week</option>
                                             <option>One off</option>
                                           </select>
+                                          <div class="invalid-feedback">
+                                            Please enter the info.
+                                          </div>
                                         </div>
                                         <div class="col-sm-3">
                                           <div class="mb-3">
-                                            <label for="overallDimensions" class="form-label">Overall Dimensions</label>
+                                            <label for="overallDimensions" class="my-icon form-label">Overall Dimensions
+                                              <span>
+                                                <div class="tooltips"> <span> <i class="ri-information-line"></i></span>
+                                                  <span class="tooltiptexts">What is the overall dimensions of this shipments.</span>
+                                                </div>
+                                              </span>
+                                            </label>
                                             <div class="row">
                                               <div class="col-sm-6"> <p>Length (cm)</p> </div>
-                                              <div class="col-sm-6"> <input type="number" class="my-details form-control" id="length" name="length" placeholder=""> </div>
+                                              <div class="col-sm-6">
+                                                 <input type="number" value="" class="my-details form-control" id="length" name="length" placeholder=""> 
+                                              </div>
                                             </div>
                                           </div>
                                         </div>
@@ -405,7 +556,7 @@
                                                 <p>Weight (kg)</p>
                                               </div>
                                               <div class="col-sm-6">
-                                                <input type="number" class="my-details form-control" id="weight" name="weight" placeholder=""> 
+                                                <input type="number" value="" class="my-details form-control" id="weight" name="weight" placeholder="" > 
                                               </div>
                                             </div>
                                           </div>
@@ -416,7 +567,7 @@
                                                 <p> Quantity</p>
                                               </div>
                                               <div class="col-sm-6">
-                                                <input type="number" class="my-details form-control" id="quantity" name="quantity" placeholder=""> 
+                                                <input type="number" value="" class="my-details form-control" id="quantity" name="quantity" placeholder="" required> 
                                               </div>
                                             </div>
                                           </div>
@@ -426,7 +577,7 @@
                                                 <p> Width (cm)</p>
                                               </div>
                                               <div class="col-sm-6">
-                                                <input type="number" class="my-details form-control" id="width" name="width" placeholder=""> 
+                                                <input type="number" value="" class="my-details form-control" id="width" name="width" placeholder=""> 
                                               </div>
 
                                             </div>
@@ -443,6 +594,9 @@
                                               <option value="" selected>TEU</option>
                                               <option>Containers</option>
                                             </select>
+                                            <div class="invalid-feedback">
+                                              Please select.
+                                            </div>
                                           </div> 
                                           <div class="col-sm-3">
                                             <div class="row">
@@ -472,16 +626,15 @@
                                             </div>
                                           </div>
                                         </div>
-                                      </fieldset>
                                       <br> <br> 
                                       <div class="row">
                                         <div class="col-sm-2"></div>
                                         <div class="col-sm-4">
-                                          <button type="button" class="my-btn-shipping btn btn-outline-dark">CANCEL THIS SHIPMENT</button>
+                                          <button type="button"  class="my-btn-shipping btn btn-outline-dark" onclick="Cancel('cancel');">CANCEL THIS SHIPMENT</button>
                                         </div>
                                         <div class="col-sm-1"></div>
                                         <div class="col-sm-4">
-                                          <button type="button" class="my-btn-shipping btn btn-outline-dark">SAVE AND CREATE ANOTHER SHIPMENT</button>
+                                          <button type="submit" class="my-btn-shipping btn btn-outline-dark">SAVE AND CREATE ANOTHER SHIPMENT</button>
                                         </div>
                                         <div class="col-sm-1"></div>
                                       </div>
@@ -490,5 +643,50 @@
                                 
                           
                                    </main>
+                                   <footer>
+
+                                    <div class="brand-footer">
+                                        <ul>
+                                            <li><div class="logo2"></div></li>
+                                        <li><h6><span class="copyright">&copy; 2022 GSC, all right reserved.</span></h6></li>
+                                        <li class="list-item">
+                                            <a href="#" class="list-link social-media">
+                                                <i class="ri-instagram-line"></i>
+                                            </a>
+                                            <a href="#" class="list-link social-media">
+                                                <i class="ri-twitter-line"></i>
+                                            </a>
+                                            <a href="#" class="list-link social-media">
+                                                <i class="ri-facebook-circle-line"></i>
+                                            </a>
+                                            
+                                        </li>
+                                        </ul>
+                            
+                                    </div>
+                            
+                                    
+                                    <div class="useful-links">
+                                        <h1>Useful links</h1>
+                                        <ul>
+                                            <li>Home</li>
+                                            <li>services</li>
+                                            <li>shipping</li>
+                                            <li>about us</li>
+                                        </ul>
+                                    </div>
+                            
+                                    <div class="useful-links">
+                                        <h1>Team</h1>
+                                        <ul>
+                                            <li>Adel Ftouni</li>
+                                            <li>Fatima Mansour</li>
+                                            <li>Kawthar Safa</li>
+                                            <li>Hamza Nemer</li>
+                                        </ul>
+                                    </div>
+                                    
+                                </footer>
+                                   <script src="shippingRequest.js"></script>
                                   </body>
                                   </html>

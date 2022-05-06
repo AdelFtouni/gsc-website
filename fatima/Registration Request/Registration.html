@@ -47,27 +47,127 @@
       <div class="py-5 text-center"> -->
 
 <body class="bg-light">
+  <header>
+    <nav class="nav-bar">
+        <a href="#"> <div class="logo1"></div></a>
 
-  <div class="container-fluid page-headerReg py-5" style="margin-bottom: 6rem;">
-    <main>
+        <div class="menu" id="menu">
+            <ul class="list">
+                <li class="list-item">
+                    <div class="drop-down">
+                        <button class="drop-btn">Shipping 
+                            <i class="ri-arrow-drop-down-fill"></i>
+                        </button>
+                        <div class="drop-down-content">
+                          <a href="#">Booking</a>
+                          <a href="#special-section">Special cargo</a>
+                          <a href="#">oversized cargo</a>
+                          <a href="#">Refrigated cargo</a>
+                          <a href="#">Air freight cargo</a>
+                        </div>
+                      </div> 
+                </li>
+                <li class="list-item">
+                    <div class="drop-down">
+                        <button class="drop-btn">Tools 
+                            <i class="ri-arrow-drop-down-fill"></i>
+                        </button>
+                        <div class="drop-down-content">
+                          <a href="#">Risk management</a>
+                          <a href="#">Statistics</a>
+                          
+                        </div>
+                      </div>
+                </li>
+                <li class="list-item">
+                    <a href="#services-section" class="list-link">Services</a>
+                </li>
+                <li class="list-item">
+                    <a href="#about-section" class="list-link">About</a>
+                </li>
+                <li class="list-item">
+                    <a href="/hamza/profile of company/html/shipment_company.html" class="list-link"><span class="personal-profile"><i class="ri-user-3-fill"></i></span></a>
+                </li>
+            </ul>
+        </div>
+
+        <ul class="nav-list hidden-lap">
+            <li class="list-item">
+                <div class="drop-down">
+                    <button class="drop-btn">Shipping 
+                        <i class="ri-arrow-drop-down-fill"></i>
+                    </button>
+                    <div class="drop-down-content">
+                      <a href="#">Booking</a>
+                      <a href="#special-section">Special cargo</a>
+                      <a href="#">oversized cargo</a>
+                      <a href="#">Refrigated cargo</a>
+                      <a href="#">Air freight cargo</a>
+                    </div>
+                  </div> 
+            </li>
+            <li class="list-item">
+                <div class="drop-down">
+                    <button class="drop-btn">Tools 
+                        <i class="ri-arrow-drop-down-fill"></i>
+                    </button>
+                    <div class="drop-down-content">
+                      <a href="#">Risk management</a>
+                      <a href="#">Statistics</a>
+                      
+                    </div>
+                  </div>
+            </li>
+            <li class="list-item">
+                <a href="#services-section">
+                Services
+                </a>
+            </li>
+            <li class="list-item">
+                <a href="#about-section">About</a>
+            </li>
+        </ul>
+
+        <a href="/hamza/profile of company/html/shipment_company.html" class="hidden-lap">
+            <span class="personal-profile">
+              <i class="ri-user-3-fill"></i>
+            </span>
+        </a>
+
+        <button class="menu-toggle-icon" id="menu-toggle-icon">
+                <i class="ri-menu-3-line open-menu-icon"></i>
+                <i class="ri-close-line close-menu-icon"></i>
+        </button>
+
+    </nav>
+</header>
+<main>
+ <div class="header">
+    <div class="container-fluid page-headerReg py-5" style="margin-bottom: 6rem;">
       <div class="container py-5 text-center">
-        <h1 class="display-3 text-white mb-3 animated slideInDown active"> Registration Request</h1>
-        <nav aria-label="breadcrumb animated slideInDown">
+        <h1 class="display-3 text-white mb-3 animated slideOutRight active">
+          Registration Request
+        </h1>
+        <p class="text-white animated slideInDown active">
+          Welcome to our registration page. <br>
+          Please fill out the form below to request a web account.
+        </p>
+      </div>
+    </div>
+  </div>
+        
+
+        <!-- <nav aria-label="breadcrumb animated slideInDown">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-              <a class="text-white" href="#"> Welcome to our registration page. </a>
+            <li class="breadcrumb-item"> -->
+              <!-- <p> Welcome to our registration page. </a>
             </li>
           </ol>
           <ol class="breadcrumb">
             <li class="breadcrumb-item">
               <a class="text-white" href="#">Please fill out the form below to request a web account. </a>
             </li>
-          </ol>
-
-
-        </nav>
-      </div>
-  </div>
+          </ol> -->
 
   <!-- <img class="d-block mx-auto mb-4" src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
         <h2>Checkout form</h2>
@@ -127,21 +227,28 @@
   <div class="container">
     
     <form class="needs-validation" novalidate>
-    <h4> Account Settings </h4>
+      <div class="my-title row">
+        <div class="col-sm-3">
+          <h4 class="my-h4"> Account Settings </h4>
+        </div>
+        <div class="col-sm-9">
+          <hr class="my-hr">
+        </div>
+      </div>
     
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-4">
-        <label for="login">Login </label>
-        <input type="email" class="form-control" placeholder="Enter your email" aria-label="login" id="login" name="login" required>
+        <label for="login" class="my-label">Login </label>
+        <input type="email" class="my-inputs form-control" placeholder="Enter your email" aria-label="login" id="login" name="login" required>
         <div class="invalid-feedback">
           Please enter a valid email address for shipping updates.
         </div>
       </div>
       <div class="col-sm-2"></div>
       <div class="col-sm-4">
-        <label for="password"> password </label>
-        <input type="password" class="form-control" placeholder="Enter your password" aria-label="password" id="password" name="password" required>
+        <label for="password" class="my-label"> password </label> <br>
+        <input type="password" class="my-inputs form-control" placeholder="Enter your password" aria-label="password" id="password" name="password" required>
         <div class="invalid-feedback">
           Please enter your password.
         </div>
@@ -152,9 +259,8 @@
     <div class="row">
       <div class="col-sm-1"></div>
       <div class="col-sm-4">
-        <label for="confirmPassword"></label>
-        <label for="confirmPassword"></label>
-        <input type="password" class="form-control" placeholder="Confirm your password" aria-label="confirm-password" id="confirmPassword" name="confirmPassword" required>
+        <label for="confirmPassword" class="my-label">Confirm Password</label> <br>
+        <input type="password" class="my-inputs form-control" placeholder="Confirm your password" aria-label="confirm-password" id="confirmPassword" name="confirmPassword" required>
         <div class="invalid-feedback">
           Please confirm your password.
         </div>
@@ -162,14 +268,24 @@
       <div class="col-sm-7"></div>
     </div>
     <br>
- 
-      <h4> User Information </h4>
+    <br>
+    <br>
+    <br>
+  
+    <div class="my-title row">
+      <div class="col-sm-3">
+        <h4 class="my-h4"> User Information </h4>
+      </div>
+      <div class="col-sm-9">
+        <hr class="my-hr">
+      </div>
+    </div>
       
       <div class="row">
         <div class="col-sm-1"></div>
         <div class="col-sm-4">
-          <label for="firstName"> First Name </label>
-          <input type="text" class="form-control" placeholder="Enter your first name" aria-label="firstName" id="firstName" name="firstName" required>
+          <label for="firstName" class="my-label"> First Name </label>
+          <input type="text" class="input my-inputs form-control" placeholder="Enter your first name" aria-label="firstName" id="firstName" name="firstName" required>
           <div class="invalid-feedback">
             Valid first name is required.
         </div>
@@ -177,8 +293,8 @@
 
         <div class="col-sm-2"></div>
         <div class="col-sm-4">
-          <label for="lastName"> Last Name </label>
-          <input type="text" class="form-control" placeholder="Enter your last name" aria-label="lastName" id="lastName" name="lastName" required>
+          <label for="lastName" class="my-label"> Last Name </label>
+          <input type="text" class="input my-inputs form-control" placeholder="Enter your last name" aria-label="lastName" id="lastName" name="lastName" required>
           <div class="invalid-feedback">
             Valid last name is required.
           </div>
@@ -189,18 +305,18 @@
       <div class="row">
         <div class="col-sm-1"></div>
         <div class="col-sm-4">
-          <label for="phoneNumber"> Phone Number </label>
-          <input type="tel" class="form-control" placeholder="Enter your telephone" aria-label="phoneNumber" id="phoneNumber" name="phoneNumber" required>
+          <label for="phoneNumber" class="my-label"> Phone Number </label>
+          <input type="tel" class="my-inputs form-control" placeholder="Enter your telephone" aria-label="phoneNumber" id="phoneNumber" name="phoneNumber" required>
           <div class="invalid-feedback">
             Please enter your telephone.
           </div>
         </div>
         <div class="col-sm-2"></div>
         <div class="col-sm-4">
-          <label for="department" class="form-label"> Department </label>
-           <select class="form-select" id="department" name="department" required>
+          <label for="department" class="my-label form-label"> Department </label>
+           <select class="input my-inputs form-select" id="department" name="department" required>
 
-            <option selected>Choose your department</option>
+            <option value="" selected>Choose your department</option>
             <option>Claim</option>
             <option> Shipment follow up</option>
             <option>Customer Service</option>
@@ -220,20 +336,28 @@
           <div class="col-sm-1"></div>
           </div>
           <br>
-          <h4> Company Information </h4>
+          <br> <br> <br>
+          <div class="my-title row">
+            <div class="col-sm-3">
+              <h4 class="my-h4"> Company Information </h4>
+            </div>
+            <div class="col-sm-9">
+              <hr class="my-hr">
+            </div>
+          </div>
       <div class="row">
         <div class="col-sm-1"></div>
         <div class="col-sm-4">
-          <label for="companyName"> Company Name </label>
-          <input type="text" class="form-control" placeholder="Enter your company name" aria-label="companyName" id="companyName" name="companyName" required>
+          <label for="companyName" class="my-label"> Company Name </label>
+          <input type="text" class="my-inputs form-control" placeholder="Enter your company name" aria-label="companyName" id="companyName" name="companyName" required>
           <div class="invalid-feedback">
             Please enter your company name.
         </div>
         </div>
         <div class="col-sm-2"></div>
         <div class="col-sm-4">
-          <label for="address"> Address </label>
-          <input type="text" class="form-control" placeholder="Enter your address" aria-label="address" id="address" name="address" required>
+          <label for="address" class="my-label"> Address </label>
+          <input type="text" class="input my-inputs form-control" placeholder="Enter your address" aria-label="address" id="address" name="address" required>
           <div class="invalid-feedback">
             Please enter your address.
           </div>
@@ -244,8 +368,8 @@
       <div class="row">
         <div class="col-sm-1"></div>
         <div class="col-sm-4">
-          <label for="companyType" class="form-label">Company Type</label>
-          <select class="form-select" id="companyType" name="companyType" required>
+          <label for="companyType" class="my-label form-label">Company Type</label>
+          <select class="input my-inputs form-select" id="companyType" name="companyType" required>
             <option value="" selected>Choose company type</option>
             <option> Third Party Logistic</option>
             <option>Consolidator/Trader</option>
@@ -264,108 +388,19 @@
         <div class="col-sm-2"></div>
         <div class="col-sm-4">
           
-            <label for="moreInformation"> For more information <span class="text-muted">(Optional)</span> </label>
-            <input type="text" class="form-control" placeholder="Enter more address" aria-label="moreInformation" id="moreInformation" name="moreInformation">
+            <label for="moreInformation" class="my-label"> For more information <span class="text-muted">(Optional)</span> </label>
+            <input type="text" class="my-inputs form-control" placeholder="Enter more address" aria-label="moreInformation" id="moreInformation" name="moreInformation">
            
         </div>
         <div class="col-sm-1"></div>
 
         </div>
         <br>
-
-                  
-
-
-      
-
-          
-
-        
-
-<!-- 
-            <div class="container mt-3">
-
-              <select class="form-select" id="sel1" name="sellist1" required>
-                <option>Choose your department</option>
-                <option>Claim</option>
-                <option> Shipment follow up</option>
-                <option>Customer Service</option>
-                <option> Documentation</option>
-                <option>Export</option>
-                <option> Finance/Accounting</option>
-                <option>Import</option>
-                <option>Transportation</option>
-                <option>Purchasing</option>
-                <option>Other</option>
-                <option>Purchasing</option>
-              </select> -->
-
-
-
-   
-          <!-- <div class="row mb-4">
-            <div class="col">
-              <div id="div1" class="inputs form-outline mb-4">
-                <input type="email" id="form6Example1" class=" form-control" placeholder="Enter your email" required/>
-                <label  class="labels form-label" for="form6Example1">Login</label>
-              </div>
-            </div> -->
-<!-- 
-          <div class="col-sm-6">
-            <label for="password" class="form-label">Password</label>
-            <input type="" class="form-control" id="password" placeholder="Enter your password" value="" required>
-            <div class="invalid-feedback">
-              Please enter your password.
-            </div>
-          </div> -->
-          <!-- <div class="col">
-              <div id="div2" class="inputs form-outline mb-4">
-                <input type="password" id="form6Example2" class="form-control" placeholder="Enter your Password" required/>
-                <label class="labels form-label" for="form6Example2">Password</label>
-              </div>
-            </div>
-           </div> -->
-          <!-- <div class="col-12">
-            <label for="confirm-password" class="form-label">Confirm Password</label> -->
-            <!-- <div class="input-group has-validation">
-              <span class="input-group-text">@</span> -->
-            <!-- <input type="password" class="form-control" id="confirm-password" placeholder="confirm password " required>
-            <div class="invalid-feedback">
-              Please confirm your password.
-            </div>
-          </div> -->
-          <!-- 
-          <div class="row mb-4">
-            <div class="col">
-              <div id="div3" class="inputs form-outline mb-4">
-                <input type="password" id="form6Example3" class=" form-control" placeholder="Confirm your Password"
-                  required />
-                <label class="labels form-label" for="form6Example3">Confirm Password</label>
-              </div>
-            </div>
-          </div> -->
-
-
-<!-- 
-          <div class="row g-5">
-            <div class="col-md-7 col-lg-8">
-              <h4 class="mb-3">User Information</h4>
-                <div class="row g-3">
-                  <div class="col-sm-6">
-                    <label for="firstName" class="form-label">First Name </label>
-                    <input type="text" class="form-control" id="first-name" placeholder="Enter your first name" value=""
-                      required>
-                    <div class="invalid-feedback">
-                      Valid first name is required.
-                    </div>
-                  </div> -->
-
- 
-                  <div class="row">
+        <div class="row">
                     <div class="col-sm-1"></div>
                     <div class="col-sm-4">
-                      <label for="city"> City </label>
-                      <input type="text" class="form-control" placeholder="Enter your city" aria-label="city" id="city" name="city" required>
+                      <label for="city" class="my-label"> City </label>
+                      <input type="text" class="input my-inputs form-control" placeholder="Enter your city" aria-label="city" id="city" name="city" required>
                       <div class="invalid-feedback">
                         Please provide a valid city.
                     </div>
@@ -373,8 +408,8 @@
             
                     <div class="col-sm-2"></div>
                     <div class="col-sm-4">
-                      <label for="zipCode"> Zip Code </label>
-                      <input type="text" class="form-control" placeholder="Enter your zip code" aria-label="zipCode" inputmode="numeric" pattern="^\s*?\d{5}(?:[-\s]\d{4})?\s*?$" id="zipCode" name="zipCode" required>
+                      <label for="zipCode" class="my-label"> Zip Code </label>
+                      <input type="text" class="input my-inputs form-control" placeholder="Enter your zip code" aria-label="zipCode" inputmode="numeric" id="zipCode" name="zipCode" required>
                       <div class="invalid-feedback">
                         Zip code required.
                       </div>
@@ -387,8 +422,8 @@
                   <div class="row">
                     <div class="col-sm-1"></div>
                     <div class="col-sm-4">
-                      <label for="countryRegion" class="form-label">Country / Region</label>
-                        <select class="form-select" id="countryRegion" name="countryRegion" required>
+                      <label for="countryRegion" class="my-label form-label">Country / Region</label>
+                        <select class="input my-inputs form-select" id="countryRegion" name="countryRegion" required>
                           <option value="" selected>Choose your country / region</option>
                           <option>AFGHANISTAN</option>
                           <option>ALAND ISLAND</option>
@@ -411,8 +446,8 @@
                     
                     <div class="col-sm-2"></div>
                     <div class="col-sm-4">
-                      <label for="vatNumber"> V.A.T Number</label>
-                      <input type="text" class="form-control" placeholder="Enter your V.A.T number" aria-label="vatNumber" inputmode="numeric" pattern="^\s*?\d{5}(?:[-\s]\d{4})?\s*?$" id="vatNumber" name="vatNumber" required>
+                      <label for="vatNumber" class="my-label"> V.A.T Number</label>
+                      <input type="text" class="my-inputs form-control" placeholder="Enter your V.A.T number" aria-label="vatNumber" inputmode="numeric" id="vatNumber" name="vatNumber" required>
                       <div class="invalid-feedback">
                         V.A.T number required.
                       </div>
@@ -424,30 +459,32 @@
                   <div class="row">
                     <div class="col-sm-1"></div>
                     <div class="col-sm-4">
-                        <label for="colleagueEmail"> Colleague's email <span class="text-muted">(Optional)</span></label>
-                        <input type="text" class="form-control" placeholder="Enter his/her email address or booking reference" aria-label="colleagueEmail" id="colleagueEmail" name="colleagueEmail" >
+                        <label for="colleagueEmail" class="my-label"> Colleague's email <span class="text-muted">(Optional)</span></label>
+                        <input type="text" class="input my-inputs form-control" placeholder="Enter his/her email address or booking reference" aria-label="colleagueEmail" id="colleagueEmail" name="colleagueEmail" >
                     </div>
                     <div class="col-sm-2"></div>
                     <div class="info-btn col-sm-4">
+                      <div class="popup" onclick="myFunction()">
                         <span><i class="ri-information-line"></i></span>
-                         <p> Your data will be validated faster if you enter the email address
-                        of a colleague who has already registered with us or booking reference.
-                         </p> 
-                    </div>
+                        <span class="popuptext" id="myPopup">Your data will be validated faster if you enter the email address
+                          of a colleague who has already registered with us or booking reference. </span>
+                      </div>
+                    
                     <div class="col-sm-1"></div>
                   </div>
                 <br>
+                <br> <br> <br> <br> <br>
 
                 <div class="row mb-4">
                   <div class="col-sm-1"></div>
                   <div class="col-sm-4">
                     <!-- <button type="button" class="btn btn-outline-primary btn-lg"  id="saveAndSignUp" name="saveAndSignUp" > Save and Sign Up </button> -->
-                    <button class="my-btnn btn btn-primary btn-lg" type="submit" id="saveAndSignUp" name="saveAndSignUp" >Save and sign up</button> 
+                    <button class="add my-btnn btn btn-primary btn-lg" type="submit" id="saveAndSignUp" name="saveAndSignUp" >Save and sign up</button> 
                   </div>
                   <div class="col-sm-2"></div>
                   <div class="col-sm-4">
                     <!-- <button type="button" class="btn btn-outline-primary btn-lg"  id="continue" name="continue" > Continue </button> -->
-                    <button type="submit" class="my-btnn btn btn-primary btn-lg" id="continue" name="continue">Continue</button> 
+                    <button type="submit" class="add my-btnn btn btn-primary btn-lg" id="continue" name="continue">Continue</button> 
                   </div>
                   <div class="col-sm-1"></div>
                 </div>
@@ -457,230 +494,60 @@
 
               <div class="col-sm-3"></div>
               <div class="col-sm-6">
-                <p> Already have an account? &nbsp;<a href="login.html">LOGIN</a></p>
+                <p> Already have an account? &nbsp;<a href="./signin.html" class="loginLink">LOGIN</a></p>
               </div>
               <div class="col-sm-3"></div>
             </div>
 
             </div>
           </form>
-            
-                  
-                      
-    
-              
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                  
-
-
-
-
-                  <!-- <div class="col-12">
-                    <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
-                    <input type="email" class="form-control" id="email" placeholder="you@example.com">
-                    <div class="invalid-feedback">
-                      Please enter a valid email address for shipping updates.
-                    </div>
-                  </div>
-
-                  <div class="col-12">
-                    <label for="address" class="form-label">Address</label>
-                    <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
-                    <div class="invalid-feedback">
-                      Please enter your shipping address.
-                    </div>
-                  </div>
-
-                  <div class="col-12">
-                    <label for="address2" class="form-label">Address 2 <span
-                        class="text-muted">(Optional)</span></label>
-                    <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
-                  </div>
-
-                  <div class="col-md-5">
-                    <label for="country" class="form-label">Country</label>
-                    <select class="form-select" id="country" required>
-                      <option value="">Choose...</option>
-                      <option>United States</option>
-                    </select>
-                    <div class="invalid-feedback">
-                      Please select a valid country.
-                    </div>
-                  </div>
-
-                  <div class="col-md-4">
-                    <label for="state" class="form-label">State</label>
-                    <select class="form-select" id="state" required>
-                      <option value="">Choose...</option>
-                      <option>California</option>
-                    </select>
-                    <div class="invalid-feedback">
-                      Please provide a valid state.
-                    </div>
-                  </div>
-
-                  <div class="col-md-3">
-                    <label for="zip" class="form-label">Zip</label>
-                    <input type="text" class="form-control" id="zip" placeholder="" required>
-                    <div class="invalid-feedback">
-                      Zip code required.
-                    </div>
-                  </div>
-                </div>
-
-                <hr class="my-4">
-
-                <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="same-address">
-                  <label class="form-check-label" for="same-address">Shipping address is the same as my billing
-                    address</label>
-                </div>
-
-                <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="save-info">
-                  <label class="form-check-label" for="save-info">Save this information for next time</label>
-                </div>
-
-                <hr class="my-4">
-
-                <h4 class="mb-3">Payment</h4>
-
-                <div class="my-3">
-                  <div class="form-check">
-                    <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
-                    <label class="form-check-label" for="credit">Credit card</label>
-                  </div>
-                  <div class="form-check">
-                    <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
-                    <label class="form-check-label" for="debit">Debit card</label>
-                  </div>
-                  <div class="form-check">
-                    <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
-                    <label class="form-check-label" for="paypal">PayPal</label>
-                  </div>
-                </div>
-
-                <div class="row gy-3">
-                  <div class="col-md-6">
-                    <label for="cc-name" class="form-label">Name on card</label>
-                    <input type="text" class="form-control" id="cc-name" placeholder="" required>
-                    <small class="text-muted">Full name as displayed on card</small>
-                    <div class="invalid-feedback">
-                      Name on card is required
-                    </div>
-                  </div>
-
-                  <div class="col-md-6">
-                    <label for="cc-number" class="form-label">Credit card number</label>
-                    <input type="text" class="form-control" id="cc-number" placeholder="" required>
-                    <div class="invalid-feedback">
-                      Credit card number is required
-                    </div>
-                  </div>
-
-                  <div class="col-md-3">
-                    <label for="cc-expiration" class="form-label">Expiration</label>
-                    <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
-                    <div class="invalid-feedback">
-                      Expiration date required
-                    </div>
-                  </div>
-
-                  <div class="col-md-3">
-                    <label for="cc-cvv" class="form-label">CVV</label>
-                    <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
-                    <div class="invalid-feedback">
-                      Security code required
-                    </div>
-                  </div>
-                </div>
-
-                <hr class="my-4">
-
-                <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
-              
-            </div>
-          </div>
           </main>
-        </form>
-          <footer class="my-5 pt-5 text-muted text-center text-small">
-            <p class="mb-1">&copy; 2017–2021 Company Name</p>
-            <ul class="list-inline">
-              <li class="list-inline-item"><a href="#">Privacy</a></li>
-              <li class="list-inline-item"><a href="#">Terms</a></li>
-              <li class="list-inline-item"><a href="#">Support</a></li>
-            </ul>
-          </footer>
-        </div> -->
-        <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-          integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-          crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-          integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-          crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-          crossorigin="anonymous"></script>
+          <footer>
 
-        <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-          crossorigin="anonymous"></script>
-
-        <script src="form-validation.js"></script> -->
+            <div class="brand-footer">
+                <ul>
+                    <li> <div class="logo1"></div></li>
+                <li><h6><span class="copyright">&copy; 2022 GSC, all right reserved.</span></h6></li>
+                <li class="list-item">
+                    <a href="#" class="list-link social-media">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="#" class="list-link social-media">
+                        <i class="ri-twitter-line"></i>
+                    </a>
+                    <a href="#" class="list-link social-media">
+                        <i class="ri-facebook-circle-line"></i>
+                    </a>
+                    
+                </li>
+                </ul>
+    
+            </div>
+    
+            
+            <div class="useful-links">
+                <h1>Useful links</h1>
+                <ul>
+                    <li>Home</li>
+                    <li>services</li>
+                    <li>shipping</li>
+                    <li>about us</li>
+                </ul>
+            </div>
+    
+            <div class="useful-links">
+                <h1>Team</h1>
+                <ul>
+                    <li>Adel Ftouni</li>
+                    <li>Fatima Mansour</li>
+                    <li>Kawthar Safa</li>
+                    <li>Hamza Nemer</li>
+                </ul>
+            </div>
+            
+        </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-<script>
-  // Example starter JavaScript for disabling form submissions if there are invalid fields
-(function () {
-  'use strict'
-
-  // Fetch all the forms we want to apply custom Bootstrap validation styles to
-  var forms = document.querySelectorAll('.needs-validation')
-
-  // Loop over them and prevent submission
-  Array.prototype.slice.call(forms)
-    .forEach(function (form) {
-      form.addEventListener('submit', function (event) {
-        if (!form.checkValidity()) {
-          event.preventDefault()
-          event.stopPropagation()
-        }
-
-        form.classList.add('was-validated')
-      }, false)
-    })
-})()
-</script>
-
+        <script src="Registration.js"></script>
       </body>
 
 </html> 

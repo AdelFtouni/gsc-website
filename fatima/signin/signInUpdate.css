@@ -1,0 +1,133 @@
+:root{
+    --background-color: #fbfbfb;
+    --primary-color: #0172ab;
+    --secondary-color: #025c7a;
+    --small-text-color: #333;
+    --small-field: rgba(76, 103, 255, 0.479);
+    --gap: 2rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--background-color);
+}
+
+aside{
+    width: 100%;
+    height: 95vh;
+    background-color: var(--primary-color) ;
+    border-radius: 30px;
+    padding: 3rem 1rem;
+    color: var(--background-color);
+    margin: 1rem 0;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 50%);
+}
+.header-aside{
+    width: 100%;
+    height: max-content;
+    margin-bottom: 7rem;
+}
+
+.header-aside button{
+    color: var(--background-color);
+    font-size: 1.2rem;
+    transition: all 0.30s ease-in-out;
+}
+
+.header-aside button:hover{
+    transform: translateX(-20px);
+    color: var(--background-color);
+}
+
+.header-aside button span{
+    margin-right: .5rem;
+    font-size: 1.4rem;
+}
+
+.logo{
+   background: url(logoBlue.png) center;
+    background-size: cover !important;
+    object-fit: cover !important;
+    width: 70px !important;
+    height: 70px !important;
+    margin-top: -30px !important;
+}
+
+.sub-welcoming-text{
+  margin-block: 2rem
+  var(--background-color);
+}
+
+.main-side{
+    padding: 3rem;
+    box-shadow: 3px 4px 8px rgba(0, 0, 0, 50%);
+    border-radius: 30px;
+    width: 100%;
+    height: 95vh;
+    padding: 3rem 1rem;
+    margin: 1rem 0;
+    margin-top: 15px !important;
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+
+ 
+}
+
+button {
+    cursor: pointer;
+}
+.my-btn-signin{
+    width: 450px !important;
+    border-radius: 7px !important;
+    box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.466) ;
+    color: #0172ab !important;
+    background-color: #0172ab !important;
+    color: #fbfbfb !important;
+    border-color: transparent !important;
+}
+.my-btn-signin:hover{
+    background-color: #fbfbfb !important;
+    color:#0172ab!important;
+}
+
+.my-input-signin{
+    border-radius: 7px !important;
+    box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.466);
+}
+.my-btn-account{
+    border-radius: 7px !important;
+    width: 250px !important;
+    box-shadow: 3px 4px 8px var(--small-text-color);
+    color:#0172ab !important;
+    background-color: #0172ab !important;
+    color: #fbfbfb !important;
+    border-color: transparent !important;
+}
+.my-btn-account:hover{
+    background-color: #fbfbfb !important;
+    color: #0172ab  !important;
+}
+
+        
+
+/* .back-btn {
+    font-size: .8rem !important;
+    color: #fbfbfb !important;
+    outline: none !important;
+    border: none !important;
+    background: transparent !important;
+    display: flex !important;
+    align-items: center !important;  
+    transition: all .30s ease-in !important;
+    margin-top: -40px !important;
+    margin-left: -45px !important;
+} */
+
+a{
+    text-decoration: none !important;
+    color: var(--background-color);
+    cursor: pointer;
+}
