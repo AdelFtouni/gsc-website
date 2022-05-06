@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+
+body {
+    background-color: #0D6EFD;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif
+}
+
+.modal-body {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.close {
+    color: #000;
+    cursor: pointer
+}
+
+.close:hover {
+    color: #000;
+}
+
+
+.fee {
+    padding: 8px;
+    margin-right: 8px;
+}
+
+
+.form-control {
+    width:100%;
+    border: 1px solid #ced4da;
+    
+}
+
+ #cvvId{
+    width:110%;
+    margin-left:5px;
+}
+
+
+.form-control[type="date"]{
+    width:110%;
+    margin-right:5px;
+}
+
+
+.form-control:focus {
+
+    box-shadow: none;
+    border-color: --primary;
+}
+
+
+.form-control:read-only {
+
+    background-color: #e2e2e2dc;
+    border-color: #bec2c5e0;
+    color: #a7aaade8
+}
+
+#cancelHref {
+    float: right !important;
+}
+
+.btnHref {
+    float: right;
+}
+
+#launchBtn {
+    background-color: #ffff;
+    color: #154b9c;
+    box-shadow: 2px 2px 11px #0e3c81;
+    margin-left: 2rem;
+
+}
+
+
+.pay {
+
+    color: #fff;
+    background-color: --primary;
+    border-color: --primary;
+    border-radius: 3px;
+    padding: 8px;
+   float: right;
+}
+
+
+.pay:hover {
+
+    color: #fff;
+    background-color: --primary;
+    border-color: --primary;
+    border-radius: 3px;
+    padding: 8px;
+}
+
+
+.cancel {
+
+    text-decoration: none;
+    color: --primary;
+    margin-right: -40px !important;
+}
+

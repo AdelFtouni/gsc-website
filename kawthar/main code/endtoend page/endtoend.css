@@ -1,0 +1,618 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+   background-color: #fbfbfb !important;
+   color: #0172ab;
+   overflow: auto;
+   overflow-x: none;
+   overflow-x: hidden;
+   font-family: 'Poppins', sans-serif;
+   scroll-behavior: smooth;
+
+}
+
+.main-container{
+   min-height: 20rem !important;
+}
+
+
+.jumbotron-fluid {
+   background: no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+.header h1 {
+   text-align: left;
+   position: relative;
+   animation-name: SlideOutRight;
+   animation-duration: 2s;
+   font-weight: 500 !important;
+   text-align: left;
+
+}
+
+.header{
+   margin-top: 5.01rem !important;
+}
+
+@keyframes SlideOutRight {
+   from {
+      left: -400px;
+      top: 0px;
+   }
+
+   to {
+      left: 10px;
+      top: 0px;
+   }
+}
+
+
+.header p {
+   text-align: left;
+   position: relative;
+   animation-name: pfade;
+   animation-duration: 2s;
+   font-weight: 400 !important;
+   text-align: left;
+
+
+}
+
+@keyframes pfade {
+   from {
+      right: -400px;
+      top: 0px;
+   }
+
+   to {
+      top: 0px;
+      right: 10px;
+   }
+}
+
+
+
+main {
+   display: flex;
+}
+
+.form-search {
+   color: #0172ab !important;
+}
+
+.header-text {
+   text-align: left;
+   position: left;
+   margin-top: 20px !important;
+}
+
+.page-header {
+   background: linear-gradient(#0172ab, #a6bec47c), url(landcargo.jpg) center center no-repeat;
+   background-size: cover;
+   object-fit: cover !important;
+   padding-top: 20px !important;
+   background-size: cover;
+}
+
+.my-title {
+   font-weight: bold !important;
+   color: #0172ab !important;
+   margin-top: -35px !important;
+   margin-left: 20px !important;
+   padding-bottom: 30px !important;
+   font-style: oblique !important;
+
+}
+
+
+
+
+/* Style the tab */
+.tab {
+
+   overflow: hidden;
+   border: 1px solid #0172ab;
+   border-bottom: none;
+   background-color: #0172ab !important;
+   border-radius: 7px !important;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+   background-color: inherit;
+   float: left;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   padding: 14px 16px;
+   transition: 0.3s;
+   font-size: 17px;
+   border-radius: 10px 30px 0 0;
+   color: #fbfbfb !important;
+
+}
+
+
+.tab .hoveroff:hover {
+   background-color: #0172ab !important;
+   color: #bbbbbb !important;
+   font-weight: 400 !important;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+   background-color: #fbfbfb;
+   color: #0172ab !important;
+   font-weight: 600 !important;
+   border-radius: 10px 30px 0 0;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+   background-color: #fbfbfb;
+   border-right: 1px solid #ccc;
+   border-bottom: none;
+   border-radius: 10px 30px 0 0;
+   color: #0172ab !important;
+   font-weight: 600 !important;
+}
+
+/* Style the tab content */
+.tabcontent {
+   display: none;
+   padding: 6px 12px;
+   margin-top: 8px;
+   border-radius: 7px;
+}
+
+
+
+
+
+
+.border-bottom {
+
+   margin-top: 10px !important;
+   margin-bottom: 10px !important;
+
+}
+
+.btn-primary {
+
+   background-color: #025c7a !important;
+   width: 100% !important;
+   height: 45px !important;
+}
+
+.cargock {
+   margin-left: 20px !important;
+   font-size: medium !important;
+}
+
+.tab a {
+   font-weight: 500;
+}
+
+#leftdiv {
+   width: 30%;
+   float: left;
+   border: 1px solid rgb(197, 197, 197);
+   border-radius: 5px;
+   margin-top: 12px;
+}
+
+#rightdiv {
+   width: 60%;
+   float: left;
+   padding: 15px !important;
+   padding-top: 40px !important;
+   margin-top: 30px;
+
+
+}
+
+/* overlay*/
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+   position: absolute;
+   bottom: 0;
+   background: #025c7a;
+   background: #025c7ac7;
+   color: #fbfbfb;
+   width: 50%;
+   height: 30px;
+   transition: .5s ease;
+   opacity: 0;
+   padding: 5px;
+   text-align: center;
+   font-weight: 500;
+   font-size: medium;
+   border-radius: 45px;
+   margin-left: 25%;
+}
+
+
+/* overlay*/
+
+#map-img-cont {
+
+   position: relative;
+   width: 100%;
+   max-width: 700px;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+   opacity: 1;
+}
+
+
+/* 000000000 */
+
+
+
+#capform {
+   caption-side: top !important;
+   color: #025c7a !important;
+   font-weight: 600 !important;
+   font-size: x-large;
+   font-style: oblique;
+   margin-bottom: -100px;
+
+}
+
+
+#contactUs {
+
+   height: 20px !important;
+   width: 400px !important;
+   text-decoration: none;
+   color: #ffff;
+   font-weight: 500;
+   font-size: larger;
+   background-color: #0172ab;
+   border-radius: 5px;
+   padding: 12px 22px;
+   margin-top: 30px;
+   margin-bottom: 20px;
+   margin-left: 20px;
+}
+
+
+#logisticSolutions h1, #Asia h1, #Asia h2, #Asia h3, #Asia h4 {
+
+   color: #025c7a;
+}
+
+
+#logisticSolutions #anyQuestions {
+
+   color: #ffff;
+}
+
+
+#logisticSolutions p, #Asia p {
+
+   color:#333;
+   font-size: 15px;
+
+}
+
+
+#logisticSolutions span, #Asia ul {
+   color:#333;
+   font-weight: 500;
+
+}
+
+.map {
+
+   max-width: 100%;
+   min-width: 80%;
+
+   max-height: 100%;
+   min-height: 80%;
+}
+
+
+.contactUsDiv {
+   width: 120rem !important;
+   background-color: #0172ab90 !important;
+   padding: 30px !important;
+   background-size: cover !important;
+   box-shadow: none !important;
+   margin-top: 125px !important;
+   margin-bottom: 30px !important;
+   border-radius: 8px !important;
+
+
+
+}
+
+.fade {
+  
+   max-width: 65rem;
+   background-size: cover;
+   background-color: #fbfbfb ;
+   box-shadow: 0 5px 25px rgba(7, 60, 83, 0.382);
+   border-radius: 15px;
+   text-align: left;
+   padding: 1.5rem ;
+   margin: 1.5rem;
+}
+
+.fadelabel{margin-top: 100px !important;}
+
+.fadeimg{
+   display: flex;
+   align-items: flex-start;
+   width: 100%;
+   height: auto;
+     
+}
+
+.tabcontent img{
+    width: 35rem; 
+   border-radius: 15px;
+   box-shadow: 0 5px 25px rgba(1, 1, 1, 50%);}
+
+  .tabcontent img:hover,  .tabcontent  img:focus,  .tabcontent  .fadeimg:hover,  .tabcontent  .fadeimg:focus{
+      justify-content: center;
+      transform: scale(1.5);
+      margin-top: 50px;
+   
+   }
+
+
+
+   
+/*hamza nav footer*/
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+header a {
+  text-decoration: none;
+  color:#fbfbfb;
+  cursor: pointer;
+}
+
+header a:active,
+header a:focus,
+header a:hover {
+  text-decoration: none;
+  color:#fbfbfb;
+  cursor: pointer;
+}
+
+
+header ul {
+  list-style: none;
+}
+
+header button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+header {
+  width: 100vw;
+  height: 5rem;
+  background-color: #0172ab;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+
+.nav-bar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.list-item {
+  color: #fbfbfb;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 7px;
+}
+
+.list-item:hover {
+  background-color: rgba(51, 51, 51, 0.425);
+}
+
+.personal-profile {
+  font-size: 2rem
+}
+
+menu for mobile and tablet
+.menu {
+  position: absolute;
+  top: 7rem;
+  right: 1.5rem;
+  width: 20rem;
+  padding: 1.5rem;
+  border-radius: 15px;
+  background-color: #0172ab;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity .25s ease-in;
+}
+
+.menu .list-item {
+  margin-bottom: .7rem;
+}
+
+.close-menu-icon,
+.open-menu-icon {
+  font-size: 2rem;
+  color: #fbfbfb;
+}
+
+.close-menu-icon {
+  display: none;
+}
+
+.menu.activated {
+  opacity: 1;
+  transform: scale(1);
+  box-shadow: 1px 1px 1rem rgba(51, 51, 51, 0.651);
+}
+
+.menu-toggle-icon.activated .open-menu-icon {
+  display: none;
+}
+
+.menu-toggle-icon.activated .close-menu-icon {
+  display: block;
+}
+
+.menu-toggle-icon {
+  display: none;
+}
+
+.menu-toggle-icon {
+  background-color: #0172ab;
+}
+
+
+@media screen and (max-width:768px) {
+   .menu-toggle-icon{
+       display: block;
+   }
+
+   .hidden-lap{
+       display: none;
+   }
+
+   footer{
+       flex-direction: column;
+   }
+}
+
+.drop-down-content {
+  display: none;
+  position: absolute;
+  background-color: #fbfbfb;
+  border-radius: 15px;
+  min-width: 160px;
+  box-shadow: 0 5px 25px rgba(1, 1, 1, 50%);
+  z-index: 999;
+}
+
+.drop-down-content a {
+  float: none;
+  color: #025c7a !important;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.drop-btn {
+  background-color: transparent;
+  color: #fbfbfb;
+  font-size: 1.05rem;
+}
+
+.drop-down:hover .drop-down-content {
+  display: block;
+}
+
+/* footer */
+
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #0172ab;
+  padding: 3rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #fbfbfb;
+ 
+}
+
+footer h1 {
+  margin-bottom: 1rem;
+}
+
+footer li {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+footer .list-item {
+  background-color: transparent !important;
+}
+
+.list-item a{ text-decoration: none;}
+
+
+.social-media i {
+  font-size: 2.7rem;
+  margin-right: .5rem;
+  color: #fbfbfb;
+}
+
+.social-media i:hover {
+  color: #082730;
+}
+
+footer li {
+  cursor: pointer;
+  list-style: none;
+  margin-left: -20px;
+}
+
+.impPages{
+  margin-left: -50px!important;
+}
+
+.teamNames{
+  margin-right: 60px !important;
+}
+
+.useful-links li:hover {
+  transform: scale(1.1);
+  color: #082730;
+}
+
+.socailmedaidiv{
+  margin-left: -20px;
+}
+
+#logo{
+  height:58px;
+  width:58px
+  
+}
+
+.brand-footer #logo{
+
+  height:118px;
+  width:118px;
+}

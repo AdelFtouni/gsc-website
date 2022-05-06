@@ -1,0 +1,280 @@
+<link href=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<link href="payment.css " rel="stylesheet">
+
+
+
+
+
+<button type="button" class="btn launch" id="launchBtn" data-toggle="modal" data-target="#staticBackdrop">
+    <i class="fa fa-info"></i> Pay Fee
+</button>
+
+
+
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body ">
+                    <form class="row needs-validation" novalidate>
+
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="text-uppercase font-weight-bold text-primary h4">Pay Now</span>
+                        <i class="fa fa-close close" data-dismiss="modal"></i>
+                    </div>
+
+                    <div class="row mt-4">
+
+                        <div class="col-md-4">
+
+                            <div class="d-flex flex-column">
+                                <small>Company Name</small>
+                                <span class="font-weight-bold small">AKAI</span>
+                            </div>
+
+
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="d-flex flex-column">
+                                <small>Fee Due Date</small>
+                                <span class="font-weight-bold small">03/05/2022</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-md-4">
+                            <div class="d-flex flex-column">
+                                <small>Company ID</small>
+                                <span class="font-weight-bold small">1TB0-XA33</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="row mt-2 mb-4">
+
+                        <div class="col-md-4">
+
+                            <div class="d-flex flex-column">
+                                <small>Agent Name</small>
+                                <span class="font-weight-bold small">FULAN FULANI</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-md-4">
+                            <div class="d-flex flex-column">
+                                <small>Arrival Due Date</small>
+                                <span class="font-weight-bold small">13/05/2022</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-md-4">
+
+                            <div class="d-flex flex-column">
+                                <small>Vessel ID</small>
+                                <span class="font-weight-bold small">1TB0-XA33-AB09</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="row mt-1">
+
+                        <div class="col-sm-1"></div>
+
+                        <div class="col-md-5">
+
+                            <div class="d-flex flex-column">
+                                <small>Vessel Content</small>
+                                <span class="font-weight-bold small">General Cargo Vessel</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-md-5">
+                            <div class="d-flex flex-column">
+                                <small>Container Description</small>
+                                <span class="font-weight-bold small">Furniture Container</span>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-1"></div>
+
+
+                    </div>
+
+                    <hr class="mr-2 mt-4 mb-2">
+
+
+<!--second row needs validation-->
+
+                    <div class="mt-4 mr-2">
+
+                        <div class="row g-2">
+
+
+                            <div class=" col-md-12 d-flex flex-row mt-2 mb-3">
+
+                                <small> <span><i class="fa fa-bank"></i>&nbsp; Payment Method:&nbsp; BANK
+                                        TRANSFER</span>
+                                </small>
+
+                            </div>
+
+                            <div class="col-md-6">
+
+                                <div class="inputbox">
+
+                                    <small>Card Number</small>
+
+                                    <input type="text" class="form-control" name="" id="cardNumber" required>
+
+                                    <div class="invalid-feedback">
+                                        Please provide a valid Card Number.
+                                      </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-md-6">
+
+                                <div class="inputbox">
+
+                                    <small>Card Name</small>
+
+                                    <input type="text" class="form-control" name="" id="cardName" required>
+
+                                    <div class="invalid-feedback">
+                                        Please provide a valid Card Name.
+                                      </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="row mt-3 mr-2">
+
+                        <div class="col-md-6">
+
+                            <div class="inputbox">
+
+                                <small>Date</small>
+
+                                <input type="date" class="form-control" name="" id="paymentDate" readonly>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-md-6">
+
+                            <div class="inputbox">
+
+                                <small class="ml-1">CVV</small>
+
+                                <input type="text" class="form-control" name="" id="cvvId" required>
+
+                                <div class="invalid-feedback">
+                                    Please provide a valid CVV.
+                                  </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+             
+                    <hr class="mr-2 mt-4">
+
+
+
+                    <div class="row mt-3 mr-2">
+                        <div class=" text-center fee align-items-center">
+
+                            <p>
+                                <span class="mb-0 font-weight-light h4 ">Total Payments:&nbsp;</span>
+                                <span class="mb-0 font-weight-meduim h4">$10,000</span>
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <hr class="mr-2 mt-2">
+
+                    <div class="row mt-4 d-flex justify-content-end align-items-center btnHref">
+
+                        <div class="col-md-7"></div>
+
+                        <div class="col-md-1">
+                            <a href="#" class="cancel" id="cancelHref" data-dismiss="modal">Cancel</a>
+                        </div>
+
+                        <div class="col-md-4">
+                            <button class=" ml-2 btn btn-primary pay" type="submit">PAY NOW</button>
+
+                        </div>
+
+                        <!-- <div class="col-md-2"></div> -->
+
+                    </div>
+                </form>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script>// Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+    })()</script>
