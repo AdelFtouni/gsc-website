@@ -32,6 +32,7 @@
     <meta name="description" content="" />
 
     <!-- Favicon -->
+   
     <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
 
     <!-- Fonts -->
@@ -63,7 +64,7 @@
     <script src="../assets/js/config.js"></script>
   </head>
 
-  <body id="mybody">
+  <body id="mybody" onload="first1()">
     <!-- Layout wrapper -->
     <div class="layout-wrapper layout-content-navbar">
       <div class="layout-container">
@@ -344,12 +345,12 @@
                           class="nav-link animated slideInDown"
                           role="tab"
                           data-bs-toggle="tab"
-                          data-bs-target="#navs-pills-justified-messages"
-                          aria-controls="navs-pills-justified-messages"
+                          data-bs-target="#navs-pills-justified-editHome"
+                          aria-controls="navs-pills-justified-editHome"
                           aria-selected="false"
                         >
                       
-                          <i class="tf-icons bx bx-message-square"></i> Home
+                          <i class="tf-icons bx bx-message-square"></i> add
                         </button>
                       </li>
                     </ul>
@@ -357,409 +358,60 @@
                       <div class="tab-pane fade show active" id="navs-pills-justified-home" role="tabpanel">
 
 <!-- ############################################################################# -->
-<table class="table mainTable card tttt">
-  <tr>
-      <th>
-          <label class="qwe1">Trip</label>
-      </th>
-      <th>
-        <label class="qwe1">cargo companies</label>  
-      </th>
-      <th>
-  <label class="qwe1">    origin</label>
-      </th>
-      <th>
-        <label class="qwe1">  destination</label>
-      </th>
-          <th>
-             <label class="qwe1"> departure</label>
-          </th>
-           <th>
-             <label class="qwe1">  arrival</label>
-           </th>
-           <th>
-               <label class="qwe1">vessels</label>
-           </th>
-           <th>
-            <label class="qwe1">route </label>
-        </th>
-        <th>
-            <label class="qwe1"></label>
-        </th>
-        
-  </tr>
+<div id="tripsData"></div>
 
 
-  <tr class="trtr">
-    <th>
-        <label class="qwee">amb432</label>
-    </th>
-    <th class="qwee">
-     adidas,puma,nike
-    </th>
-    <th>
-<label class="qwee">   china  </label>
-    </th>
-    <th>
-      <label class="qwee">  usa</label>
-    </th>
-        <th class="qwee">
-            01/04/2022
-        </th>
-         <th>
-           <label class="qwee">  03/05/2022</label>
-         </th>
-         <th>
-             <label class="qwee">67</label>
-         </th>
-         <th>
-            <label class="qwee">shooes</label>
-        </th>
-        <th>
-          <div class="row-cols-12">
-          <div class="">
-            <button
-            type="button"
-            class="btn btn-dark "
-            data-bs-toggle="modal"
-            data-bs-target="#largeModal"
-          >
-        Edit
-          </button>
-          <button
+ 
+        <div class="row-cols-12">
+        <div class="">
+          <!-- <button
           type="button"
-          class="btn btn-danger"
+          class="btn btn-dark "
           data-bs-toggle="modal"
           data-bs-target="#largeModal"
         >
-     Delete
+      Add trip
         </button>
+        <button
         
+        type="button"
+        class="btn btn-danger"
+        data-bs-toggle="modal"
+        data-bs-target="#largeModal"
+      >
+   Delete
+      </button>
+      <button type="button"  onclick="vieww()" class="btn btn-dark">view</button> -->
+      <table class="hhhh" >
+        <tr>
           
-            </div>
-          </div>
-        </th>
-        
-         
+          <th>Trip</th>
+          <th>companies</th>
+          <th>origin</th>
+          <th>Destination</th>
+          <th>Departure</th>
+          <th>Arrival</th>
+          <th>Vessels</th>
+          <th>Route</th>
+        </tr>
+      </table>
 
-       
-</tr>
+      <table class="myTablert" id="myTable">
+<p id="testlocal12"></p>
 
-<tr class="trtr">
-  <th>
-      <label class="qwee">amb432</label>
-  </th>
-  <th class="qwee">
-   adidas,puma,nike
-  </th>
-  <th>
-<label class="qwee">   china  </label>
-  </th>
-  <th>
-    <label class="qwee">  usa</label>
-  </th>
-      <th class="qwee">
-          01/04/2022
-      </th>
-       <th>
-         <label class="qwee">  03/05/2022</label>
-       </th>
-       <th>
-           <label class="qwee">67</label>
-       </th>
-       <th>
-          <label class="qwee">shooes</label>
-      </th>
-      <th>
-        <div class="row-cols-12">
-        <div class="">
-          <button
-          type="button"
-          class="btn btn-dark "
-          data-bs-toggle="modal"
-          data-bs-target="#largeModal"
-        >
-      Edit
-        </button>
-        <button
-        type="button"
-        class="btn btn-danger"
-        data-bs-toggle="modal"
-        data-bs-target="#largeModal"
-      >
-   Delete
-      </button>
-      
-        
-          </div>
-        </div>
-      </th>
-      
-       
+<p id="testlocal"></p>
+<!-- <tr>
 
-     
-</tr>
-<tr class="trtr">
-  <th>
-      <label class="qwee">amb432</label>
-  </th>
-  <th class="qwee">
-   adidas,puma,nike
-  </th>
-  <th>
-<label class="qwee">   china  </label>
-  </th>
-  <th>
-    <label class="qwee">  usa</label>
-  </th>
-      <th class="qwee">
-          01/04/2022
-      </th>
-       <th>
-         <label class="qwee">  03/05/2022</label>
-       </th>
-       <th>
-           <label class="qwee">67</label>
-       </th>
-       <th>
-          <label class="qwee">shooes</label>
-      </th>
-      <th>
-        <div class="row-cols-12">
-        <div class="">
-          <button
-          type="button"
-          class="btn btn-dark "
-          data-bs-toggle="modal"
-          data-bs-target="#largeModal"
-        >
-      Edit
-        </button>
-        <button
-        type="button"
-        class="btn btn-danger"
-        data-bs-toggle="modal"
-        data-bs-target="#largeModal"
-      >
-   Delete
-      </button>
-      
-        
-          </div>
-        </div>
-      </th>
-      
-       
+  <td id="td1">helo</td>
+  <td>helo</td>
+  <td>helo</td>
+  <td>helo</td>
+  <td>helo</td>
+  <td>helo</td>
+  <td>helo</td>
+</tr> -->
 
-     
-</tr>
-
-
-<tr class="trtr">
-  <th>
-      <label class="qwee">amb432</label>
-  </th>
-  <th class="qwee">
-   adidas,puma,nike
-  </th>
-  <th>
-<label class="qwee">   china  </label>
-  </th>
-  <th>
-    <label class="qwee">  usa</label>
-  </th>
-      <th class="qwee">
-          01/04/2022
-      </th>
-       <th>
-         <label class="qwee">  03/05/2022</label>
-       </th>
-       <th>
-           <label class="qwee">67</label>
-       </th>
-       <th>
-          <label class="qwee">shooes</label>
-      </th>
-      <th>
-        <div class="row-cols-12">
-          <div class="">
-            <button
-            type="button"
-            class="btn btn-dark "
-            data-bs-toggle="modal"
-            data-bs-target="#largeModal"
-          >
-        Edit
-          </button>
-          <button
-          type="button"
-          class="btn btn-danger"
-          data-bs-toggle="modal"
-          data-bs-target="#largeModal"
-        >
-     Delete
-        </button>
-        
-          
-            </div>
-          </div>
-      
-      </th>
-</tr>
-
-
-
-<tr class="trtr">
-<th>
-  <label class="qwee">amb432</label>
-</th>
-<th class="qwee">
-adidas,puma,nike
-</th>
-<th>
-<label class="qwee">   china  </label>
-</th>
-<th>
-<label class="qwee">  usa</label>
-</th>
-  <th class="qwee">
-      01/04/2022
-  </th>
-   <th>
-     <label class="qwee">  03/05/2022</label>
-   </th>
-   <th>
-       <label class="qwee">67</label>
-   </th>
-   <th>
-      <label class="qwee">shooes</label>
-  </th>
-  <th>
-    <div class="row-cols-12">
-      <div class="">
-        <button
-        type="button"
-        class="btn btn-dark "
-        data-bs-toggle="modal"
-        data-bs-target="#largeModal"
-      >
-    Edit
-      </button>
-      <button
-      type="button"
-      class="btn btn-danger"
-      data-bs-toggle="modal"
-      data-bs-target="#largeModal"
-    >
- Delete
-    </button>
-    
-      
-        </div>
-      </div>
-  </th>
-  
-</tr>
-<tr class="trtr">
-  <th>
-      <label class="qwee">amb432</label>
-  </th>
-  <th class="qwee">
-   adidas,puma,nike
-  </th>
-  <th>
-<label class="qwee">   china  </label>
-  </th>
-  <th>
-    <label class="qwee">  usa</label>
-  </th>
-      <th class="qwee">
-          01/04/2022
-      </th>
-       <th>
-         <label class="qwee">  03/05/2022</label>
-       </th>
-       <th>
-           <label class="qwee">67</label>
-       </th>
-       <th>
-          <label class="qwee">shooes</label>
-      </th>
-      <th>
-        <div class="row-cols-12">
-        <div class="">
-          <button
-          type="button"
-          class="btn btn-dark "
-          data-bs-toggle="modal"
-          data-bs-target="#largeModal"
-        >
-      Edit
-        </button>
-        <button
-        type="button"
-        class="btn btn-danger"
-        data-bs-toggle="modal"
-        data-bs-target="#largeModal"
-      >
-   Delete
-      </button>
-      
-        
-          </div>
-        </div>
-      </th>
-      
-       
-
-     
-</tr>
-
-<tr class="trtr">
-  <th>
-      <label class="qwee">amb432</label>
-  </th>
-  <th class="qwee">
-   adidas,puma,nike
-  </th>
-  <th>
-<label class="qwee">   china  </label>
-  </th>
-  <th>
-    <label class="qwee">  usa</label>
-  </th>
-      <th class="qwee">
-          01/04/2022
-      </th>
-       <th>
-         <label class="qwee">  03/05/2022</label>
-       </th>
-       <th>
-           <label class="qwee">67</label>
-       </th>
-       <th>
-          <label class="qwee">shooes</label>
-      </th>
-      <th>
-        <div class="row-cols-12">
-        <div class="">
-          <button
-          type="button"
-          class="btn btn-dark "
-          data-bs-toggle="modal"
-          data-bs-target="#largeModal"
-        >
-      Edit
-        </button>
-        <button
-        type="button"
-        class="btn btn-danger"
-        data-bs-toggle="modal"
-        data-bs-target="#largeModal"
-      >
-   Delete
-      </button>
-      
+      </table>
         
           </div>
         </div>
@@ -892,6 +544,30 @@ adidas,puma,nike
                         <button type="button" onclick="send()" class="btn btn-primary">send</button>
                       </div>
                     </div>
+                    <div class="tab-pane fade" id="navs-pills-justified-editHome" role="tabpanel">
+                   
+                      <div class="d-xxl-flex justify-content-center flex-row bd-highlight">
+                        <div class="p-5 bd-highlight">  <button type="button" 
+                          data-bs-toggle="modal"
+                          data-bs-target="#largeModal"
+                          onclick="add()"
+                          class="btn btn-dark">add trip</button></div>
+                        <div class="p-5 bd-highlight">  <button type="button"  class="btn btn-dark">add to home</button></div>
+                        <div class="p-5 bd-highlight">  <button type="button"  class="btn btn-dark">add offer</button></div>
+
+
+                        <div class="p-5 bd-highlight">  <button type="button" 
+                          data-bs-toggle="modal"
+                          data-bs-target="#largeModalRisk"
+                          class="btn btn-dark">add risk</button></div>
+                      </div>
+ 
+                       
+                     </div>
+                       
+                      
+                     </div>
+                   </div>
                   </div>
                 </div>
               </div>
@@ -945,13 +621,13 @@ adidas,puma,nike
 
 
     <div class="col-lg-4 col-md-6">
-      <small class="text-light fw-semibold">Sizes</small>
+  
 
       <div class="modal fade" id="smallModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-sm" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel2">Edit trip</h5>
+              <h5 class="modal-title" id="exampleModalLabel2">Add trip</h5>
               <button
                 type="button"
                 class="btn-close"
@@ -991,7 +667,7 @@ adidas,puma,nike
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel3">Edit Trip</h5>
+              <h5 class="modal-title" id="exampleModalLabel3">Add Trip</h5>
               <button
                 type="button"
                 class="btn-close"
@@ -1003,41 +679,41 @@ adidas,puma,nike
               <div class="row g-2">
                 <div class="col mb-0">
                   <label for="emailLarge" class="form-label">Trip</label>
-                  <input type="text" id="emailLarge" class="form-control"  />
+                  <input type="text" id="trip" class="form-control"  />
                 </div>
                 <div class="col mb-0">
-                  <label for="emailLarge" class="form-label">Cargo COmpanies</label>
-                  <input type="text" id="emailLarge" class="form-control"  />
+                  <label for="emailLarge" class="form-label">Cargo Companies</label>
+                  <input type="text" id="cargoCompanies" class="form-control"  />
                 </div>
               </div>
               <div class="row g-2">
                 <div class="col mb-0">
                   <label for="emailLarge" class="form-label">Origin</label>
-                  <input type="text" id="emailLarge" class="form-control"  />
+                  <input type="text" id="origin" class="form-control"  />
                 </div>
                 <div class="col mb-0">
                   <label for="dobLarge" class="form-label">Destination</label>
-                  <input type="text" id="dobLarge" class="form-control" />
+                  <input type="text" id="destination" class="form-control" />
                 </div>
               </div>
               <div class="row g-2">
                 <div class="col mb-0">
-                  <label for="emailLarge" class="form-label">EDepartue</label>
-                  <input type="text" id="emailLarge" class="form-control"  />
+                  <label for="emailLarge" class="form-label">Departue</label>
+                  <input type="text" id="departure" class="form-control"  />
                 </div>
                 <div class="col mb-0">
                   <label for="dobLarge" class="form-label">Arrival</label>
-                  <input type="text" id="dobLarge" class="form-control"  />
+                  <input type="text" id="arrival" class="form-control"  />
                 </div>
               </div>
               <div class="row g-2">
                 <div class="col mb-0">
                   <label for="emailLarge" class="form-label">Vessels</label>
-                  <input type="text" id="emailLarge" class="form-control"  />
+                  <input type="number" id="vessels" class="form-control"  />
                 </div>
                 <div class="col mb-0">
                   <label for="dobLarge" class="form-label">route</label>
-                  <input type="text" id="dobLarge" class="form-control" />
+                  <input type="text" id="route" class="form-control" />
                 </div>
               </div>
             </div>
@@ -1045,11 +721,112 @@ adidas,puma,nike
               <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
                 Close
               </button>
-              <button type="button" class="btn btn-dark">Save changes</button>
+              <button type="button" onclick="add()" class="btn btn-dark">Add Trip</button>
+              <button type="button" onclick="vieww()" class="btn btn-dark">view1</button>
+             
             </div>
           </div>
         </div>
       </div>
+
+
+
+      <div class="modal fade" id="largeModalRisk"  >
+        <div class="modal-dialog modal-lg" >
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel3">Add risk</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="row g-2">
+                <div class="col mb-0">
+                  <label for="emailLarge" class="form-label">Risk name</label>
+                  <input type="text" id="riskName" class="form-control"  />
+                </div>
+                <div class="col mb-0">
+                  <label for="emailLarge" class="form-label">Risk danger level</label>
+                  <input type="text" id="dangerLevel" class="form-control"  />
+                </div>
+              </div>
+              <div class="row g-2">
+                <div class="col mb-0">
+                  <label for="emailLarge" class="form-label">Risk delay duration</label>
+                  <input type="text" id="delay" class="form-control"  />
+                </div>
+                <div class="col mb-0">
+                  <label for="dobLarge" class="form-label">Is known before</label>
+                  <input type="text" id="isKnownBefore" class="form-control" />
+                </div>
+              </div>
+              <div class="row g-2">
+                <div class="col mb-0">
+                  <label for="emailLarge" class="form-label">solution needed</label>
+                  <input type="text" id="solutionNeeded" class="form-control"  />
+                </div>
+                <div class="col mb-0">
+                  <label for="dobLarge" class="form-label">Status</label>
+                  <input type="text" id="status" class="form-control" required />
+                </div>
+              </div>
+              <div class="row g-2">
+                <div class="col mb-0">
+                  <label for="emailLarge" class="form-label">Description</label>
+                  <input type="text" id="description" class="form-control"  />
+                </div>
+               
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                Close
+              </button>
+              <button type="button" onclick="create()"  class="btn btn-dark"  data-toggle="modal"  >Add risk</button>
+              <a type="button" href="viewRisks.html"  class="btn btn-dark"    >view risks</a>
+              <button type="button" onclick="getit()"  class="btn btn-dark"  data-toggle="modal"  >get</button>
+            </div>
+            <p class="asddsa" id="l">
+
+            </p>
+            <p class="asddsa" id="we">
+
+            </p>
+            <!-- <table>
+              <tr>
+                <th>
+                  risk name
+                </th>
+                <th>
+                  risk danger level
+                </th>
+                <th>
+                  risk delay duration
+                </th>
+                <th>
+                  is known before
+                </th>
+                <th>
+                  solution needed
+                </th>
+                <th>
+                  status
+                </th>
+                <th>
+                  descrition
+                </th>
+              </tr>
+            </table> -->
+          </div>
+       
+        </div>
+       
+      </div>
+      
       <!-- Extra Large Modal -->
       <div class="modal fade" id="exLargeModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-xl" role="document">
@@ -1092,10 +869,34 @@ adidas,puma,nike
       </div>
      
     </div>
+<!-- Different sized modals can be used with the help of .modal-{sm|lg|xl} class -->
+<div class="modal" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="addToHome">POST TO HOME</h5>
+        <button type="button" class="btn-close" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-floating">
+          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px"></textarea>
+          <label for="floatingTextarea">Comments</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-    
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
+ 
+    
+   <script src="../assets/js/classes.js"></script> 
+    <!-- <script src="../assets/js/classes1.js"></script> -->
     <script src="../assets/vendor/libs/jquery/jquery.js"></script>
     <script src="../assets/vendor/libs/popper/popper.js"></script>
     <script src="../assets/vendor/js/bootstrap.js"></script>
