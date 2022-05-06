@@ -7,6 +7,7 @@ function first(){
 class Account(){
     constructor(email,password,firstName,lastName,phoneNumber){
         this.email = email;
+        this.email.type = "email";
         this.password = password;
         this.firstName = firstName;
         this.lastName =  lastName;
