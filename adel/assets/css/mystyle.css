@@ -16,13 +16,51 @@ body{
     margin-bottom: 2%;
 }
 .mainTable{
-  margin-left: 100px !important;
+  margin-top: 20px !important;
+  width: 800px !important;
 }
+.qwe{
+  color: rgb(30, 66, 157) !important ;
+  text-shadow: darkblue;
+font-weight: bold;
+font-size: large;
+}
+.qwe1{
+  color: rgb(30, 66, 157) !important ;
+  text-shadow: darkblue;
+font-weight: bold;
+font-size: small;
+}
+.qwee{
+  color: rgb(30, 66, 157) !important ;
+  text-shadow: darkblue;
+font-size: small;
 
+
+}
+/* .trtr{
+   background-color: rgb(207, 237, 255); 
+  
+} */
+.ttt{
+  width: 115% !important;
+}
+.tttt{
+  width: 130% !important;
+}
  * {
     box-sizing: border-box;
   }
+  .marg{
+    margin-left: 20px;
+  }
+  .text4{
+    vertical-align: center;
+    width:30px;
+font-size: 20px !important;
+  }
   
+ 
    /* td{
    
     height: 2% !important;
@@ -108,7 +146,16 @@ h3{
 height: 60px !important;
 margin-bottom: 20px;
 margin-left:20 px;
+
     }
+
+    .mmmCard{
+       
+      height: 60px !important;
+      margin-top: 35px !important;
+      margin-left:20 px;
+      
+          }
     /* .td{
         padding-left: 60px;
     } */
@@ -117,10 +164,21 @@ margin-left:20 px;
           padding:5px; */
           /* text-align: center; */
           /* vertical-align: center; */
-          padding: 1px;
+          margin-top: 18px;
+          margin-left:6px !important ;
           color: rgb(30, 66, 157) !important ;
-          font-size:20px !important;
+          font-size:16px !important;
       }
+      .texttt{
+        /* margin-:15px;
+        padding:5px; */
+        /* text-align: center; */
+        /* vertical-align: center; */
+        margin-top: 4px;
+        margin-left:6px !important ;
+        color: rgb(30, 66, 157) !important ;
+        font-size:20px !important;
+    }
       .text123{
         /* margin-:15px;
         padding:5px; */
@@ -172,4 +230,107 @@ margin-left:20 px;
 .myaside{
     width:300px !important;
     height: 800px !important;
+}
+.myimg{
+  width: 800px;;
+  height: 300px;
+  margin-left: 130px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+.text12{
+  margin-top: 6px;
+  color: rgb(30, 66, 157) !important ;
+  font-size:14px !important;
+
+  margin-left: 6px !important;
+}
+.mybtn1{
+  height:50px !important;
+
+}
+.text123{
+  margin-top: 6px;
+  color: rgb(30, 66, 157) !important ;
+  font-size:14px !important;
+
+  margin-left: 6px !important;
+  font-weight: bold;
+}
+.myimg1{
+  width: 800px;;
+  height: 300px;
+  margin-left: 55px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+.aaaa{
+  font-size: 15px;
+  width: 40px;
+}
+.cardcar{
+
+    font-size: 15px;
+    width: 80px;
+  
+}
+.width12{
+  width:600px
+}
+
+.text1231{
+  font-size: xx-large !important;
+}
+.darken{
+  color: rgba(13, 18, 80, 0.895) !important;
+}
+.card1231{
+  width:400px !important;
+  align-items: center !important;
+  vertical-align: center !important;
+  
+}
+
+.cont4{
+  width:800px !important;
+  height:1200px !important;
+}
+btn-width1{
+  width:100px !important;
+}
+.bgbg{
+background-color: rgb(217, 245, 253);
+width:1600px;
+height:400px;
+border-radius: 20px;
+margin-bottom: 10px;
+}
+.messageTable{
+width:800px;
+
+}
+.mypara{
+background-color: rgb(3, 16, 82);
+width:fit-content ;
+border-radius: 20px;
+padding:10px;
+margin-top: 5px;
+color: rgb(255, 255, 255);
+font-size: medium;
+}
+.asddsa{
+  background: rgba(152, 226, 255, 0.916);
+  color: rgb(28, 42, 85);
+  font-size: 30px;
+  width:800px !important;
+  align-self: center;
+}
+.myTablert{
+  margin-right: -150px !important;
+ width:500px !important;
+}
+.hhhh{
+  /* margin-right: -110px !important; */
+ width:800px !important;
+ margin-left: 70px;
 }
