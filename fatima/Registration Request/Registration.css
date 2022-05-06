@@ -18,7 +18,8 @@
     }
 
 .info-btn span i{
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  color: #0172ab !important;
 }
     
 .info-btn {
@@ -26,7 +27,7 @@
   color: #8692A6;
   outline: none;
   border: none;
-  background: transparent;
+  /* background: transparent; */
   /* display: flex;
   align-items: center; */
   transition: all .25s ease-in;
@@ -36,10 +37,365 @@ button {
   cursor: pointer;
 }
 .my-btnn{
-  background-color: #0d596a !important;
+  background-color: #0172ab !important;
   color: #fbfbfb !important;
+  box-shadow: 3px 4px 8px rgb(54, 53, 53);
+  border-radius: 7px;
 }
 .my-btnn:hover{
   background-color: #fbfbfb !important;
-  color: #0d596a !important;
+  color: #0172ab !important;
 }
+.my-inputs{
+  border-radius: 7px !important;
+  box-shadow: 5px 4px 8px gray;
+}
+.my-label{
+  margin-bottom: 10px !important;
+}
+p,hr{
+  font-size: 1.2rem;
+  margin-block: 1rem;
+}
+h4{
+  margin-bottom: 35px !important;
+  color: #0172ab !important;
+}
+.my-h4{
+  margin-top: -40px !important;
+}
+.header h1{
+  font-weight: 700px;
+  text-align: left;
+  position: relative;
+  animation-name: SlideOutRight;
+  animation-duration: 2s;
+}
+@keyframes SlideOutRight {
+  from {left:-400px; top:0px;}
+  to {left:10px; top:0px;}
+}
+.header p{
+  font-weight: 500px;
+  text-align: left;
+  position: relative;
+  animation-name: SlideInDown;
+  animation-duration: 2s;
+}
+@keyframes SlideInDown {
+  from {right:-400px; top:0px;}
+  to {right:10px; top:0px;}
+}
+.my-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.my-hr{
+  margin-top: -32px;
+}
+
+
+
+
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 350px;
+  background-color: #0172ab;
+  color: #fbfbfb;
+  text-align: center;
+  border-radius: 7px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left:50%;
+  margin-left: 20px;
+  margin-bottom: -80px;
+  box-shadow: 3px 4px 8px rgb(54, 53, 53);
+
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+  
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --background-color: #fbfbfb;
+    --primary-color: #0172ab;
+    --secondary-color: #025c7a;
+    --small-text-color: #333;
+    --gap: 2rem;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--background-color);
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+a{
+    text-decoration: none !important;
+    color: var(--background-color) !important;
+    cursor: pointer !important;
+}
+
+ul{
+    list-style: none;
+}
+
+button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+header{
+    width:100vw;
+    height: 5rem;
+    background-color: var(--primary-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+
+.nav-bar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+}
+
+.list-item{
+    color: var(--background-color);
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 7px;
+}
+
+.list-item:hover{
+    background-color: rgba(51, 51, 51, 0.425);
+}
+
+.personal-profile{
+    font-size: 2rem
+}
+
+/* menu for mobile and tablet */
+.menu{
+    position: absolute;
+    top: 7rem;
+    right: 1.5rem;
+    width: 20rem;
+    padding: 1.5rem;
+    border-radius: 15px;
+    background-color: var(--primary-color);
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity .25s ease-in;
+}
+
+.menu .list-item{
+   margin-bottom: .7rem;
+}
+
+.close-menu-icon,.open-menu-icon{
+    font-size: 2rem;
+    color: var(--background-color);
+}
+
+.close-menu-icon{
+    display: none;
+}
+
+.menu.activated{
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 1px 1px 1rem rgba(51, 51, 51, 0.651);
+}
+
+.menu-toggle-icon.activated .open-menu-icon{
+    display: none;
+}
+
+.menu-toggle-icon.activated .close-menu-icon{
+    display: block;
+}
+
+.menu-toggle-icon{
+    display: none;
+}
+
+.menu-toggle-icon{
+    background-color: var(--primary-color);
+}
+
+@media screen and (max-width:768px) {
+    .menu-toggle-icon{
+        display: block;
+    }
+
+    .hidden-lap{
+        display: none;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+}
+
+.drop-down-content {
+    display: none;
+    position: absolute;
+    background-color: var(--background-color);
+    border-radius: 15px;
+    min-width: 160px;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 50%);
+    z-index: 999;
+  }
+
+  .drop-down-content a {
+    float: none;
+    color: var(--secondary-color) !important;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .drop-btn{
+      background-color: transparent;
+      color: var(--background-color);
+      font-size: 1.05rem;
+  }
+
+  .drop-down:hover .drop-down-content {
+    display: block;
+  }
+
+  
+footer{
+    width: 100%;
+    height: auto;
+    background-color: var(--primary-color);
+    padding: 3rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: #111;
+    /* position: fixed;
+    bottom: 0;
+    left: 0; */
+}
+
+footer h1{
+    margin-bottom: 1rem;
+}
+
+footer li{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+footer .list-item{
+    background-color: transparent !important;
+}
+
+.social-media i{
+    font-size: 2rem;
+    margin-right: .5rem;
+}
+
+.social-media i:hover{
+    color: var(--small-text-color);
+}
+
+footer li{
+    cursor: pointer;
+}
+
+.useful-links li:hover{
+    transform: scale(1.1);
+    color: var(--background-color);
+}
+.logo1{
+    background: url(logo.png) center;
+    background-size: cover !important;
+    object-fit: cover !important;
+    width: 110px !important;
+    height: 110px !important;
+}
+hr{
+  border: 1px solid #0172ab !important;
+}
+.loginLink{
+  color: var(--secondary-color) !important;
+  font-weight: bold;
+}
+
+
+

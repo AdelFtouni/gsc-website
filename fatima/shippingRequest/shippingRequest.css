@@ -1,11 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --background-color: #fbfbfb;
+    --primary-color: #0172ab;
+    --secondary-color: #025c7a;
+    --small-text-color: #333;
+    --gap: 2rem;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--background-color);
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+a{
+    text-decoration: none;
+    color: var(--background-color);
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+}
+
+button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+header{
+    width:100vw;
+    height: 5rem;
+    background-color: var(--primary-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+
+.nav-bar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+}
+
+.list-item{
+    color: var(--background-color);
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 7px;
+}
+
+.list-item:hover{
+    background-color: rgba(51, 51, 51, 0.425);
+}
+
+.personal-profile{
+    font-size: 2rem
+}
+
+/* menu for mobile and tablet */
+.menu{
+    position: absolute;
+    top: 7rem;
+    right: 1.5rem;
+    width: 20rem;
+    padding: 1.5rem;
+    border-radius: 15px;
+    background-color: var(--primary-color);
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity .25s ease-in;
+}
+
+.menu .list-item{
+   margin-bottom: .7rem;
+}
+
+.close-menu-icon,.open-menu-icon{
+    font-size: 2rem;
+    color: var(--background-color);
+}
+
+.close-menu-icon{
+    display: none;
+}
+
+.menu.activated{
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 1px 1px 1rem rgba(51, 51, 51, 0.651);
+}
+
+.menu-toggle-icon.activated .open-menu-icon{
+    display: none;
+}
+
+.menu-toggle-icon.activated .close-menu-icon{
+    display: block;
+}
+
+.menu-toggle-icon{
+    display: none;
+}
+
+.menu-toggle-icon{
+    background-color: var(--primary-color);
+}
+
+@media screen and (max-width:768px) {
+    .menu-toggle-icon{
+        display: block;
+    }
+
+    .hidden-lap{
+        display: none;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+}
+
+.drop-down-content {
+    display: none;
+    position: absolute;
+    background-color: var(--background-color);
+    border-radius: 15px;
+    min-width: 160px;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 50%);
+    z-index: 999;
+  }
+
+  .drop-down-content a {
+    float: none;
+    color: var(--secondary-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .drop-btn{
+      background-color: transparent;
+      color: var(--background-color);
+      font-size: 1.05rem;
+  }
+
+  .drop-down:hover .drop-down-content {
+    display: block;
+  }
+
+  
+footer{
+    width: 100%;
+    height: auto;
+    background-color: var(--primary-color);
+    padding: 3rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: #111;
+    /* position: fixed;
+    bottom: 0;
+    left: 0; */
+}
+
+footer h1{
+    margin-bottom: 1rem;
+}
+
+footer li{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+footer .list-item{
+    background-color: transparent !important;
+}
+
+.social-media i{
+    font-size: 2rem;
+    margin-right: .5rem;
+}
+
+.social-media i:hover{
+    color: var(--small-text-color);
+}
+
+footer li{
+    cursor: pointer;
+}
+
+.useful-links li:hover{
+    transform: scale(1.1);
+    color: var(--background-color);
+}
+
+
 .my-shippingRequest{
     font-weight: bold !important;
-    color: #0d596a !important;
+    color: #0172ab !important;
     padding-top: 25px !important;
     margin-left: -35px !important;
 }
 .my-para-rate{
-    margin-left: -35px !important;
+    /* margin-left: -35px !important; */
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
 }
 .my-details{
     border-radius: 7px !important;
@@ -13,26 +237,225 @@
 }
 .my-btn-shipping{
     border-radius: 7px !important;
-    background-color: #0d596a !important;
-    color: white !important;
-    box-shadow: 5px 4px 8px #0d596a;
+    background-color: #0172ab !important;
+    color: #fbfbfb !important;
+    box-shadow: 5px 4px 8px rgb(95, 94, 94);
+    margin-bottom: 70px !important;
+    border-color: transparent!important;
 } 
 .my-detailss{
     box-shadow: 5px 4px 8px gray;
 }
 .page-headership{
-    background: linear-gradient(rgba(6, 3, 21, .5), rgba(6, 3, 21, .5)), url(shippingRequestImg2.png) center center no-repeat;
+    background: url(shippingImg4.jpg) center center no-repeat;
     background-size: cover;
- 
-    }
-/* .my-text-img{
-    color: #0d596a !important;
-} */
-
+    object-fit: cover !important;
+    padding-top: 20px !important;
+}
 .my-loc span i{
 font-size: 5rem;
-color: #0d596a !important;
+color: #0172ab !important;
 }
 .my-loc{
     padding-left: 100px !important;
 } 
+.my-icon span i{
+    font-size: 1.5rem !important;
+    color: #0172ab !important;
+}
+.header h1{
+    font-weight: 700px;
+    text-align: right;
+    position: relative;
+    animation-name: SlideOutRight;
+    animation-duration: 2s;
+  }
+  @keyframes SlideOutRight {
+    from {left:-400px; top:0px;}
+    to {left:10px; top:0px;}
+  }
+/* header p{
+    font-weight: 500px;
+    text-align: left;
+    position: relative;
+    animation-name: SlideInDown;
+    animation-duration: 2s;
+  }
+  @keyframes SlideInDown {
+    from {right:-400px; top:0px;}
+    to {right:10px; top:0px;}
+  } */
+  .header p{
+    font-weight: 500px !important;
+    text-align: right;
+    position: relative;
+    animation-name: ParagOpacity;
+    animation-duration: 10s;
+  }
+  @keyframes ParagOpacity {
+    from {opacity: 0;}
+    to { top:0; opacity: 1;}
+  }
+  .my-description{
+    box-shadow: 3px 4px 8px rgb(49, 47, 47);
+  }
+  .my-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .my-shipments{
+    color:#0172ab;
+  }
+/* Tooltip container */
+.tooltips {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltips .tooltiptexts {
+  visibility: hidden;
+  width: 120px;
+  background-color:#0172ab;
+  color: #fbfbfb;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 7px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltips .tooltiptexts::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltips:hover .tooltiptexts {
+  visibility: visible;
+  opacity: 1;
+}
+hr{
+  border: 1px solid #0172ab;
+}
+/* .rows{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  width: 90%;
+  text-align: center;
+}
+.main-rows{
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+.rows span i{
+  font-size: 50px !important;
+}
+.type-img{
+  background: url(type.png) center;
+  width: 120px;
+  height: 100px;
+  background-size: cover;
+  object-fit: cover !important;
+  padding-top: 20px !important;
+  margin-left: 60px;
+  margin-bottom: 20px;
+
+}
+.hazardous-img{
+  background: url(hazardouss.png) center;
+  width: 120px;
+  height: 100px;
+  background-size: cover;
+  object-fit: cover !important;
+  padding-top: 20px !important;
+  margin-left: 60px;
+  margin-bottom: 20px;
+}
+.volume-img{
+  background: url(volume.png) center;
+  width: 120px;
+  height: 100px;
+  background-size: cover;
+  object-fit: cover !important;
+  padding-top: 20px !important;
+  margin-left: 60px;
+  margin-bottom: 20px;
+
+}
+.dimension-img{
+  background: url(dimension.png) center;
+  width: 120px;
+  height: 100px;
+  background-size: cover;
+  object-fit: cover !important;
+  padding-top: 20px !important;
+  margin-left: 60px;
+  margin-bottom: 20px;
+
+}
+.train-img{
+  background: url(train.png) center;
+  width: 60px;
+  height: 40px;
+  background-size: cover;
+  object-fit: cover !important;
+  padding-top: 20px !important;
+  margin-left: 60px;
+  margin-bottom: 20px;
+}
+
+a:hover{
+  text-decoration: none !important;
+  color: var(--background-color) !important;
+}
+.location-img{
+  background: url(location.png) center;
+  width: 60px;
+  height: 80px;
+  background-size: cover;
+  object-fit: cover !important;
+  padding-top: 20px !important;
+  margin-left: 100px;
+  margin-bottom: 20px;
+}
+.marine-img{
+  background: url(marine.png) center;
+  width: 60px;
+  height: 40px;
+  background-size: cover;
+  object-fit: cover !important;
+  padding-top: 20px !important;
+  margin-left: 60px;
+  margin-bottom: 20px;
+
+}
+.logo2{
+    background: url(logo.png) center;
+    background-size: cover !important;
+    object-fit: cover !important;
+    width: 110px !important;
+    height: 110px !important;
+}
+
+ 
