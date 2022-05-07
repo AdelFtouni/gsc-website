@@ -167,6 +167,17 @@ header{
 
     footer{
         flex-direction: column;
+        align-items: flex-start;
+    }
+    footer div {
+        margin-bottom: 1rem;
+    }
+    .services-card h1{
+        font-size: 1.2rem;
+    }
+
+    .services-card p{
+        font-size: .7rem;
     }
     
 }
@@ -486,7 +497,9 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    color: #111;
+    color:var(--background-color);
+    border-radius: 30px 30px 0 0;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 55%);
 }
 
 footer h1{
@@ -506,14 +519,22 @@ footer .list-item{
 .social-media i{
     font-size: 2rem;
     margin-right: .5rem;
+    padding: 1rem;
+    border-radius: 15px;
 }
 
 .social-media i:hover{
-    color: var(--small-text-color);
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 55%);
 }
 
 footer li{
     cursor: pointer;
+}
+
+.brand-footer{
+    text-align: center;
 }
 
 .titles-tab{
@@ -582,4 +603,26 @@ footer li{
  .notification_icon{
      font-size: 1.2rem !important;
      color: var(--secondary-color) !important;
+ }
+
+ .feedback-btn{
+     position: fixed;
+     top: 25rem;
+     left:-5rem;
+     width: max-content;
+     padding: 1rem 2rem;
+     color: var(--background-color);
+     background:  linear-gradient(120deg, var(--primary-color),var(--secondary-color), rgba(255, 255, 255, 0.553));
+     box-shadow: 0 5px 25px rgba(1, 1, 1, 15%) ;
+     display: flex;
+     align-items: center;
+     border-radius: 0 0 15px 15px;
+     transform: rotate(-90deg);
+     z-index: 9999;
+     cursor: pointer;
+     transition: all .50s ease;
+ }
+
+ .feedback-btn:hover{
+     transform: rotate(-90deg) translateY(2rem) scale(1.1);
  }

@@ -71,7 +71,7 @@ const messagesContainer = selectElement(".messages-container");
 sendMessageBtn.addEventListener('click', sendMessage);
 
 function sendMessage(event){
-    event.preventDefault();
+        event.preventDefault();
     const messageDiv = document.createElement("div");
     messageDiv.classList.add("message");
     const newMessage = document.createElement('span');
@@ -495,7 +495,7 @@ window.addEventListener('load', notificationMessage);
 
 const form = document.querySelector('#form_upload');
 const uploadBtn = form.querySelector('#upload-file-btn');
-
+const sendFile = document.getElementById('#send-file');
 uploadBtn.onchange = ({target}) => {
     let file = target.files[0];
     if(file){
@@ -515,26 +515,31 @@ function uploadFile(name){
         spinner = `<div class="upload-message">
         <span class="icon-file-upload"><i class="ri-folder-shared-fill"></i></span>
         <span class="name-file-upload">${name}</span>
+        <p>${fileTotal}KB</p>
         <div class="progress-bar">
         <div class="progress" style="width: ${fileLoaded}%"></div>
         </div>
         </div>`;
     });
+
     let formData = new FormData(form);
     xhr.send(formData);
-    uploadBtn.addEventListener('click', function(event){
-        event.preventDefault();
-        const messageDiv = document.createElement("div");
-        messageDiv.classList.add("message");
-        const newMessage = document.createElement('span');
-        const dateOfMessage = document.createElement('span');
-        dateOfMessage.className = 'date_of_message';
-        let dateNow = new Date();
-        dateOfMessage.innerText = dateNow.getHours() + ":" + dateNow.getMinutes();
-        newMessage.innerHTML = spinner;
-        newMessage.classList.add('message-item');
-        messageDiv.appendChild(newMessage);
-        messageDiv.appendChild(dateOfMessage);
-        messagesContainer.appendChild(messageDiv);
-      });
+    
+        uploadBtn.addEventListener('click', () => {
+            const messageDiv = document.createElement("div");
+            messageDiv.classList.add("message");
+            const newMessage = document.createElement('span');
+            const dateOfMessage = document.createElement('span');
+            dateOfMessage.className = 'date_of_message';
+            let dateNow = new Date();
+            dateOfMessage.innerText = dateNow.getHours() + ":" + dateNow.getMinutes();
+            newMessage.innerHTML = spinner;
+            newMessage.classList.add('message-item');
+            messageDiv.appendChild(newMessage);
+            messageDiv.appendChild(dateOfMessage);
+            messagesContainer.appendChild(messageDiv);
+            spinner =``;
+        } );
+    
 }
+
