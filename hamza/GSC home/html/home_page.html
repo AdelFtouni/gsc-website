@@ -159,15 +159,21 @@
 
                     <div class="form-container" id="schedule" style="display: none">
                         
-                        
-                        <input type="text" class="tracking-code-input" placeholder="Place of loading">
-                        
 
-                        
-                        <input type="text" class="tracking-code-input" placeholder="Place of discharge">
-                        
-
-                        <button class="tracking-code-btn">Search</button>
+                        <div class="icons-beside-inputs-schedule">
+                            <div class="icons-schedule">
+                                <span><i class="ri-road-map-line"></i></span>
+                                <span class="route-line-icon"><i class="ri-route-line"></i></span>
+                               <span> <i class="ri-map-pin-5-line"></i></span>
+                            </div>
+                            
+                           <div class="inputs-schedule">
+                            <input type="text" class="tracking-code-input" id="input-origin-schedule" placeholder="Place of loading">
+                            <input type="text" class="tracking-code-input" id="input-destination-schedule" placeholder="Place of discharge">
+                           </div>
+                        </div>
+                
+                        <button class="tracking-code-btn" id="search-schedule-btn">Search</button>
             
                     </div>
                 </div>
