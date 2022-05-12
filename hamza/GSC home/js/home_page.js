@@ -83,3 +83,5 @@ function scheduleFun(){
         document.location.href = '/Kawthar/schedule.html';
     }
 }
+
+

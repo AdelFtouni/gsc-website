@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>GSC</title>
 </head>
 <style>
@@ -136,7 +137,7 @@
         <a href="/fatima/Feedback/Feedback.html"><div class="feedback-btn">Feedback</div></a>
         <section id="hero-section">
             <div class="boat-animation-part">
-                <img src="../images/boat-img.png" alt="">
+                <img src="../images/boat-img1.png" alt="">
             </div>
             <div class="tracking-code-part">
                 <div class="name-of-web">
@@ -217,7 +218,7 @@
             </h2>
 
             <div class="services-card-container">
-                <div class="services-card">
+                <div class="services-card" data-aos="zoom-in">
                     <img src="../images/ai-services.jpg" alt="">
                     <div class="services-card-description">
                         <h1>Air freight</h1>
@@ -228,7 +229,7 @@
                     </div>
                 </div>
     
-                <div class="services-card">
+                <div class="services-card" data-aos="zoom-out">
                     <img src="../images/ocean-services.jpg" alt="">
                     <div class="services-card-description">
                         <h1>Ocean freight</h1>
@@ -239,7 +240,7 @@
                     </div>
                 </div>
     
-                <div class="services-card">
+                <div class="services-card" data-aos="zoom-in">
                     <img src="../images/road-services.jpg" alt="">
                     <div class="services-card-description">
                         <h1>Road freight</h1>
@@ -250,7 +251,7 @@
                     </div>
                 </div>
     
-                <div class="services-card">
+                <div class="services-card" data-aos="zoom-out">
                     <img src="../images/train-services.jpg" alt="">
                     <div class="services-card-description">
                         <h1>Train freight</h1>
@@ -261,7 +262,7 @@
                     </div>
                 </div>
     
-                <div class="services-card">
+                <div class="services-card" data-aos="zoom-in">
                     <img src="../images/custom-services.jpg" alt="">
                     <div class="services-card-description">
                         <h1>Custom clearance</h1>
@@ -272,7 +273,7 @@
                     </div>
                 </div>
     
-                <div class="services-card">
+                <div class="services-card" data-aos="zoom-out">
                     <img src="../images/warehouse-services.jpg" alt="">
                     <div class="services-card-description">
                         <h1>Warehouse solutions</h1>
@@ -294,7 +295,7 @@
 
            <div class="container-sepcial">
 
-            <div class="special-card">
+            <div class="special-card" data-aos="flip-right">
                 
                 <img src="../images/specialCargo.png" alt="" class="image-style">
             
@@ -310,7 +311,7 @@
         </div>
 
 
-        <div class="special-card">
+        <div class="special-card" data-aos="flip-left">
         <div class="description description-about">
             <h1>Refrigated</h1>
             <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
@@ -324,7 +325,7 @@
     </div>
 
 
-    <div class="special-card">
+    <div class="special-card" data-aos="flip-right">
                 
         <img src="../images/oversized.jpeg" alt="" class="image-style">
         
@@ -338,7 +339,7 @@
       </div>
     </div>
 
-    <div class="special-card">
+    <div class="special-card" data-aos="flip-left">
         <div class="description description-about">
             <h1>Air freight</h1>
             <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
@@ -515,5 +516,11 @@
        }
    })
      </script>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+        AOS.init({
+  duration: 1200,
+})
+      </script>
 </body>
 </html>

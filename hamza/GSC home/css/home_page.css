@@ -201,6 +201,7 @@ header{
     width: 50rem;
     position: absolute;
     left: -35rem;
+    overflow-x: hidden;
     animation: animate-boat 17s .5s infinite ease-in-out;
 }
 
