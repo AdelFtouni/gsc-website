@@ -59,6 +59,8 @@ document.getElementById("continue").addEventListener("click", function(){
 
 })
 
+//Local Storage part
+
 let inputFirstName=document.getElementById('firstName');
 let inputLastName=document.getElementById('lastName');
 let inputPhoneNumber=document.getElementById('phoneNumber');
@@ -75,7 +77,7 @@ let submit=document.getElementById('continue');
 
 //Empty Array To Store The Info
 let arrayOfInfo=[];
-let info;
+
 
 //Check if theres Info In Local Storage
  //if(localStorage.getItem("info")){
@@ -86,7 +88,7 @@ let info;
 //getDataFromLocalStorage();
 
 //Add Info
-submit.addEventListener("click",addInfoToLocalStorage);
+submit.addEventListener("click",addInfoToArray);
 // function myFunction2(){
 //     if(input.value !==""){
 //     //Add Info To Array
@@ -97,44 +99,45 @@ submit.addEventListener("click",addInfoToLocalStorage);
 // }
  function addInfoToArray(){
   // Info Data
-    info={
+    let info={
      id: Date.now(),
-     FirstName:inputFirstName.value,
-     LastName:inputLastName.value,
-     PhoneNumber:inputPhoneNumber.value,
-     Department:inputDepartment.value,
-     CompanyName:inputCompanyName.value,
-     Address:inputAddress.value,
-     CompanyType:inputCompanyType.value,
-     City:inputCity.value,
-     ZipCode:inputZipCode.value,
-     CountryRegion:inputCountryRegion.value,
-     VatNumber:inputVatNumber.value,
-     ColleagueEmail:inputColleagueEmail.value,
+     FirstName: inputFirstName.value,
+     LastName: inputLastName.value,
+     PhoneNumber: inputPhoneNumber.value,
+     Department: inputDepartment.value,
+     CompanyName: inputCompanyName.value,
+     Address: inputAddress.value,
+     CompanyType: inputCompanyType.value,
+     City: inputCity.value,
+     ZipCode: inputZipCode.value,
+     CountryRegion: inputCountryRegion.value,
+     VatNumber: inputVatNumber.value,
+     ColleagueEmail: inputColleagueEmail.value,
     
 };
 
   //push Info To Array Of Info
   arrayOfInfo.push(info);
-   console.log(arrayOfInfo);
+  //  console.log(arrayOfInfo);
   //Add Info To Local Storage
   addInfoToLocalStorage(arrayOfInfo);
   //For Testing
-  console.log(arrayOfInfo);
+  // console.log(arrayOfInfo);
   // console.log(JSON.stringify(arrayOfInfo));
-  addInfoToLocalStorage(info);
+  // addInfoToLocalStorage(info);
 }
 
  function addInfoToLocalStorage(a){
   window.localStorage.setItem("Info", JSON.stringify(a));
  }
-  function getDataFromLocalStorage(){
-   let data=window.localStorage.getItem("info");
-    if(data){
-     a =JSON.parse(data);
-     console.log(a);
-   }
-}
+//  }
+//   function getDataFromLocalStorage(){
+//    let data=window.localStorage.getItem("info");
+//     if(data){
+//      a =JSON.parse(data);
+//      console.log(a);
+//    }
+
 
 
 
