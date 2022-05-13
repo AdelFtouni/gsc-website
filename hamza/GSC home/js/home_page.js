@@ -66,3 +66,22 @@ trackingCodeTabTracking.addEventListener('click', () => {
     hTrackingStyle.style.transition = "all .30s ease-in-out";
     tracking.style.transition = "all .30s ease-in-out";
 });
+
+const inputOriginSchedule = selectElement('#input-origin-schedule');
+const inputDestinationSchedule = selectElement('#input-destination-schedule');
+const searchScheduleBtn = selectElement('#search-schedule-btn');
+
+searchScheduleBtn.addEventListener('click', scheduleFun);
+
+function scheduleFun(){
+    if(inputDestinationSchedule.value == '' || inputOriginSchedule.value == ''){
+        inputDestinationSchedule.style.border = "1px solid red";
+        inputOriginSchedule.style.border = "1px solid red";
+    }else{
+        inputDestinationSchedule.style.border = "1px solid green";
+        inputOriginSchedule.style.border = "1px solid green";
+        document.location.href = '/Kawthar/schedule.html';
+    }
+}
+
+

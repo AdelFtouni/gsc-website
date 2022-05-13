@@ -48,11 +48,13 @@
                         </nav>
 
                         <div class="log-out">
-                          <h6>
-                            <span><i class="ri-logout-circle-line"></i>
-                           </span>
-                           Log out
-                          </h6>
+                          <a href="/fatima/signin/signin.html" class="log-out-href">
+                            <h6>
+                              <span><i class="ri-logout-circle-line"></i>
+                             </span>
+                             Log out
+                            </h6>
+                          </a>
                         </div>
                     
                 </aside>
@@ -68,7 +70,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
                   </div>
                   <div class="toast-body">
-                    Welcome Mr.Foulen, dont't hesitate to message me if you have problems. We are you here for you.
+                    Welcome, Mr.Foulen. Please don't hesitate to message me if you have any problems.
                   </div>
                 </div>
               </div>
@@ -125,11 +127,13 @@
                     <i class="ri-send-plane-fill"></i>
                   </button>
                   
-                    <input type="file" id="upload-file-btn" name="file" hidden>
+                    <input type="file" id="upload-file-btn" name="file" hidden multiple>
                     <label for="upload-file-btn" class="label-upload">
                       <i class="ri-attachment-line"></i>
                     </label>
+                  <button id="send-file">send your file</button>
                   </div>
+
                     
                   <div class="brief-text-container">
 
@@ -163,11 +167,11 @@
                     <label for="floatingInput">Comfirm password</label>
                   </div>
                   <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput adress-input-update" placeholder="New adress">
+                    <input type="text" class="form-control" id="floatingInput address-input-update" placeholder="New adress">
                     <label for="floatingInput">New adress</label>
                   </div>
                   <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput apost-code-input-update" placeholder="New adress">
+                    <input type="text" class="form-control" id="floatingInput post-code-input-update" placeholder="New adress">
                     <label for="floatingInput">Post code</label>
                   </div>
                 </div>

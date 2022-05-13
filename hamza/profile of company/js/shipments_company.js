@@ -71,7 +71,7 @@ const messagesContainer = selectElement(".messages-container");
 sendMessageBtn.addEventListener('click', sendMessage);
 
 function sendMessage(event){
-    event.preventDefault();
+        event.preventDefault();
     const messageDiv = document.createElement("div");
     messageDiv.classList.add("message");
     const newMessage = document.createElement('span');
@@ -316,7 +316,7 @@ let dataOfShipments = [
 
 const tBody = selectElement("#tBody");
 
-// let statusOfshipments = true;
+let statusOfshipments = true;
 
 function pushTableOfShipmentsFun(){
     let table = '';
@@ -348,13 +348,12 @@ function pushTableOfShipmentsFun(){
         <td>${dataOfShipments[i].location}</td>
         <td>${dataOfShipments[i].starting}</td>
         <td>${dataOfShipments[i].arrival}</td>
-        <td>
-            ${dataOfShipments[i].status}
-        </td>
+        <td>${dataOfShipments[i].status} </td>
 
       </tr>`;
     }
      tBody.innerHTML = table;
+     riskProcessClick();
 }
 
 pushTableOfShipmentsFun();
@@ -376,7 +375,7 @@ function whatTypeOfSearch(id){
 }
 
 function searchInTable(value){
-    let table = '';
+    let table = ``;
     if(statusOfSearch == "Origin"){
         for(let i=0; i < dataOfShipments.length; i++){
             if(dataOfShipments[i].origin.toLowerCase().includes(value.toLowerCase())){
@@ -388,10 +387,7 @@ function searchInTable(value){
                 <td>${dataOfShipments[i].location}</td>
                 <td>${dataOfShipments[i].starting}</td>
                 <td>${dataOfShipments[i].arrival}</td>
-                <td>
-                ${dataOfShipments[i].status}
-                </td>
-        
+                <td>${dataOfShipments[i].status} </td>
               </tr>`;
             }
         }
@@ -406,7 +402,7 @@ function searchInTable(value){
                 <td>${dataOfShipments[i].location}</td>
                 <td>${dataOfShipments[i].starting}</td>
                 <td>${dataOfShipments[i].arrival}</td>
-               <td>${dataOfShipments[i].status}</td>
+                <td>${dataOfShipments[i].status}</td>
                </tr>`;
             }
         }
@@ -414,6 +410,7 @@ function searchInTable(value){
 
     tBody.innerHTML = table;
      //  POP-UP RISK DETAILS
+     riskProcessClick();
 }
 
 
@@ -447,7 +444,7 @@ function searchCode(value){
             }
         }
         tBody.innerHTML = table;
-        
+        riskProcessClick();
 }
 
 riskProcessClick();
@@ -495,7 +492,7 @@ window.addEventListener('load', notificationMessage);
 
 const form = document.querySelector('#form_upload');
 const uploadBtn = form.querySelector('#upload-file-btn');
-
+const sendFile = document.getElementById('#send-file');
 uploadBtn.onchange = ({target}) => {
     let file = target.files[0];
     if(file){
@@ -504,35 +501,42 @@ uploadBtn.onchange = ({target}) => {
     }
 }
 
+let spinner= ``;
 function uploadFile(name){
     let xhr = new XMLHttpRequest();
     xhr.open('POST', 'php/upload.php');
     xhr.upload.addEventListener('progress', ({loaded, total}) => {
         let fileLoaded = Math.floor((loaded / total) * 100);
         let fileTotal = Math.floor(total / 1000);
-        let spinner = `<div class="upload-message">
+        console.log(fileLoaded, fileTotal);
+        spinner = `<div class="upload-message">
         <span class="icon-file-upload"><i class="ri-folder-shared-fill"></i></span>
         <span class="name-file-upload">${name}</span>
+        <p>${fileTotal}KB</p>
         <div class="progress-bar">
-        <div class="progress" style="width: ${fileLoaded}"></div>
+        <div class="progress" style="width: ${fileLoaded}%"></div>
         </div>
         </div>`;
-      uploadBtn.addEventListener('click', function(event){
-        event.preventDefault();
-        const messageDiv = document.createElement("div");
-        messageDiv.classList.add("message");
-        const newMessage = document.createElement('span');
-        const dateOfMessage = document.createElement('span');
-        dateOfMessage.className = 'date_of_message';
-        let dateNow = new Date();
-        dateOfMessage.innerText = dateNow.getHours() + ":" + dateNow.getMinutes();
-        newMessage.innerHTML = spinner;
-        newMessage.classList.add('message-item');
-        messageDiv.appendChild(newMessage);
-        messageDiv.appendChild(dateOfMessage);
-        messagesContainer.appendChild(messageDiv);
-      });
     });
+
     let formData = new FormData(form);
     xhr.send(formData);
+    
+        uploadBtn.addEventListener('click', () => {
+            const messageDiv = document.createElement("div");
+            messageDiv.classList.add("message");
+            const newMessage = document.createElement('span');
+            const dateOfMessage = document.createElement('span');
+            dateOfMessage.className = 'date_of_message';
+            let dateNow = new Date();
+            dateOfMessage.innerText = dateNow.getHours() + ":" + dateNow.getMinutes();
+            newMessage.innerHTML = spinner;
+            newMessage.classList.add('message-item');
+            messageDiv.appendChild(newMessage);
+            messageDiv.appendChild(dateOfMessage);
+            messagesContainer.appendChild(messageDiv);
+            spinner =``;
+        } );
+    
 }
+

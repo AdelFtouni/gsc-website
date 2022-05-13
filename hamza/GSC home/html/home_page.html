@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>GSC</title>
 </head>
 <style>
@@ -49,7 +50,7 @@
                                 <i class="ri-arrow-drop-down-fill"></i>
                             </button>
                             <div class="drop-down-content">
-                              <a href="#">Booking</a>
+                              <a href="/fatima/Registration Request/Registration.html">Booking</a>
                               <a href="#special-section">Special cargo</a>
                               <a href="#">oversized cargo</a>
                               <a href="#">Refrigated cargo</a>
@@ -88,11 +89,11 @@
                             <i class="ri-arrow-drop-down-fill"></i>
                         </button>
                         <div class="drop-down-content">
-                          <a href="#">Booking</a>
+                          <a href="/fatima/Registration Request/Registration.html">Booking</a>
                           <a href="#special-section">Special cargo</a>
-                          <a href="#">oversized cargo</a>
-                          <a href="#">Refrigated cargo</a>
-                          <a href="#">Air freight cargo</a>
+                          <a href="#special-section">oversized cargo</a>
+                          <a href="#special-section">Refrigated cargo</a>
+                          <a href="#special-section">Air freight cargo</a>
                         </div>
                       </div> 
                 </li>
@@ -133,10 +134,10 @@
     </header>
 
     <main>
-
+        <a href="/fatima/Feedback/Feedback.html"><div class="feedback-btn">Feedback</div></a>
         <section id="hero-section">
             <div class="boat-animation-part">
-                <img src="../images/boat-img.png" alt="">
+                <img src="../images/boat-img1.png" alt="">
             </div>
             <div class="tracking-code-part">
                 <div class="name-of-web">
@@ -159,15 +160,21 @@
 
                     <div class="form-container" id="schedule" style="display: none">
                         
-                        
-                        <input type="text" class="tracking-code-input" placeholder="Place of loading">
-                        
 
-                        
-                        <input type="text" class="tracking-code-input" placeholder="Place of discharge">
-                        
-
-                        <button class="tracking-code-btn">Search</button>
+                        <div class="icons-beside-inputs-schedule">
+                            <div class="icons-schedule">
+                                <span><i class="ri-road-map-line"></i></span>
+                                <span class="route-line-icon"><i class="ri-route-line"></i></span>
+                               <span> <i class="ri-map-pin-5-line"></i></span>
+                            </div>
+                            
+                           <div class="inputs-schedule">
+                            <input type="text" class="tracking-code-input" id="input-origin-schedule" placeholder="Place of loading">
+                            <input type="text" class="tracking-code-input" id="input-destination-schedule" placeholder="Place of discharge">
+                           </div>
+                        </div>
+                
+                        <button class="tracking-code-btn" id="search-schedule-btn">Search</button>
             
                     </div>
                 </div>
@@ -211,7 +218,7 @@
             </h2>
 
             <div class="services-card-container">
-                <div class="services-card">
+                <div class="services-card" >
                     <img src="../images/ai-services.jpg" alt="">
                     <div class="services-card-description">
                         <h1>Air freight</h1>
@@ -222,7 +229,7 @@
                     </div>
                 </div>
     
-                <div class="services-card">
+                <div class="services-card" >
                     <img src="../images/ocean-services.jpg" alt="">
                     <div class="services-card-description">
                         <h1>Ocean freight</h1>
@@ -266,11 +273,11 @@
                     </div>
                 </div>
     
-                <div class="services-card">
+                <div class="services-card" >
                     <img src="../images/warehouse-services.jpg" alt="">
                     <div class="services-card-description">
                         <h1>Warehouse solutions</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, omnis repellat! Quis et obcaecati dicta!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, omnis repellat! Quis et obcaecati dicta! Voluptates impedit atque porro ab, placeat</p>
                     </div>
                     <div class="read-more">
                         <p>read more ></p>
@@ -288,7 +295,7 @@
 
            <div class="container-sepcial">
 
-            <div class="special-card">
+            <div class="special-card" data-aos="flip-right">
                 
                 <img src="../images/specialCargo.png" alt="" class="image-style">
             
@@ -304,7 +311,7 @@
         </div>
 
 
-        <div class="special-card">
+        <div class="special-card" data-aos="flip-left">
         <div class="description description-about">
             <h1>Refrigated</h1>
             <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
@@ -318,7 +325,7 @@
     </div>
 
 
-    <div class="special-card">
+    <div class="special-card" data-aos="flip-right">
                 
         <img src="../images/oversized.jpeg" alt="" class="image-style">
         
@@ -332,7 +339,7 @@
       </div>
     </div>
 
-    <div class="special-card">
+    <div class="special-card" data-aos="flip-left">
         <div class="description description-about">
             <h1>Air freight</h1>
             <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
@@ -448,31 +455,31 @@
         <div class="brand-footer">
             <ul>
                 <li><img src="../images/logo1.png" alt="" class="logo_image"></li>
-            <li><h6><span class="copyright">&copy; 2022 GSC, all right reserved.</span></h6></li>
             <li class="list-item">
                 <a href="#" class="list-link social-media">
                     <i class="ri-instagram-line"></i>
                 </a>
                 <a href="#" class="list-link social-media">
-                    <i class="ri-twitter-line"></i>
+                    <i class="ri-facebook-circle-line"></i>
                 </a>
                 <a href="#" class="list-link social-media">
-                    <i class="ri-facebook-circle-line"></i>
+                    <i class="ri-twitter-line"></i>
                 </a>
                 
             </li>
+            <li><h6><span class="copyright">&copy; 2022 GSC, all right reserved.</span></h6></li>
             </ul>
 
         </div>
 
         
         <div class="useful-links">
-            <h1>Useful links</h1>
+            <h1>Links</h1>
             <ul>
                 <li>Home</li>
-                <li>services</li>
-                <li>shipping</li>
-                <li>about us</li>
+                <li>Services</li>
+                <li>Booking</li>
+                <li>About us</li>
             </ul>
         </div>
 
@@ -509,5 +516,11 @@
        }
    })
      </script>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+        AOS.init({
+  duration: 1200,
+})
+      </script>
 </body>
 </html>

@@ -432,7 +432,10 @@ tr:nth-child(even) {
 .log-out{
   width: 100%;
   margin-top: 6rem;
-  text-align: center;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #risk-management-container{
@@ -816,6 +819,10 @@ a{
 }
 .progress-bar .progress{
   height: 100%;
-  width: 50%;
+  /* width: 50%; */
   background-color: var(--secondary-color);
+}
+
+#send-file{
+  display: none;
 }
