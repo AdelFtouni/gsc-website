@@ -147,21 +147,21 @@
                 Shipment Requirements
             </h3>
             <br>
-            <form class="needs-validation" novalidate>
+            <form id="myForm" class="needs-validation" novalidate>
                   <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label"> <h4>Description:</h4></label>
-                    <textarea class="my-description form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea class="my-description form-control" id="exampleFormControlTextarea1" value="" rows="3"></textarea>
                   </div>
                   <br> 
                   <h5>Import / Export:</h5> 
                   <div class="form-check">
-                    <input class="my-detailss form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="" required>
+                    <input class="my-detailss form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="Import" required>
                     <label class="form-check-label" for="flexRadioDefault1">
                       Import
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="my-detailss form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked required>
+                    <input class="my-detailss form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="Export" checked required>
                     <label class="form-check-label" for="flexRadioDefault2">
                       Export
                     </label>
@@ -179,7 +179,7 @@
                   <div class="row">
                   <div class="col-sm-3">
                     <div class="form-check">
-                      <input class="my-detailss form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                      <input class="my-detailss form-check-input" type="checkbox" value="Container Type: 20' Dry van" id="flexCheckDefault3">
                       <label class="form-check-label" for="flexCheckDefault">
                         20' Dry van
                       </label>
@@ -187,7 +187,7 @@
                     </div>
                     <div class="col-sm-3">
                       <div class="form-check">
-                        <input class="my-detailss form-check-input" type="checkbox" value="" id="flexCheckDefault4">
+                        <input class="my-detailss form-check-input" type="checkbox" value="Container Type: 40' Reefer" id="flexCheckDefault4">
                         <label class="form-check-label" for="flexCheckDefault">
                           40' Reefer
                         </label>
@@ -195,7 +195,7 @@
                       </div>
                       <div class="col-sm-3">
                         <div class="form-check">
-                          <input class="my-detailss form-check-input" type="checkbox" value="" id="flexCheckDefault5">
+                          <input class="my-detailss form-check-input" type="checkbox" value="Container Type: 20' Flat rack" id="flexCheckDefault5">
                           <label class="form-check-label" for="flexCheckDefault">
                             20' Flat rack
                           </label>
@@ -211,7 +211,7 @@
                        <div class="row">
                         <div class="col-sm-3">
                           <div class="form-check">
-                            <input class="my-detailss form-check-input" type="checkbox" value="" id="flexCheckDefault6">
+                            <input class="my-detailss form-check-input" type="checkbox" value="Container Type: 40' Dry van" id="flexCheckDefault6">
                             <label class="form-check-label" for="flexCheckDefault">
                               40' Dry van
                             </label>
@@ -219,7 +219,7 @@
                           </div>
                           <div class="col-sm-3">
                             <div class="form-check">
-                              <input class="my-detailss form-check-input" type="checkbox" value="" id="flexCheckDefault7">
+                              <input class="my-detailss form-check-input" type="checkbox" value="Container Type: 40' High Cube Reefer" id="flexCheckDefault7">
                               <label class="form-check-label" for="flexCheckDefault">
                                 40' High Cube Reefer
                               </label>
@@ -227,7 +227,7 @@
                             </div>
                             <div class="col-sm-3">
                               <div class="form-check">
-                                <input class="my-detailss form-check-input" type="checkbox" value="" id="flexCheckDefault8">
+                                <input class="my-detailss form-check-input" type="checkbox" value="Container Type: 40' Flat rack" id="flexCheckDefault8">
                                 <label class="form-check-label" for="flexCheckDefault">
                                   40' Flat rack
                                 </label>
@@ -235,7 +235,7 @@
                               </div>
                               <div class="col-sm-3">
                                 <div class="form-check">
-                                  <input class="my-detailss form-check-input" type="checkbox" value="" id="flexCheckDefault9">
+                                  <input class="my-detailss form-check-input" type="checkbox" value="Additional Services: Customs Clearance " id="flexCheckDefault9">
                                   <label class="form-check-label" for="flexCheckDefault">
                                     Customs Clearance
                                   </label>
@@ -246,7 +246,7 @@
                              <div class="row">
                               <div class="col-sm-3">
                                 <div class="form-check">
-                                  <input class="my-detailss form-check-input" type="checkbox" value="" id="flexCheckDefault10">
+                                  <input class="my-detailss form-check-input" type="checkbox" value="Container Type: 40' High Cube" id="flexCheckDefault10">
                                   <label class="form-check-label" for="flexCheckDefault">
                                     40' High Cube
                                   </label>
@@ -254,7 +254,7 @@
                                 </div>
                                 <div class="col-sm-3">
                                   <div class="form-check">
-                                    <input class="my-detailss form-check-input" type="checkbox" value="" id="flexCheckDefault11">
+                                    <input class="my-detailss form-check-input" type="checkbox" value="Container Type: 20' Open Top" id="flexCheckDefault11">
                                     <label class="form-check-label" for="flexCheckDefault">
                                       20' Open Top
                                     </label>
@@ -262,7 +262,7 @@
                                   </div>
                                   <div class="col-sm-3">
                                     <div class="form-check">
-                                      <input class="my-detailss form-check-input" type="checkbox" value="" id="flexCheckDefault12">
+                                      <input class="my-detailss form-check-input" type="checkbox" value="Container Type: 20' Platform" id="flexCheckDefault12">
                                       <label class="form-check-label" for="flexCheckDefault">
                                         20' Platform
                                       </label>
@@ -270,7 +270,7 @@
                                     </div>
                                     <div class="col-sm-3">
                                       <div class="form-check">
-                                        <input class="my-detailss form-check-input" type="checkbox" value="" id="flexCheckDefault13">
+                                        <input class="my-detailss form-check-input" type="checkbox" value="Additional Service: Warehousing" id="flexCheckDefault13">
                                         <label class="form-check-label" for="flexCheckDefault">
                                           Warehousing
                                         </label>
@@ -282,7 +282,7 @@
                              <div class="row">
                               <div class="col-sm-3">
                                 <div class="form-check">
-                                  <input class="my-detailss form-check-input" type="checkbox" value="" id="flexCheckDefault14">
+                                  <input class="my-detailss form-check-input" type="checkbox" value="Container Type: 20' Refregerated container (reefer)" id="flexCheckDefault14">
                                   <label class="form-check-label" for="flexCheckDefault">
                                     20' Refregerated container (reefer)
                                   </label>
@@ -290,7 +290,7 @@
                                 </div>
                                 <div class="col-sm-3">
                                   <div class="form-check">
-                                    <input class="my-detailss form-check-input" type="checkbox" value="" id="flexCheckDefault15">
+                                    <input class="my-detailss form-check-input" type="checkbox" value="Container Type: 20' Open Top" id="flexCheckDefault15">
                                     <label class="form-check-label" for="flexCheckDefault">
                                       20' Open Top
                                     </label>
@@ -298,7 +298,7 @@
                                   </div>
                                   <div class="col-sm-3">
                                     <div class="form-check">
-                                      <input class="my-detailss form-check-input" type="checkbox" value="" id="flexCheckDefault16">
+                                      <input class="my-detailss form-check-input" type="checkbox" value="Container Type: 40' Platform" id="flexCheckDefault16">
                                       <label class="form-check-label" for="flexCheckDefault">
                                         40' Platform
                                       </label>
@@ -500,13 +500,13 @@
                                             </span>
                                           </label>
                                           <div class="form-check">
-                                            <input class="my-detailss form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked required>
+                                            <input class="my-detailss form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault17" value="The cargo is not hazardous." checked required>
                                             <label class="form-check-label" for="flexRadioDefault1">
                                               NO
                                             </label>
                                           </div>
                                           <div class="form-check">
-                                            <input class="my-detailss form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" required>
+                                            <input class="my-detailss form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault18" value="The cargo is hazardous." required>
                                             <label class="form-check-label" for="flexRadioDefault2">
                                               YES
                                             </label>
@@ -630,13 +630,14 @@
                                       <div class="row">
                                         <div class="col-sm-2"></div>
                                         <div class="col-sm-4">
-                                          <button type="button"  class="my-btn-shipping btn btn-outline-dark" onclick="Cancel('cancel');">CANCEL THIS SHIPMENT</button>
+                                          <button type="button" id="my_cancel" class="my-btn-shipping btn btn-outline-dark">CANCEL THIS SHIPMENT</button>
                                         </div>
                                         <div class="col-sm-1"></div>
                                         <div class="col-sm-4">
-                                          <button type="submit" class="my-btn-shipping btn btn-outline-dark">SAVE AND CREATE ANOTHER SHIPMENT</button>
+                                          <button type="submit" id="my_submit" class="my-btn-shipping btn btn-outline-dark">SAVE AND CREATE ANOTHER SHIPMENT</button>
                                         </div>
-                                        <div class="col-sm-1"></div>
+                                        <!-- <div class="col-sm-1"></div> -->
+                                        <div class="col-sm-1" id="error"></div>
                                       </div>
                                      </form> 
                                     </div>

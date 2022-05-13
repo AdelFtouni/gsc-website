@@ -18,4 +18,17 @@
         }, false)
       })
   })()
+   
+let userLogin=document.getElementById('user_login');
+let userRegister=document.getElementById('user_register');
+let userEmail=document.getElementById('user-email');
+let userPassword=document.getElementById('user_password');
+userRegister.addEventListener("click", Register);
+function Register(){
+  if(userEmail.value!="" && userPassword.value!=""){
+    document.location.href = './gsc-website/fatima/Registration Request/Registration.html';
+
+  }
+
+}
   

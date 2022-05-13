@@ -247,10 +247,11 @@ footer li{
     box-shadow: 5px 4px 8px gray;
 }
 .page-headership{
-    background: url(shippingImg4.jpg) center center no-repeat;
+    background:  linear-gradient(#0172ab, #a6bec47c),url(shippingImg4.jpg) center center no-repeat;
     background-size: cover;
     object-fit: cover !important;
     padding-top: 20px !important;
+  
 }
 .my-loc span i{
 font-size: 5rem;
@@ -285,7 +286,10 @@ color: #0172ab !important;
     from {right:-400px; top:0px;}
     to {right:10px; top:0px;}
   } */
-  .header p{
+.header {
+    margin-top: 5.01rem !important;
+ }
+.header p{
     font-weight: 500px !important;
     text-align: right;
     position: relative;
@@ -295,8 +299,8 @@ color: #0172ab !important;
   @keyframes ParagOpacity {
     from {opacity: 0;}
     to { top:0; opacity: 1;}
-  }
-  .my-description{
+}
+.my-description{
     box-shadow: 3px 4px 8px rgb(49, 47, 47);
   }
   .my-title{
