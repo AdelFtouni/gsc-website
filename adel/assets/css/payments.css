@@ -374,3 +374,16 @@ border-style: hidden;
 .lll{
   font-size:20px;
 }
+
+@media screen and (max-width: 768px) {
+  .grid-container{
+    display:block;
+  }
+  .itemAside{
+
+    width: 100%;
+  }
+  .myTable{
+    width:50%;
+  }
+}
