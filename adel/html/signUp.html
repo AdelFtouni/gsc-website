@@ -138,23 +138,13 @@
              
 
               <form id="formAuthentication" class="mb-3" action="index.html" method="POST">
-                <div class="mb-3">
-                  <label for="username" class="form-label">Username</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="username"
-                    name="username"
-                    placeholder="Enter your username"
-                    autofocus
-                  />
-                </div>
+               
                 <div class="mb-3">
                   <label for="email" class="form-label">Email</label>
-                  <input type="text" class="form-control" id="email" name="email" placeholder="Enter your email" />
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" />
                 </div>
-                <div class="mb-3 form-password-toggle">
-                  <label class="form-label" for="password">Password</label>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Password</label>
                   <div class="input-group input-group-merge">
                     <input
                       type="password"
@@ -166,21 +156,36 @@
                     />
                     <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
                   </div>
+                 
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">First name</label>
+                  <input type="text" class="form-control" id="fName" name="email" placeholder="Enter your email" />
+                </div>
+                <div class="mb-3 form-password-toggle">
+                  <label class="form-label" for="password">last name</label>
+                  <input type="text" class="form-control" id="lName" name="email" placeholder="Enter your email" />
                 </div>
 
                 <div class="mb-3">
                   <div class="form-check">
                    
                   </div>
+                  <div class="mb-3">
+                    <label for="username" class="">Phone number</label>
+                    <input type="number" class="form-control" id="phoneNumber" name="email" placeholder="Enter your email" />
+                  </div>
                 </div>
-                <a href="admin-login.html" class="btn btn-dark d-grid w-100">Sign up</a>
+                
+              
               </form>
-
+              <button onclick="add()" class="btn btn-dark ">Sign up</button>
               <p class="text-center">
                 <span>Already have an account?</span>
-                <a href="auth-login-basic.html">
+                <a href="signIn.html">
                   <span>Sign in instead</span>
                 </a>
+                <p id="mypara"></p>
               </p>
             </div>
           </div>
@@ -195,6 +200,9 @@
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
+    <!-- <script src="../assets/js/local.js"></script> -->
+    <!-- <script src="../assets/js/accounts.js"></script> -->
+    <script src="../assets/js/local.js"></script>
     <script src="../assets/vendor/libs/jquery/jquery.js"></script>
     <script src="../assets/vendor/libs/popper/popper.js"></script>
     <script src="../assets/vendor/js/bootstrap.js"></script>

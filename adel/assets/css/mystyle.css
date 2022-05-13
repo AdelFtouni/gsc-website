@@ -38,6 +38,28 @@ font-size: small;
 
 
 }
+.qweeee{
+  color: rgb(255, 255, 255) !important ;
+  text-shadow: darkblue;
+font-size: 12px !important;
+font-weight: bolder;
+
+}
+.qweeeee{
+  color: rgb(255, 255, 255) !important ;
+  text-shadow: darkblue;
+font-size: 12px !important;
+font-weight: bolder;
+
+}
+.qwe12{
+  
+  color: rgb(255, 255, 255) !important ;
+  text-shadow: darkblue;
+font-weight: bold;
+font-size: large;
+background-color: yellow;
+}
 /* .trtr{
    background-color: rgb(207, 237, 255); 
   
@@ -47,12 +69,14 @@ font-size: small;
 }
 .tttt{
   width: 130% !important;
+  height: 50px !important;
 }
  * {
     box-sizing: border-box;
   }
   .marg{
     margin-left: 20px;
+    height: 40px;
   }
   .text4{
     vertical-align: center;
@@ -332,5 +356,107 @@ font-size: medium;
 .hhhh{
   /* margin-right: -110px !important; */
  width:800px !important;
- margin-left: 70px;
+ margin-left: 180px !important;
+}
+.tablett{
+ margin-top: 100px !important;
+}
+.marg{
+  margin-bottom: 100px;
+}
+th ,td ,th{
+
+  padding: 0px;
+          color: rgb(22, 22, 92) !important ;
+          height: 10px !important;
+         
+}
+#spinner{
+  margin-top: 0px;
+  height: 10px !important;
+}
+#locloc1{
+  height: 40px !important;
+  width: 100px;
+ color: white !important;
+  
+background-color: rgb(7, 26, 99);
+}
+#final{
+  height: 40px !important;
+  width: 100px;
+  border-width: 2px;
+  border-radius: 20px;
+  box-shadow: inset;
+background-color: rgb(7, 26, 99);
+}
+.final{
+  background-color: rgb(52, 213, 68);
+  height: 60px !important;
+  width: 1200px;
+  
+  align-items: center !important;
+  border-width: 2px;
+  border-radius: 20px;
+ 
+}
+h4{
+  color: white;
+  margin-top: 12px;
+  margin-left: 500px;
+}
+.asssd{
+  border-width: 2px !important;
+  border-radius: 20px !important;
+}
+#lada{
+  background-color: rgb(244, 246, 255);
+  font-size: 25px;
+  font-weight: bold;
+  height: 40px;
+  color: rgb(20, 20, 90);
+  border-radius: 5px;
+}
+.hehe{
+  margin-top: 0px;
+height: 100px !important;
+}
+.vvv{
+  margin-top: 00px;
+}
+.mmmm{
+  height: 24  0px;
+}       
+.all{
+  margin-right: 90px !important;
+  width:200px;
+  padding-left: -100px !important;
+  padding-right: -50px !important;
+ 
+}
+/* .bt{
+
+} */
+.high{
+  background-color: green;
+}
+.text12345{
+
+color: rgb(23, 195, 23);
+padding: 10px !important;
+
+}
+
+#tablefa{
+  
+  width: 1000px;
+  height: 400px;
+  border-radius: 20px !important;
+}
+th , td{
+ padding: 20px;
+  margin: 20px;
+  /* background-color: rgb(245, 245, 255); */
+  
+  padding: 20px !important;
 }

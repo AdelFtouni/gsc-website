@@ -64,7 +64,7 @@
     <script src="../assets/js/config.js"></script>
   </head>
 
-  <body id="mybody" onload="first1()">
+  <body id="mybody" onload="readFirst()">
     <!-- Layout wrapper -->
     <div class="layout-wrapper layout-content-navbar">
       <div class="layout-container">
@@ -207,7 +207,7 @@
                 </div>
               </div>
               <!-- /Search -->
-
+             
               <ul class="navbar-nav flex-row align-items-center ms-auto">
                 <!-- Place this tag where you want the button to render. -->
            
@@ -274,7 +274,9 @@
               </ul>
             </div>
           </nav>
-
+          <!-- <p id="lada1">qwwwq</p> -->
+   
+          
           <!-- / Navbar -->
 
           <!-- Content wrapper -->
@@ -383,24 +385,17 @@
       </button>
       <button type="button"  onclick="vieww()" class="btn btn-dark">view</button> -->
       <table class="hhhh" >
-        <tr>
+        <tr class="hhhh">
           
-          <th>Trip</th>
-          <th>Cargo companies</th>
-          <th>origin</th>
-          <th>Destination</th>
-          <th>Departure</th>
-          <th>Arrival</th>
-          <th>Vessels</th>
-          <th>Route</th>
+       
         </tr>
       </table>
-
+<!-- 
       <table class="myTablert" id="myTable">
 <p id="testlocal12"></p>
 
 <p id="testlocal"></p>
-<!-- <tr>
+ <tr>
 
   <td id="td1">helo</td>
   <td>helo</td>
@@ -409,10 +404,16 @@
   <td>helo</td>
   <td>helo</td>
   <td>helo</td>
-</tr> -->
+</tr>
 
-      </table>
-        
+      </table> -->
+      <button id="btn" onclick="add()">add</button>
+      <button id="btn" onclick="read()">read</button>
+      <button id="btn" onclick="readFirst()">show</button>
+      <button id="btn" onclick="delete1()">delete all</button>
+            <table id="tablefa" class="">
+             
+            </table>
           </div>
         </div>
       </th>
@@ -550,7 +551,7 @@
                         <div class="p-5 bd-highlight">  <button type="button" 
                           data-bs-toggle="modal"
                           data-bs-target="#largeModal"
-                          onclick="add()"
+                          onclick=""
                           class="btn btn-dark">add trip</button></div>
                         <div class="p-5 bd-highlight">  <button type="button"  class="btn btn-dark">add to home</button></div>
                         <div class="p-5 bd-highlight">  <button type="button"  class="btn btn-dark">add offer</button></div>
@@ -715,6 +716,7 @@
                   <label for="dobLarge" class="form-label">route</label>
                   <input type="text" id="route" class="form-control" />
                 </div>
+                <p id="lada"></p>
               </div>
             </div>
             <div class="modal-footer">
@@ -722,7 +724,7 @@
                 Close
               </button>
               <button type="button" onclick="add()" class="btn btn-dark">Add Trip</button>
-              <button type="button" onclick="vieww()" class="btn btn-dark">view1</button>
+              <button type="button" onclick="view()" class="btn btn-dark">view1</button>
              
             </div>
           </div>
@@ -895,7 +897,7 @@
     <!-- build:js assets/vendor/js/core.js -->
  
     
-   <script src="../assets/js/classes.js"></script> 
+   <script src="../assets/js/new.js"></script> 
     <!-- <script src="../assets/js/classes1.js"></script> -->
     <script src="../assets/vendor/libs/jquery/jquery.js"></script>
     <script src="../assets/vendor/libs/popper/popper.js"></script>
