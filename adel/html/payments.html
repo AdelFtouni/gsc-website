@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/payments.css">
+    <title>Payments</title>
+</head>
+<body onload="first()">
+   
+    <div class="grid-container">
+        <div class="itemAside">
+            <aside>
+              <img class="myImg" src="../assets/img/logo.png">
+                <div class="pushDown">
+                
+                <div class="itemAsideIn">
+       
+            <a class="btn1" href="home.html">
+                home
+            </a>
+                </div>
+                <div class="itemAsideIn">
+                    <a class="btn1"  href="Tracking.html">
+                       Tracking
+                    </a> 
+                </div>
+                <div class="itemAsideIn">
+                    <a class="btn1" href="requests.html">
+                       Requests
+                    </a>  
+         </div>
+         <div class="itemAsideIn">
+            <a class="btn1" href="risk2.html">
+               Risks
+            </a>  
+ </div>
+ <div class="itemAsideIn">
+    <a class="btn1" href="admin-control.html">
+       Admin control
+    </a>  
+</div>
+<div class="itemAsideInP">
+    <a class=" btnPayments" href="payments.html">
+       Payments
+    </a>  
+</div>
+                </div>
+               
+               
+              
+                </aside>
+            </div>
+            <div class="grid-item item1 ">
+                <label class="push1">Payments</label>
+                 </div>
+                 <div class=" grid-item-back"> 
+                 <div class="item2">
+                     <label class="font">
+                      Company :<label class="font" id="audi"></label> 
+                      | Trip code : <label class="font" id="trip-code"></label> 
+                       | bill code : <label class="font" id="bill-code"></label> 
+                     </label> 
+                     <button onclick="btt()" id="btView" class="btn">view </button>
+         
+                 </div>  
+                 <div class="item2">
+                    <label class="font">
+                     Company : Puma | Trip code : abn223 | bill code : 2231
+                    </label> 
+                    <button id="btView" class="btn">view </button>
+        
+                </div>  
+                <div class="item2">
+                    <label class="font">
+                     Company : H&M | Trip code : mvc211 | bill code : 9921
+                    </label> 
+                    <button id="btView" class="btn">view </button>
+        
+                </div>  
+                <div class="item2">
+                    <label class="font">
+                     Company : Bosh | Trip code : amb432 | bill code : 6224
+                    </label> 
+                    <button id="btView" class="btn">view </button>
+        
+                </div>  
+               </div>
+
+            
+ 
+
+    </div>
+
+
+               <button id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h1 class="push123 font">Bill</h1>
+    </div>
+    <div class="modal-body">
+<div class="back12">
+    <table class="myTable">
+        <tr>
+            <td>
+                 <p>
+                Company name: <label class="label1" id="audi1"></label>
+                </p>
+        </td>
+           
+           <td>
+            <p>
+                Fee due date :<label class="label1"> 13/05/2022</label>
+               
+            </p>
+           </td>
+         <td>
+            <p>
+                Company ID : <label class="label1">adi221</label>
+               
+            </p>
+         </td>
+        
+        </tr>
+        <tr>
+            
+               <td id="asdasd">Trip code</td> 
+            
+              <td>
+                <input  onClick="onClickHandler(this)" type="text" id="input_trip_code" class="tripCodeInput">
+             
+                <button id="viewBill" onclick="setBill()" class="btn123">view </button>
+              </td>
+              <td>
+                <label class="label1 red" id="wrong1">wrong trip code</label>
+               </td>
+            
+        
+        </tr>
+        
+         </table>
+        
+</div>
+<div id="details">
+<table id="ttt">
+    <tr>
+        <td>
+            <label class="label1"> Cargo type :</label> cars
+          </td>
+     
+        </tr>
+        <tr>
+            <td>
+                <label class="label1"> Volume :</label><br> length: 20 m <br> height: 8 m <br>width: 4 m 
+            </td>
+
+          
+        </tr>
+    
+        <tr>
+            <td>
+                <label class="label1"> Route :</label>
+            </td>
+            <td>
+                <input  onClick="onClickHandler(this)" type="text" id="input_route_code" class="tripCodeInput">
+            </td>
+            <td class="left1">
+               
+               <button id="viewBill" onclick="getTotal()" class="btn123"> Total</button><br>
+   
+   
+              
+           </td>
+           <td>
+            <label class="label1 red" id="wrong2">wrong route code</label>
+           </td>
+           <td>
+            <label class="label1" id="total"></label>   
+           </td>
+           <td>
+            <button id="send" onclick="send()" class="btn123">send  </button>
+           </td>
+           
+        </tr>
+    
+</table>
+<div id="email">
+    <label class="email1"> Bill informations is sent to the cargo company page <br>
+        (an email was sent to <u>Audi@hotmail.com</u> showing bill details)</label>
+                   </div>
+</div>
+
+    </div>
+   
+  </div>
+
+</div>
+      
+            </div>
+    
+    <script src="../assets/js/payments.js"></script>
+</body>
+</html>
+
+
+  

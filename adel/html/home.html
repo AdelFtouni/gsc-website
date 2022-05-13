@@ -30,7 +30,16 @@
     <title>Dashboard - Analytics | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
 
     <meta name="description" content="" />
-
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+    <!-- Nucleo Icons -->
+    <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <!-- CSS Files -->
+    <link id="pagestyle" href="../assets/css/material-dashboard.css?v=3.0.2" rel="stylesheet" />
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
 
@@ -190,10 +199,21 @@
         <div class="layout-page">
           <!-- Navbar -->
 
-          <nav
+          
+          <!-- / Navbar -->
+
+          <!-- Content wrapper -->
+          <div class="container-fluid">
+            <!-- Content -->
+
+            <div class="container-xxl flex-grow-1 container-p-y">
+              <div class="row">
+                
+                <nav
             class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
             id="layout-navbar"
           >
+          
             <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
               <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
                 <i class="bx bx-menu bx-sm"></i>
@@ -202,167 +222,125 @@
 
             <div class="navbar-nav-right d-flex align-items-center animated " id="navbar-collapse">
               <!-- Search -->
-              <div class="navbar-nav align-items-center">
-                <div class="nav-item d-flex align-items-center">
-                  <i class="bx bx-search fs-4 lh-0"></i>
-                  <input
-                    type="text"
-                    class="form-control border-0 shadow-none"
-                    placeholder="Search..."
-                    aria-label="Search..."
-                  />
-                </div>
-              </div>
+          
               <!-- /Search -->
 
               <ul class="navbar-nav flex-row align-items-center ms-auto">
                 <!-- Place this tag where you want the button to render. -->
-             
+               
 
                 <!-- User -->
-                <li class="nav-item navbar-dropdown dropdown-user dropdown">
-                  <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
-                    <div class="avatar avatar-online">
-                      <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
-                    </div>
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-end">
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        <div class="d-flex">
-                          <div class="flex-shrink-0 me-3">
-                            <div class="avatar avatar-online">
-                              <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+              
+
+
+
+                <li class="nav-item ">
+              
+         
+                    <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+
+                      <div class="avatar avatar-ofnline">
+                        <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                      </div>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li>
+                        <a class="dropdown-item all" href="#">
+                          <div class="d-flex">
+                            <div class="flex-shrink-0 me-3">
+                              <div class="avatar avatar-online">
+                                <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                              </div>
+                            </div>
+                            <div class="flex-grow-1">
+                              <span class="fw-semibold d-block">John Doe</span>
+                              <small class="text-muted">Admin</small>
                             </div>
                           </div>
-                          <div class="flex-grow-1">
-                            <span class="fw-semibold d-block">John Doe</span>
-                            <small class="text-muted">Admin</small>
-                          </div>
-                        </div>
-                      </a>
-                    </li>
-                    <li>
-                      <div class="dropdown-divider"></div>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        <i class="bx bx-user me-2"></i>
-                        <span class="align-middle">My Profile</span>
-                      </a>
-                    </li>
-                    
-                 
-                    <li>
-                      <div class="dropdown-divider"></div>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="admin-login.html">
-                        <i class="bx bx-power-off me-2"></i>
-                        <span class="align-middle">Log Out</span>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <!--/ User -->
-              </ul>
-            </div>
-          </nav>
-
-          <!-- / Navbar -->
-
-          <!-- Content wrapper -->
-          <div class="content-wrapper">
-            <!-- Content -->
-
-            <div class="container-xxl flex-grow-1 container-p-y">
-              <div class="row">
-                
-                </div>
-                <div class="">
-                  <div class="row">
-                    <a class="card col-lg-6" href="all">all trips</a>
-                    <a  class = "card col-lg-6" href="all">all requests</a>
-                    <div class="col-lg-2 col-md-12 col-6 mb-4">
-                      
-                          <div class="card-title d-flex align-items-start justify-content-between">
-                            <div class="avatar flex-shrink-0">
-                             
-                            </div>
-                            
-                           
+                        </a>
+                      </li>
+                      <li>
+                        <div class="dropdown-divider"></div>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <i class="bx bx-user me-2"></i>
+                          <span class="align-middle">My Profile</span>
+                        </a>
+                      </li>
                       
                    
-                       
-                        
-                      </div>
-                      </div>
-                      <div class="col-lg-2 col-md-12 col-6 mb-4">
-                        
-                          <div class="card-body">
-                            <div class="card-title d-flex align-items-start justify-content-between">
-                              <div class="avatar flex-shrink-0">
-                                
-                              </div>
-                              
-                             
-                                
-                              
-                       
-                           
-                          </div>
-                          
-                        </div>
-                        </div>
+                      <li>
+                        <div class="dropdown-divider"></div>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="signIn.html">
+                          <i class="bx bx-power-off me-2"></i>
+                          <span class="align-middle">Log Out</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <!--/ User -->
+                </ul>
+              </div>
+          </nav>
+
+
+
+
+  <div class="row">
+               
+
+                </div>
+              
+              
                       <!-- <div class="col-lg-4 col-md-12 col-6 mb-4">
                        
                   -->
               
                     <div class="col-lg-12 col-md-12 col-6 mb-4">
                       
-                      <div class="card">
-                        <h5 class="card-header">Today trips</h5>
-                        <div class="table-responsive text-nowrap">
+                      <div class="card mmmm">
+                       
                         
-                          <table class="table">
+                        <div class="table-responsive text-nowrap ">
+                        
+                          <table class="table hehe  ">
                             <thead>
-                              <tr>
-                                <th>trip</th>
-                                <th>cargoCompanies</th>
-                                <th>arrival hour</th>
-                                <th>status</th>
-                                <th>details</th>
+                              <tr class="text">
+                                <th class="text">trip</th>
+                                <th class="text">cargoCompanies</th>
+                                <th class="text">arrival hour</th>
+                                <th class="text">status</th>
+                                <th class="text">details</th>
                               </tr>
                             </thead>
                             <tbody class="table-border-bottom-0">
                               <tr>
-                                <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>ams221</strong></td>
+                                <td><i class=""></i> <strong class="text">AMB432</strong></td>
                                 <td class="text">adidas,nike,puma</td>
-                                <td><i class=" text fab fa-angular fa-lg text-danger me-3"></i> 
+                                <td class="text"><i class=" "></i> 
                                   03:00 pm</td>
                                  
                                 
                                 <td><span class="badge bg-label-warning me-1">pending</span></td>
                                 <td>
-                                  <div class="dropdown">
-                                    <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                                      <i class="bx bx-dots-vertical-rounded"></i>
-                                    </button>
-                                    <div class="dropdown-menu">
-                                      <a class="dropdown-item" href="tracking.html"
-                                        ><i class="bx bx-edit-alt me-1"></i>track</a
-                                      >
-                                      <a class="dropdown-item" href="" id="ft"
-                                        ><i class="bx bx-trash me-1"></i> clear</a
-                                      >
+                                  <div class="">
+                                  
+                                    <div class="">
+                                      <a class="" href="tracking.html"
+                                        ><strong class="text">view</strong></a>
+                                      
+                                     
                                     </div>
                                   </div>
                                 </td>
                               </tr>
-                              <tr>
-                                <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>ams221</strong></td>
+                              <!-- <tr>
+                                <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong class="text">ams221</strong></td>
                                 <td class="text">adidas,nike,puma</td>
-                                <td><i class=" text fab fa-angular fa-lg text-danger me-3"></i> 
+                                <td class="text"><i class=" text fab fa-angular fa-lg text-danger me-3"></i> 
                                   02:00 pm</td>
                                  
                                 
@@ -383,30 +361,45 @@
                                   </div>
                                 </td>
                               </tr>
-                             
+                              -->
                               <tr>
-                                <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>ams221</strong></td>
+                                <td><i class=""></i> <strong class="text">ams221</strong></td>
                                 <td class="text">adidas,nike,puma</td>
-                                <td><i class=" text fab fa-angular fa-lg text-danger me-3"></i> 
+                                <td class="text"><i class=" "></i> 
                                   02:00 pm</td>
                                  
                                 
                                 <td><span class="badge bg-label-success me-1">complete</span></td>
                                 <td>
-                                  <div class="dropdown">
-                                    <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                                      <i class="bx bx-dots-vertical-rounded"></i>
-                                    </button>
-                                    <div class="dropdown-menu">
-                                      <a class="dropdown-item" href="javascript:void(0);"
-                                        ><i class="bx bx-edit-alt me-1"></i> Edit</a
-                                      >
-                                      <a class="dropdown-item" href="javascript:void(0);"
-                                        ><i class="bx bx-trash me-1"></i> Delete</a
-                                      >
+                                  <div class="">
+                                  
+                                    <div class="">
+                                      <a class="dropdown-item " href="details.html"
+                                        ><strong class="text">view</strong></a>
+                                      
+                                     
                                     </div>
                                   </div>
                                 </td>
+                              </tr>
+                              <tr>
+                                <td><i class=""></i> <strong class="text">ams221</strong></td>
+                                <td class="text">adidas,nike,puma</td>
+                                <td class="text"><i class=" "></i> 
+                                  02:00 pm</td>
+                                 
+                                
+                                <td><span class="badge bg-label-success me-1">complete</span></td>
+                                <td>
+                                  <div class="">
+                                  
+                                    <div class="">
+                                      <a class="dropdown-item " href="details.html"
+                                        ><strong class="text">view</strong></a>
+                                      
+                                     
+                                    </div>
+                                  </div>
                               </tr>
                             </tbody>
                           </table>
@@ -424,7 +417,7 @@
                          
                        
                     </div>
-                    <div class="card-body px-0">
+                    <div class="card-body px-0 vvv">
                       <div class="tab-content p-0">
                         <div class="tab-pane fade show active" id="navs-tabs-line-card-income" role="tabpanel">
                           <div class="d-flex p-4 pt-3">
@@ -552,8 +545,7 @@
                 </div>
              
 
-    
-
+            
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
     <script src="../assets/vendor/libs/jquery/jquery.js"></script>
@@ -575,5 +567,263 @@
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <script>
+      var ctx = document.getElementById("chart-bars").getContext("2d");
+  
+      new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: ["M", "T", "W", "T", "F", "S", "S"],
+          datasets: [{
+            label: "Sales",
+            tension: 0.4,
+            borderWidth: 0,
+            borderRadius: 4,
+            borderSkipped: false,
+            backgroundColor: "rgba(255, 255, 255, .8)",
+            data: [50, 20, 10, 22, 50, 10, 40],
+            maxBarThickness: 6
+          }, ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              display: false,
+            }
+          },
+          interaction: {
+            intersect: false,
+            mode: 'index',
+          },
+          scales: {
+            y: {
+              grid: {
+                drawBorder: false,
+                display: true,
+                drawOnChartArea: true,
+                drawTicks: false,
+                borderDash: [5, 5],
+                color: 'rgba(255, 255, 255, .2)'
+              },
+              ticks: {
+                suggestedMin: 0,
+                suggestedMax: 500,
+                beginAtZero: true,
+                padding: 10,
+                font: {
+                  size: 14,
+                  weight: 300,
+                  family: "Roboto",
+                  style: 'normal',
+                  lineHeight: 2
+                },
+                color: "#fff"
+              },
+            },
+            x: {
+              grid: {
+                drawBorder: false,
+                display: true,
+                drawOnChartArea: true,
+                drawTicks: false,
+                borderDash: [5, 5],
+                color: 'rgba(255, 255, 255, .2)'
+              },
+              ticks: {
+                display: true,
+                color: '#f8f9fa',
+                padding: 10,
+                font: {
+                  size: 14,
+                  weight: 300,
+                  family: "Roboto",
+                  style: 'normal',
+                  lineHeight: 2
+                },
+              }
+            },
+          },
+        },
+      });
+  
+  
+      var ctx2 = document.getElementById("chart-line").getContext("2d");
+  
+      new Chart(ctx2, {
+        type: "line",
+        data: {
+          labels: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+          datasets: [{
+            label: "Mobile apps",
+            tension: 0,
+            borderWidth: 0,
+            pointRadius: 5,
+            pointBackgroundColor: "rgba(255, 255, 255, .8)",
+            pointBorderColor: "transparent",
+            borderColor: "rgba(255, 255, 255, .8)",
+            borderColor: "rgba(255, 255, 255, .8)",
+            borderWidth: 4,
+            backgroundColor: "transparent",
+            fill: true,
+            data: [50, 40, 300, 320, 500, 350, 200, 230, 500],
+            maxBarThickness: 6
+  
+          }],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              display: false,
+            }
+          },
+          interaction: {
+            intersect: false,
+            mode: 'index',
+          },
+          scales: {
+            y: {
+              grid: {
+                drawBorder: false,
+                display: true,
+                drawOnChartArea: true,
+                drawTicks: false,
+                borderDash: [5, 5],
+                color: 'rgba(255, 255, 255, .2)'
+              },
+              ticks: {
+                display: true,
+                color: '#f8f9fa',
+                padding: 10,
+                font: {
+                  size: 14,
+                  weight: 300,
+                  family: "Roboto",
+                  style: 'normal',
+                  lineHeight: 2
+                },
+              }
+            },
+            x: {
+              grid: {
+                drawBorder: false,
+                display: false,
+                drawOnChartArea: false,
+                drawTicks: false,
+                borderDash: [5, 5]
+              },
+              ticks: {
+                display: true,
+                color: '#f8f9fa',
+                padding: 10,
+                font: {
+                  size: 14,
+                  weight: 300,
+                  family: "Roboto",
+                  style: 'normal',
+                  lineHeight: 2
+                },
+              }
+            },
+          },
+        },
+      });
+  
+      var ctx3 = document.getElementById("chart-line-tasks").getContext("2d");
+  
+      new Chart(ctx3, {
+        type: "line",
+        data: {
+          labels: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+          datasets: [{
+            label: "Mobile apps",
+            tension: 0,
+            borderWidth: 0,
+            pointRadius: 5,
+            pointBackgroundColor: "rgba(255, 255, 255, .8)",
+            pointBorderColor: "transparent",
+            borderColor: "rgba(255, 255, 255, .8)",
+            borderWidth: 4,
+            backgroundColor: "transparent",
+            fill: true,
+            data: [50, 40, 300, 220, 500, 250, 400, 230, 500],
+            maxBarThickness: 6
+  
+          }],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              display: false,
+            }
+          },
+          interaction: {
+            intersect: false,
+            mode: 'index',
+          },
+          scales: {
+            y: {
+              grid: {
+                drawBorder: false,
+                display: true,
+                drawOnChartArea: true,
+                drawTicks: false,
+                borderDash: [5, 5],
+                color: 'rgba(255, 255, 255, .2)'
+              },
+              ticks: {
+                display: true,
+                padding: 10,
+                color: '#f8f9fa',
+                font: {
+                  size: 14,
+                  weight: 300,
+                  family: "Roboto",
+                  style: 'normal',
+                  lineHeight: 2
+                },
+              }
+            },
+            x: {
+              grid: {
+                drawBorder: false,
+                display: false,
+                drawOnChartArea: false,
+                drawTicks: false,
+                borderDash: [5, 5]
+              },
+              ticks: {
+                display: true,
+                color: '#f8f9fa',
+                padding: 10,
+                font: {
+                  size: 14,
+                  weight: 300,
+                  family: "Roboto",
+                  style: 'normal',
+                  lineHeight: 2
+                },
+              }
+            },
+          },
+        },
+      });
+    </script>
+    <script>
+      var win = navigator.platform.indexOf('Win') > -1;
+      if (win && document.querySelector('#sidenav-scrollbar')) {
+        var options = {
+          damping: '0.5'
+        }
+        Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+      }
+    </script>
+
   </body>
 </html>

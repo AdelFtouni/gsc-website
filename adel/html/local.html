@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/local.css" />
+</head>
+<body>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" />
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Password</label>
+        <div class="input-group input-group-merge">
+          <input
+            type="password"
+            id="password"
+            class="form-control"
+            name="password"
+            placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
+            aria-describedby="password"
+          />
+          <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
+        </div>
+       
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">First name</label>
+        <input type="text" class="form-control" id="fName" name="email" placeholder="Enter your email" />
+      </div>
+      <div class="mb-3 form-password-toggle">
+        <label class="form-label" for="password">last name</label>
+        <input type="text" class="form-control" id="lName" name="email" placeholder="Enter your email" />
+      </div>
+
+      <div class="mb-3">
+        <div class="form-check">
+         
+        </div>
+        <div class="mb-3">
+          <label for="username" class="">Phone number</label>
+          <input type="number" class="form-control" id="phoneNumber" name="email" placeholder="Enter your email" />
+        </div>
+      </div>
+
+    
+    <button id="btn" onclick="add()">add</button>
+    <button id="btn" onclick="read()">read</button>
+    <button id="btn" onclick="readFirst()">show</button>
+    <button id="btn" onclick="delete1()">delete</button>
+    <table id="table"></table>
+    <script src="../assets/js/local.js"></script>
+</body>
+</html>

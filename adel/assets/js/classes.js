@@ -1,31 +1,63 @@
-function first(){
-    document.getElementById('testlocal12').innerHTML= Object.values(data);
-    
+
+
+function first1(){
+    // document.getElementById('testlocal12').innerHTML= Object.values(data);
+    document.getElementById('lada').style.diplay = "none" ;
 }
 
+function logIn(){
+    let accounts1 = JSON.parse(localStorage.getItem("key"))
+    for(let i=0 ; i < accounts.length; i++){
+    if(document.getElementById('e').value == JSON.parse(accounts1[i].email) &&  
+    document.getElementById('p').value == JSON.parse(accounts1[i].password)){
+        // document.getElementById("signIn").addEventListener("click", console.log("success"));
+       console.log("success");
+         }
+         console.log('test');    
+    }
+    console.log('test');
+}
 
-class Account(){
+class Account{
     constructor(email,password,firstName,lastName,phoneNumber){
         this.email = email;
-        this.email.type = "email";
+        //this.email.type = "email";
         this.password = password;
         this.firstName = firstName;
         this.lastName =  lastName;
-        thisPhoneNumber = phoneNumber;
+        this.PhoneNumber = phoneNumber;
     }
 }
-let _email = document.getElementbyId('email').value;
-let _password = document.getElementbyId('email').value;
-let _firstName = document.getElementbyId('email').value;
-let _lastName = document.getElementbyId('email').value;
-let _phonenumber = document.getElementbyId('email').value;
-let account ;
+let text1 = "";
+let account = {};
 let accounts = [];
+let s = 1;
+function viewAll(){
+   
+    for(i=1;i<5;i++){
+    text1 = JSON.parse(localStorage.getItem(s));
+   // document.getElementById("myPara").innerHTML = Object.values(text1);
+    console.log("hello");
+    console.log(accounts);
+    }
+}
 function signUp(){
-account = new Account(_email,_password,_firstName,_lastName,_phoneNumber);
+    let _email = document.getElementById('email').value;
+ let _password = document.getElementById('password').value;
+ let _firstName = document.getElementById('fName').value;
+ let _lastName = document.getElementById('lName').value;
+ let _phoneNumber = document.getElementById('phoneNumber').value;
+
+// let account = new Account() ;
+ account = {_email,_password,_firstName,_lastName,_phoneNumber};
+
+// account = new Account(_email,_password,_firstName,_lastName,_phoneNumber);
 accounts.push(account);
 console.log(accounts);
-localStorage.setItem(JSON.stringify(accounts));
+localStorage.setItem(s,JSON.stringify(accounts));
+localStorage.setItem("key",JSON.stringify(accounts));
+s++;
+//viewAll();
 }
 let array = [];
 class RiskCase{
@@ -131,13 +163,15 @@ function create(){
 let data = JSON.parse(localStorage.getItem(i));;
 function vieww() {
 // localStorage.getItem()
-for(let i=1;i<k;i++){
+//document.getElementById('lada').innerHTML = "Trip added successfully" ;
+
+// for(let i=1;i<k;i++){
    
-  console.log(data);
-  console.log("adel");
- document.getElementById('testlocal').innerHTML = Object.values(data);
- console.log(Object.values(data));
-}
+//   console.log(data);
+//   console.log("adel");
+//  //document.getElementById('testlocal').innerHTML = Object.values(data);
+//  console.log(Object.values(data));
+// }
 //data = JSON.parse(localStorage.getItem(17));
     // console.log(data.tId);
 // console.log("hey");
@@ -164,10 +198,10 @@ for(let i=1;i<k;i++){
 
 
 //let j =1;
-//let trips=[];
+let trip;
 let number = 3;
 console.log(number);
-function add(){
+// function add(){
    
 
         let tId  =  document.getElementById('trip').value;
@@ -179,14 +213,14 @@ function add(){
         let tVessels = document.getElementById('vessels').value;
         let tRoute  =  document.getElementById('route').value;
         
-        let trip  = new Trip(tId,tCargoCompanies,tOrgin,tDestination,tDepartue,tArrival,tVessels,tRoute);
-       array.push(trip);
+//         trip  = new Trip(tId,tCargoCompanies,tOrgin,tDestination,tDepartue,tArrival,tVessels,tRoute);
+//        array.push(trip);
   
-        localStorage.setItem("key",JSON.stringify(array));
-        console.log(JSON.stringify(array));
+//         localStorage.setItem("key",JSON.stringify(array));
+//         console.log(JSON.stringify(array));
       
  
-        //aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+//         //aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
         document.getElementById('trip').value='';
            document.getElementById('cargoCompanies').value='';
         document.getElementById('origin').value='';
@@ -195,28 +229,31 @@ function add(){
       document.getElementById('arrival').value='';
         document.getElementById('vessels').value='';
         document.getElementById('route').value='';
-        create();
+        document.getElementById('lada').innerHTML = "Trip added successfully" ;
+
+      document.getElementById('lada').style.display = "block";
+      //  create();
         // document.getElementById('t').innerHTML="Trip successfully added";
-    }
+    
    
-//document.getElementsByClassName('form-control').innerHTML='';  
+// //document.getElementsByClassName('form-control').innerHTML='';  
 
 
 
 
-// function view() {
-// // localStorage.getItem()
-// document.getElementById('l').innerHTML="successfully added";
+// // function view() {
+// // // localStorage.getItem()
+// // document.getElementById('l').innerHTML="successfully added";
      
 
-//     // console.log(JSON.stringify(riskCase1));
+// //     // console.log(JSON.stringify(riskCase1));
   
-//   }
+// //   }
 
 
-  let table = document.createElement('tripTable');
-  let row_1;
-function createTable2(){
+//   let table = document.createElement('tripTable');
+//   let row_1;
+// function createTable2(){
   
    
 
@@ -224,30 +261,30 @@ function createTable2(){
 
 
 
-    console.log(number);
+//     console.log(number);
    
-    for(i=0 ; i < 5 ; i++){
+//     for(i=0 ; i < 5 ; i++){
     
-   //    row_1 = table.insertRow(1);
+//    //    row_1 = table.insertRow(1);
         
-        let cell_01 = row_1.insertCell(0);
-        let id = document.createElement("label");
-        id.type = "text";
+//         let cell_01 = row_1.insertCell(0);
+//         let id = document.createElement("label");
+//         id.type = "text";
         
-        //input1.placeholder="Enter the subject";
-        //input1.className = "";
-        cell_01.appendChild(id);
+//         //input1.placeholder="Enter the subject";
+//         //input1.className = "";
+//         cell_01.appendChild(id);
 
-        let cell_02 = row_1.insertCell(1);
-        var input2 = document.createElement("input");
-        input2.type = "text";
-        input2.placeholder="Enter the grade";
-        input2.className = "numericInput";
-        cell_02.appendChild(input2);
+//         let cell_02 = row_1.insertCell(1);
+//         var input2 = document.createElement("input");
+//         input2.type = "text";
+//         input2.placeholder="Enter the grade";
+//         input2.className = "numericInput";
+//         cell_02.appendChild(input2);
         
-     }
+//      }
 
-}
+// }
 let res="";
 let name = document.getElementById('name');
 let sum = 0;
@@ -354,10 +391,10 @@ function load(){
     for(let key in tripsList){
         tripsList = JSON.parse(localStorage.getItem(k));
         console.log(key + ":", tripsList[key]);
-    //    document.getElementById('testlocal').innerHTML=tripsList;
+        document.getElementById('testlocal').innerHTML=tripsList;
     }
     if(localStorage.getItem(k) != null){
-        // document.getElementById('testlocal').innerHTML = tripp;
+         document.getElementById('testlocal').innerHTML = tripp;
     }
 p1.innerHTML =  JSON.parse(localStorage.getItem(1));
 console.log(JSON.stringify(JSON.parse(localStorage.getItem(1))+"jasbisabbasjvbwjvbwqbvwj"));
@@ -371,12 +408,12 @@ console.log("testing load");
 
 console.log(JSON.parse(localStorage.getItem("k")));
 //Classes defined
-
+let arrayt=[];
 //console.log(JSON.parse(localStorage.getItem(k)));
 
-function add(){
+function addd(){
   // console.log(Object.values(data)); // document.getElementById('td1').innerHTML = tripsList ;
-    let table = document.getElementById("myTable");
+    let table1 = document.getElementById("tablefa");
 
 let tId  =  document.getElementById('trip').value;
 let tCargoCompanies  =  document.getElementById('cargoCompanies').value;
@@ -387,6 +424,25 @@ let tArrival  =  document.getElementById('arrival').value;
 let tVessels = document.getElementById('vessels').value;
 let tRoute  =  document.getElementById('route').value;
     let trippp = new Trip(tId, tCargoCompanies, tOrigin, tDestination, tDepartue, tArrival,tVessels,tRoute);
+    arrayt.push(trippp)
+    document.getElementById('trip').value='';
+    document.getElementById('cargoCompanies').value='';
+ document.getElementById('origin').value='';
+  document.getElementById('destination').value='';
+  document.getElementById('departure').value='';
+document.getElementById('arrival').value='';
+ document.getElementById('vessels').value='';
+ document.getElementById('route').value='';
+ if(tId !="" && tCargoCompanies !="" && tOrigin !="" && tDestination !="" && tDepartue !="" && tArrival !=""&&
+  tVessels !=""&& tRoute !="" ){
+    document.getElementById('lada').innerHTML = "Trip added successfully" ;
+    document.getElementById('lada').style.display = "block" ;
+ }
+ else{
+    document.getElementById('lada').innerHTML = "Please fill all the informations" ;
+    document.getElementById('lada').style.display = "block" ;
+ }
+
     // function: Pushses new skill, in "Skills" array
  
   //Employee Database "Localstorage"
@@ -397,9 +453,11 @@ let tRoute  =  document.getElementById('route').value;
     //  employeeList.push (new Employee("Mads", 12345,"IT", 1999,  "1234@email.com", '1'));
     //  employeeList.push (new Employee("Jessica", 54321, "Sales",1998, "Mail2@mail.dk",'1'));
     //  employeeList.push (new Employee("Benjamin", 4321,"IT", 1997, "blabla@mail.dk", '1'));
-  console.log(trippp.tId);
+  console.log(trippp);
   //tripsListString = JSON.stringify(tripsList)
      localStorage.setItem(k, JSON.stringify(trippp));
+     localStorage.setItem("array", JSON.stringify(arrayt));
+console.log(JSON.stringify(localStorage.getItem("array")));
     //console.log(JSON.parse(localStorage.getItem(k)));
     //tripsList = JSON.parse(localStorage.getItem(k))
    k++;
@@ -435,14 +493,14 @@ let tRoute  =  document.getElementById('route').value;
 //   cell1.appendChild(p1);
   //cell1.innerHTML = JSON.parse(localStorage.getItem(k));
 
-  cell1.innerHTML = tId;
-  cell2.innerHTML = tCargoCompanies;
-  cell3.innerHTML = tOrigin;
-  cell4.innerHTML = tDestination;
-  cell5.innerHTML = tDepartue;
-  cell6.innerHTML = tArrival;
-  cell7.innerHTML = tVessels;
-  cell8.innerHTML = tRoute;
+  cell1.innerHTML =JSON.parse(localStorage.getItem(k)).tId;
+  cell2.innerHTML = JSON.parse(localStorage.getItem(k)).tCargoCompanies;
+  cell3.innerHTML = JSON.parse(localStorage.getItem(k)).tOrigin;
+  cell4.innerHTML = JSON.parse(localStorage.getItem(k)).tDestination;
+  cell5.innerHTML = JSON.parse(localStorage.getItem(k)).tDepartue;
+  cell6.innerHTML = JSON.parse(localStorage.getItem(k)).tArrival;
+  cell7.innerHTML = JSON.parse(localStorage.getItem(k)).tVessels;
+  cell8.innerHTML = JSON.parse(localStorage.getItem(k)).tRoute;
 
   
 }
@@ -519,12 +577,12 @@ let tRoute  =  document.getElementById('route').value;
 // }
 
 
-    let table = document.getElementById("myTable");
-   let row = table.insertRow(0);
-   let cell1 = row.insertCell(0);
-    let cell2 = row.insertCell(1);
-    cell1.innerHTML = "NEW CELL1";
-    cell2.innerHTML = "NEW CELL2";
+//     let table = document.getElementById("myTable");
+//    let row = table.insertRow(0);
+//    let cell1 = row.insertCell(0);
+//     let cell2 = row.insertCell(1);
+//     cell1.innerHTML = "NEW CELL1";
+//     cell2.innerHTML = "NEW CELL2";
   
 }
 
@@ -532,3 +590,6 @@ let tRoute  =  document.getElementById('route').value;
 function clear(){
     document.getElementById('f').display = "none";
 }
+
+
+
