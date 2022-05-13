@@ -234,7 +234,6 @@
 
                             <!-- <div class="col-md-7"></div> -->
 
-
                             <div class="col-md-5" id="error">
 
                             </div>
@@ -250,6 +249,7 @@
                             <div class="col-md-4" id="paybtn">
                                 <button class=" ml-2 btn btn-primary pay" type="submit" id="submit">PAY NOW</button>
                            </div>
+
 
 
                         </div>

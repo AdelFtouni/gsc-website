@@ -14,6 +14,8 @@ body {
     background-color: #fff;
     border-radius: 12px;
     padding: 30px;
+    min-width: 250px;
+ 
 }
 
 .close {
@@ -64,14 +66,6 @@ body {
     color: #a7aaade8
 }
 
-#cancelHref {
-    float: right !important;
-}
-
-.btnHref {
-    float: right;
-}
-
 #launchBtn {
     background-color: #ffff;
     color: #154b9c;
@@ -80,6 +74,11 @@ body {
 
 }
 
+.btnDiv {
+    float: right;
+    align-items: flex !important;
+    justify-content: end !important;
+} 
 
 .pay {
 
@@ -88,9 +87,8 @@ body {
     border-color: --primary;
     border-radius: 3px;
     padding: 8px;
-   float: right;
+    float: right !important;
 }
-
 
 .pay:hover {
 
@@ -106,6 +104,7 @@ body {
 
     text-decoration: none;
     color: --primary;
-    margin-right: -40px !important;
+    float: right !important;
+
 }
 
