@@ -316,7 +316,7 @@ let dataOfShipments = [
 
 const tBody = selectElement("#tBody");
 
-// let statusOfshipments = true;
+let statusOfshipments = true;
 
 function pushTableOfShipmentsFun(){
     let table = '';
@@ -348,13 +348,12 @@ function pushTableOfShipmentsFun(){
         <td>${dataOfShipments[i].location}</td>
         <td>${dataOfShipments[i].starting}</td>
         <td>${dataOfShipments[i].arrival}</td>
-        <td>
-            ${dataOfShipments[i].status}
-        </td>
+        <td>${dataOfShipments[i].status} </td>
 
       </tr>`;
     }
      tBody.innerHTML = table;
+     riskProcessClick();
 }
 
 pushTableOfShipmentsFun();
@@ -376,7 +375,7 @@ function whatTypeOfSearch(id){
 }
 
 function searchInTable(value){
-    let table = '';
+    let table = ``;
     if(statusOfSearch == "Origin"){
         for(let i=0; i < dataOfShipments.length; i++){
             if(dataOfShipments[i].origin.toLowerCase().includes(value.toLowerCase())){
@@ -388,10 +387,7 @@ function searchInTable(value){
                 <td>${dataOfShipments[i].location}</td>
                 <td>${dataOfShipments[i].starting}</td>
                 <td>${dataOfShipments[i].arrival}</td>
-                <td>
-                ${dataOfShipments[i].status}
-                </td>
-        
+                <td>${dataOfShipments[i].status} </td>
               </tr>`;
             }
         }
@@ -406,7 +402,7 @@ function searchInTable(value){
                 <td>${dataOfShipments[i].location}</td>
                 <td>${dataOfShipments[i].starting}</td>
                 <td>${dataOfShipments[i].arrival}</td>
-               <td>${dataOfShipments[i].status}</td>
+                <td>${dataOfShipments[i].status}</td>
                </tr>`;
             }
         }
@@ -414,6 +410,7 @@ function searchInTable(value){
 
     tBody.innerHTML = table;
      //  POP-UP RISK DETAILS
+     riskProcessClick();
 }
 
 
@@ -447,7 +444,7 @@ function searchCode(value){
             }
         }
         tBody.innerHTML = table;
-        
+        riskProcessClick();
 }
 
 riskProcessClick();
