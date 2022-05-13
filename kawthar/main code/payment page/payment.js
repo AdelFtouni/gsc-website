@@ -1,8 +1,7 @@
 let cl = console.log;
 
-document.getElementById('save').addEventListener('click', function_savePayment);
-
-// document.getElementById('cancelHref').addEventListener('click', function_cancel);
+// document.getElementById('save').addEventListener('click', function_savePayment);
+document.getElementById('submit').addEventListener('click', function_savePayment);
 
 
 const payment_array = [];
@@ -24,7 +23,7 @@ function function_savePayment(event) {
 
         console.log(payment_array);
         let founded = false;
-        const error = `<div style='background-color:red; color: white; margin:auto; width:50%; border-radius: 5px; margin-top:50px; box-shadow:3px 3px 7px gray; font-size:18px; padding:10px;'>Already exist !!!</div>`;
+        const error = `<div style='background-color:red; color: white; margin:auto; width:50%; border-radius: 5px; margin-top:50px; box-shadow:3px 3px 7px gray; font-size:14px; padding:10px;'>Already exists!</div>`;
 
         for (let i = 0; i < localStorage.length; i++)
             (JSON.stringify(payment_fee) == JSON.stringify(payment_array[i])) && (founded = true);
@@ -34,7 +33,7 @@ function function_savePayment(event) {
         // cl(`the value ${founded} abc`); 
 
         function set_payment_fee_in_local_storage() {
-
+         
             payment_array.push(payment_fee);
             let len = payment_array.length;
 

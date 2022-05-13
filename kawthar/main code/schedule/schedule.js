@@ -153,9 +153,10 @@ function slReset(event) {
           if (!form.checkValidity()) {
             event.preventDefault()
             event.stopPropagation()
-            searchshippingL.addEventListener("click", openShippingLResult);
-            searchport.addEventListener("click", openportcallsResult);
+         
             searchptp.addEventListener("click", openPtpResult);
+            searchport.addEventListener("click", openportcallsResult);
+            searchshippingL.addEventListener("click", openShippingLResult);
 
 
           }
@@ -164,13 +165,6 @@ function slReset(event) {
         }, false)
       })
   })()
-
-
-
-
-
-
-
 
 
 

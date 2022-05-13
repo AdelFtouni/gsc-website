@@ -192,7 +192,7 @@
                         <div class="col-md mb-2 mt-4 pl-3 pr-3">
                           <label for="from" class="form-label mb-0">From City /Region</label>
                           <input type="text" class="form-control rounded" id="from" name="from" aria-label="from"
-                            required>
+                           autocomplete="true" pattern="[a-zA-Z0-9]+" required>
                           <div class="invalid-feedback">
                             Please provide a valid region.
                           </div>
@@ -212,7 +212,7 @@
 
                         <div class="col-md mb-2 mt-3 pl-3 pr-3">
                           <label for="validationCustom01" class="form-label mb-0">To City /Region</label>
-                          <input type="text" class="form-control rounded" id="validationCustom01" required>
+                          <input type="text" class="form-control rounded" id="validationCustom01" pattern="[a-zA-Z0-9]+" required>
                           <div class="valid-feedback">
                             Please provide a valid city.
                           </div>
@@ -309,7 +309,7 @@
                           <div class="col-sm-12 mb-2 mt-2">
                             <div>
                               <label for="validationCustom05" class="form-label mb-0">Country Region</label>
-                              <input type="text" class="form-control rounded" id="validationCustom05" required>
+                              <input type="text" class="form-control rounded" id="validationCustom05" pattern="[a-zA-Z0-9]+" required>
 
                               <div class="valid-feedback">
                                 Please provide a valid city.
@@ -322,7 +322,7 @@
                           <div class="col-sm-12 mb-2 mt-2">
                             <div>
                               <label for="validationCustom06" class="form-label mb-0">Port</label>
-                              <input type="text" class="form-control rounded" id="validationCustom06" required>
+                              <input type="text" class="form-control rounded" id="validationCustom06" pattern="[a-zA-Z0-9]+" required>
                               <div class="valid-feedback">
                                 Please provide a valid city.
                               </div>
