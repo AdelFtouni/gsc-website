@@ -31,7 +31,7 @@ trackingCodeSubmit.addEventListener('click' ,() => {
 
         if(codesTracking.indexOf(trackingCodeInput.value) !== -1){
             trackingCodeInput.style.border = "1px solid green";
-            document.location.href = '/hamza/Shipment tracking user/html/shipment_tracking_user.html';
+            document.location.href = '/gsc-website/hamza/Shipment tracking user/html/shipment_tracking_user.html';
          } else{
              trackingCodeInput.style.border = "1px solid red";
          }
@@ -80,7 +80,7 @@ function scheduleFun(){
     }else{
         inputDestinationSchedule.style.border = "1px solid green";
         inputOriginSchedule.style.border = "1px solid green";
-        document.location.href = '/Kawthar/schedule.html';
+        document.location.href = '/gsc-website/Kawthar/schedule.html';
     }
 }
 
