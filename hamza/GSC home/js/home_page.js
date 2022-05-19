@@ -80,7 +80,7 @@ function scheduleFun(){
     }else{
         inputDestinationSchedule.style.border = "1px solid green";
         inputOriginSchedule.style.border = "1px solid green";
-        document.location.href = '/Kawthar/schedule.html';
+        document.location.href = '/Kawthar/main code/schedule/schedule.html';
     }
 }
 
