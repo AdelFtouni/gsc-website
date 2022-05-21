@@ -49,7 +49,7 @@ document.getElementById('details').style.display='none';
 document.getElementById('wrong1').style.display='none';
 document.getElementById('wrong2').style.display='none';
 function setBill(){
-if(document.getElementById('input_trip_code').value == JSON.parse(window.localStorage.getItem(0)).tId){
+if(document.getElementById('input_trip_code').value == JSON.parse(window.localStorage.getItem(1)).tId){
 document.getElementById('details').style.display = 'block';
 document.getElementById('wrong1').style.display='none';
 document.getElementById('total').style.display='none';
@@ -80,6 +80,6 @@ let counter = 6234;
 function first(){
     document.getElementById('audi').innerText = JSON.parse(window.localStorage.getItem(1)).tCargoCompanies;
     document.getElementById('audi1').innerText = JSON.parse(window.localStorage.getItem(1)).tCargoCompanies;
-    document.getElementById('trip-code').innerText = JSON.parse(window.localStorage.getItem(0)).tId;
+    document.getElementById('trip-code').innerText = JSON.parse(window.localStorage.getItem(1)).tId;
     document.getElementById('bill-code').innerText = counter;
 }

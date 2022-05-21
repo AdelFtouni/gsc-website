@@ -64,7 +64,7 @@ let det = document.getElementById('tablefa');
     <th id="#asdf">Arrival</th>
     <th id="#asdf">Vessels</th>
     <th id="#asdf">Route</th>`;
-    for (let i = 0; i < localStorage.length; i++) {
+    for (let i = 1; i < localStorage.length; i++) {
         // const str = localStorage.getItem(i +1);
         // convert string to valid object
        // const parsedObj = JSON.parse(str);
