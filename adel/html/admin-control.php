@@ -545,11 +545,36 @@
                     <div class="tab-pane fade" id="navs-pills-justified-editHome" role="tabpanel">
                    
                       <div class="d-xxl-flex justify-content-center flex-row bd-highlight">
-                        <div class="p-5 bd-highlight">  <button type="button" 
+                      <form action = "<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+                        <div class="p-5 bd-highlight">
+                              <button type="button" 
                           data-bs-toggle="modal"
                           data-bs-target="#largeModal"
                           onclick=""
-                          class="btn btn-dark">add trip</button></div>
+                          class="btn btn-dark">add trip</button>
+
+                          <?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "without";
+$text = $_POST['name'];
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+$sql = "INSERT INTO `test`(`text`) VALUES ('$text')";
+
+if ($conn->query($sql) === TRUE) {
+echo "success";           
+console.log("succes");
+} else {
+  echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+     $conn->close();
+     ?>
+                              </form>
+                        </div>
                         <div class="p-5 bd-highlight">  <button type="button"  class="btn btn-dark">add to home</button></div>
                         <div class="p-5 bd-highlight">  <button type="button"  class="btn btn-dark">add offer</button></div>
 
